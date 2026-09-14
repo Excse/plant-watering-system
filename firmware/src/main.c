@@ -7,47 +7,25 @@
 #include "freertos/event_groups.h"
 #include "driver/gpio.h"
 
+#include "esp_adc/adc_oneshot.h"
 #include "esp_wifi.h"
 #include "esp_log.h"
 
 #include "mqtt_client.h"
+#include "mqtt_identity.h"
 #include "nvs_flash.h"
 #include "sdkconfig.h"
 
 #define WIFI_CONNECTED_BIT BIT0
 #define LED_GPIO GPIO_NUM_2
 
-#define DISCOVERY_TOPIC    "homeassistant/light/esp32_blinky_led/config"
-#define COMMAND_TOPIC      "esp32/blinky/led/set"
-#define STATE_TOPIC        "esp32/blinky/led/state"
-#define AVAILABILITY_TOPIC "esp32/blinky/status"
+static mqtt_identity_t identity;
 
 static const char *WIFI_LOG_TAG = "wifi";
 static const char *MQTT_LOG_TAG = "mqtt";
 static const char *PWS_LOG_TAG = "pws";
 
 static EventGroupHandle_t wifi_event_group;
-
-static const char *discovery_payload =
-    "{"
-        "\"name\":\"LED\","
-        "\"unique_id\":\"esp32_blinky_led\","
-        "\"command_topic\":\"" COMMAND_TOPIC "\","
-        "\"state_topic\":\"" STATE_TOPIC "\","
-        "\"availability_topic\":\"" AVAILABILITY_TOPIC "\","
-        "\"payload_on\":\"ON\","
-        "\"payload_off\":\"OFF\","
-        "\"device\":{"
-            "\"identifiers\":[\"esp32_blinky\"],"
-            "\"name\":\"ESP32 Blinky\","
-            "\"manufacturer\":\"DIY\","
-            "\"model\":\"ESP32\""
-        "},"
-        "\"origin\":{"
-            "\"name\":\"esp32-idf\","
-            "\"sw_version\":\"1.0.0\""
-        "}"
-    "}";
 
 static void log_error_if_nonzero(const char *tag, const char *message, int error_code) {
     if (error_code != 0) {
@@ -65,10 +43,10 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
         case MQTT_EVENT_CONNECTED:
             ESP_LOGI(MQTT_LOG_TAG, "MQTT_EVENT_CONNECTED");
 
-            esp_mqtt_client_subscribe(client, COMMAND_TOPIC, 1);
-            esp_mqtt_client_publish(client, DISCOVERY_TOPIC, discovery_payload, 0, 1, 1);
-            esp_mqtt_client_publish(client, AVAILABILITY_TOPIC, "online", 0, 1, 1);
-            esp_mqtt_client_publish(client, STATE_TOPIC, gpio_get_level(LED_GPIO) ? "ON" : "OFF", 0, 1, 1);
+            esp_mqtt_client_subscribe(client, identity.command_topic, 1);
+            esp_mqtt_client_publish(client, identity.discovery_topic, identity.discovery_payload, 0, 1, 1);
+            esp_mqtt_client_publish(client, identity.availability_topic, "online", 0, 1, 1);
+            esp_mqtt_client_publish(client, identity.state_topic, gpio_get_level(LED_GPIO) ? "ON" : "OFF", 0, 1, 1);
             break;
         
         case MQTT_EVENT_DISCONNECTED:
@@ -78,16 +56,16 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
         case MQTT_EVENT_DATA:
             ESP_LOGI(MQTT_LOG_TAG, "MQTT_EVENT_DATA");
             
-            if (event->topic_len == strlen(COMMAND_TOPIC) && strncmp(event->topic, COMMAND_TOPIC, event->topic_len) ==  0) {
+            if (event->topic_len == strlen(identity.command_topic) && strncmp(event->topic, identity.command_topic, event->topic_len) ==  0) {
                 if (event->data_len == 2 && strncmp(event->data, "ON", 2) == 0) {
                     gpio_set_level(LED_GPIO, 1);
 
-                    esp_mqtt_client_publish(client, STATE_TOPIC, "ON", 0, 1, 1);
+                    esp_mqtt_client_publish(client, identity.state_topic, "ON", 0, 1, 1);
                 }
                 else if (event->data_len == 3 && strncmp(event->data, "OFF", 3) == 0) {
                     gpio_set_level(LED_GPIO, 0);
 
-                    esp_mqtt_client_publish(client, STATE_TOPIC, "OFF", 0, 1, 1);
+                    esp_mqtt_client_publish(client, identity.state_topic, "OFF", 0, 1, 1);
                 }
             }
             break;
@@ -110,16 +88,19 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
 }
 
 void mqtt_start(void) {
+    ESP_ERROR_CHECK(mqtt_identity_init(&identity));
+    
     const esp_mqtt_client_config_t mqtt_cfg = {
         .broker.address.uri = CONFIG_PWS_MQTT_BROKER_URI,
         .credentials = {
+            .client_id = identity.device_id,
             .username = CONFIG_PWS_MQTT_USERNAME,
             .authentication = {
                 .password = CONFIG_PWS_MQTT_PASSWORD,
             },
         },
         .session.last_will = {
-            .topic = AVAILABILITY_TOPIC,
+            .topic = identity.availability_topic,
             .msg = "offline",
             .qos = 1,
             .retain = 1,
@@ -192,7 +173,7 @@ void app_main(void) {
     esp_log_level_set("*", ESP_LOG_INFO);
 
     ESP_LOGI(PWS_LOG_TAG, "Startup..");
-    ESP_LOGI(PWS_LOG_TAG, "Free memory: %u KiB", (esp_get_free_heap_size() / 1024));
+    ESP_LOGI(PWS_LOG_TAG, "Free heap: %u KiB", (esp_get_free_heap_size() / 1024));
     ESP_LOGI(PWS_LOG_TAG, "IDF version: %s", esp_get_idf_version());
 
     gpio_reset_pin(LED_GPIO);

@@ -1,0 +1,19 @@
+{
+  "device": {
+    "identifiers": ["{{device_id}}"],
+    "name": "PWS {{device_id}}",
+    "manufacturer": "DIY",
+    "model": "ESP32"
+  },
+  "name": "LED",
+  "unique_id": "{{device_id}}_led",
+  "command_topic": "{{device_id}}/led/set",
+  "state_topic": "{{device_id}}/led/state",
+  "availability_topic": "{{device_id}}/status",
+  "payload_on": "ON",
+  "payload_off": "OFF",
+  "origin": {
+    "name": "esp32-idf",
+    "sw_version": "1.0.0"
+  }
+}
