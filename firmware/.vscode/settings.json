@@ -1,0 +1,6 @@
+{
+    "clangd.enable": false,
+    "C_Cpp.intelliSenseEngine": "default",
+    "cmake.configureOnOpen": false,
+    "platformio-ide.autoRebuildAutocompleteIndex": true
+}
