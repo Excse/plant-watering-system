@@ -1,35 +1,168 @@
 # Watering system firmware
 
-ESP32 Dev Module firmware using PlatformIO and ESP-IDF (C).
+Experimental firmware for the [Smart Plant Pot](../README.md), written in C using
+ESP-IDF and PlatformIO. The current target is an **ESP32 Dev Module** (`esp32dev`).
 
-## Develop in VS Code
+For now, the firmware connects to Wi-Fi and MQTT and exposes an LED on **GPIO 2**
+to Home Assistant. Soil moisture sensing and pump control are still planned.
 
-1. Open this `firmware` folder directly in VS Code (the folder containing
-   `platformio.ini`).
-2. Install the recommended **PlatformIO IDE** and **C/C++** extensions. When
-   using WSL or Remote SSH, install them in the remote environment.
-3. Run **Developer: Reload Window** from the command palette.
-4. Run **PlatformIO: Build**, then **PlatformIO: Rebuild C/C++ Project Index**.
+## What you need
 
-Open `src/main.c`. Completion inside `#include "driver/` should list headers;
-Ctrl+Space triggers suggestions, and F12 on `GPIO_NUM_2` opens its definition.
-This project uses ESP-IDF headers such as `driver/gpio.h` and
-`freertos/FreeRTOS.h`.
+- An ESP32 development board compatible with the `esp32dev` target and a USB data cable.
+- A Wi-Fi network the ESP32 can join.
+- An MQTT broker reachable from that network, plus its credentials if required.
+- VS Code with the **PlatformIO IDE** and **C/C++** extensions, or an existing
+  PlatformIO Core installation for command-line use.
+- Optional: Home Assistant with its MQTT integration connected to the same broker.
 
-Workspace settings select Microsoft C/C++ for IntelliSense and disable clangd
-for this project. PlatformIO generates `.vscode/c_cpp_properties.json` with the
-compiler, include paths, and defines; do not edit that file manually. Rebuild
-the C/C++ project index after changing dependencies or the build environment.
+The current experiment uses GPIO 2 for the LED. Check your board's pinout if its
+onboard LED is connected elsewhere; the pin is set by `LED_GPIO` in
+[`src/main.c`](src/main.c).
 
-Use the PlatformIO toolbar to build, upload, or open the serial monitor.
-Equivalent commands in a PlatformIO terminal are:
+## 1. Open the project
+
+Clone this repository, then open its **`firmware` folder** directly in VS Code.
+This is the folder containing `platformio.ini`.
+
+Install the recommended extensions when prompted, then run **Developer: Reload
+Window** from the command palette. With WSL or Remote SSH, install the extensions
+in the remote environment and make sure that environment can access the board's
+USB serial port.
+
+Open a **PlatformIO Core CLI** terminal from PlatformIO in VS Code. Run all commands
+below from the `firmware` directory. If your terminal starts at the repository root:
+
+```sh
+cd firmware
+```
+
+PlatformIO manages the ESP-IDF framework and toolchain for this project. Its first
+run may take a while to download and install dependencies. See the
+[PlatformIO ESP-IDF guide](https://docs.platformio.org/en/latest/frameworks/espidf.html)
+for framework setup details.
+
+## 2. Configure Wi-Fi and MQTT
+
+Open the interactive ESP-IDF configuration menu through PlatformIO:
+
+```sh
+pio run -e esp32dev -t menuconfig
+```
+
+Select **Plant Watering System Configuration** and fill in these settings:
+
+| Setting         | What to enter                                                                                                       |
+| --------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Wi-Fi SSID      | Your wireless network name.                                                                                         |
+| Wi-Fi password  | Your wireless network password.                                                                                     |
+| MQTT broker URI | Your broker's address, for example `mqtt://192.168.1.100:1883`. Replace the existing default with your own address. |
+| MQTT username   | Your broker username, or leave empty if authentication is not required.                                             |
+| MQTT password   | Your broker password, or leave empty if authentication is not required.                                             |
+
+Use the arrow keys to navigate and Enter to open or edit an item. Use the menu's
+**Save** action, keep the suggested configuration filename, then **Exit**.
+
+The broker address must be reachable **from the ESP32**. Use the broker machine's
+LAN address or a resolvable hostname; `localhost` would refer to the ESP32 itself.
+
+The configuration options are defined in
+[`src/Kconfig.projbuild`](src/Kconfig.projbuild). Your saved values live in
+`sdkconfig.esp32dev`, which is ignored by Git along with its backups. This file
+contains your credentials, so keep it local. Settings are compiled into the
+firmware: after changing them, build and upload again.
+
+## 3. Build and flash
+
+Build the firmware:
 
 ```sh
 pio run -e esp32dev
+```
+
+Connect the ESP32 using a USB data cable, then upload:
+
+```sh
 pio run -e esp32dev -t upload
+```
+
+If PlatformIO cannot choose the correct serial port, list the available devices
+and specify the port explicitly:
+
+```sh
+pio device list
+pio run -e esp32dev -t upload --upload-port /dev/ttyUSB0
+```
+
+Replace `/dev/ttyUSB0` with your board's port, such as `/dev/ttyACM0` on Linux,
+`/dev/cu.usbserial-...` on macOS, or `COM3` on Windows.
+
+## 4. Check the serial output
+
+Start the serial monitor at the baud rate configured in `platformio.ini`:
+
+```sh
 pio device monitor -b 115200
 ```
 
-If completion is still missing, run **C/C++: Reset IntelliSense Database**,
-then **PlatformIO: Rebuild C/C++ Project Index**. Check that the language mode
-for `main.c` is **C** and the selected C/C++ configuration is **PlatformIO**.
+To select a port explicitly:
+
+```sh
+pio device monitor -b 115200 --port /dev/ttyUSB0
+```
+
+Press the board's reset button if you want to see the startup messages again.
+A successful connection should include these messages, with log prefixes and
+additional details:
+
+```text
+Startup..
+Connecting to Wi-Fi...
+Got IP: ...
+Network ready
+MQTT_EVENT_CONNECTED
+```
+
+The firmware waits for Wi-Fi before starting MQTT. Exit the monitor with **Ctrl+C**.
+
+## 5. Test the LED
+
+With Home Assistant's MQTT integration connected to the same broker and discovery
+enabled, the firmware publishes discovery information for an **ESP32 Blinky**
+device with an **LED** light entity. Toggle that entity to control GPIO 2.
+
+You can also test directly with any MQTT client:
+
+| Topic                                         | Purpose / payload                                                                                                  |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `esp32/blinky/led/set`                        | Publish exactly `ON` or `OFF` to control the LED.                                                                  |
+| `esp32/blinky/led/state`                      | Subscribe to receive reported `ON` / `OFF` state.                                                                  |
+| `esp32/blinky/status`                         | Availability: `online`; the broker publishes the configured `offline` last will when it detects a lost connection. |
+| `homeassistant/light/esp32_blinky_led/config` | Retained Home Assistant discovery configuration.                                                                   |
+
+The MQTT topics and discovery identifiers are currently fixed in `src/main.c`.
+Use one board at a time with these defaults, or give each board unique topics and
+identifiers before running multiple copies against the same broker.
+
+## Developing in VS Code
+
+After the first build, run **PlatformIO: Rebuild C/C++ Project Index**. Open
+`src/main.c`; Ctrl+Space should offer completions, and F12 on `GPIO_NUM_2` should
+open its definition.
+
+Workspace settings select Microsoft C/C++ for IntelliSense and disable clangd.
+PlatformIO generates `.vscode/c_cpp_properties.json` with the compiler, include
+paths, and defines; do not edit it manually. Rebuild the project index after
+changing dependencies or the build environment.
+
+## Troubleshooting
+
+| Problem                                     | What to check                                                                                                                                                                                                                                              |
+| ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `pio` is not found                          | Open a PlatformIO Core CLI terminal in VS Code, or make sure your PlatformIO Core installation is on `PATH`.                                                                                                                                               |
+| No serial port appears                      | Check the USB data cable, board connection, and USB serial driver. For WSL or remote development, check USB forwarding to that environment.                                                                                                                |
+| Upload fails or the port is busy            | Close other serial monitors, confirm the port with `pio device list`, and check your user's serial port permissions. If the board does not enter the bootloader automatically, hold BOOT while the uploader connects, then release it once writing starts. |
+| Wi-Fi keeps reconnecting                    | Check the SSID and password in `menuconfig`, network availability, and signal strength. Build and upload after changing settings.                                                                                                                          |
+| Wi-Fi works but MQTT does not connect       | Check the broker URI, credentials, broker listener, and firewall. The ESP32 must be able to reach the broker's port.                                                                                                                                       |
+| The LED does not change                     | Check the exact topic and uppercase `ON` / `OFF` payload, then verify that your board has an LED on GPIO 2.                                                                                                                                                |
+| Home Assistant does not discover the device | Confirm `MQTT_EVENT_CONNECTED`, verify both use the same broker, and check that MQTT discovery is enabled with the `homeassistant` prefix.                                                                                                                 |
+| Includes or completion are missing          | Build once, run **PlatformIO: Rebuild C/C++ Project Index**, then **C/C++: Reset IntelliSense Database** if needed. Check that `main.c` uses C language mode and the C/C++ configuration is PlatformIO.                                                    |
