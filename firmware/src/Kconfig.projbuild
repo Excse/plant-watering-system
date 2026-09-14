@@ -1,0 +1,22 @@
+menu "Plant Watering System Configuration"
+
+    config PWS_WIFI_SSID
+        string "Wi-Fi SSID"
+        default ""
+
+    config PWS_WIFI_PASSWORD
+        string "Wi-Fi password"
+        default ""
+
+    config PWS_MQTT_BROKER_URI
+        string "MQTT broker URI"
+        default "mqtt://10.13.37.42:1883"
+
+    config PWS_MQTT_USERNAME
+        string "MQTT username"
+        default ""
+    
+    config PWS_MQTT_PASSWORD
+        string "MQTT password"
+
+endmenu
