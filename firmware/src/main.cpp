@@ -7,7 +7,7 @@
 #include "freertos/event_groups.h"
 #include "driver/gpio.h"
 
-#include "esp_adc/adc_oneshot.h"
+#include "moisture_sensor.h"
 #include "esp_wifi.h"
 #include "esp_log.h"
 
@@ -15,6 +15,7 @@
 #include "mqtt_identity.h"
 #include "nvs_flash.h"
 #include "sdkconfig.h"
+#include "rhadar.h"
 
 #define WIFI_CONNECTED_BIT BIT0
 #define LED_GPIO GPIO_NUM_2
@@ -36,7 +37,7 @@ static void log_error_if_nonzero(const char *tag, const char *message, int error
 static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data) {
     ESP_LOGD(MQTT_LOG_TAG, "Event dispatched from event loop base=%s, event_id=%" PRIi32 "", base, event_id);
 
-    esp_mqtt_event_handle_t event = event_data;
+    esp_mqtt_event_handle_t event = static_cast<esp_mqtt_event_handle_t>(event_data);
     esp_mqtt_client_handle_t client = event->client;
 
     switch (event_id) {
@@ -90,25 +91,18 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
 void mqtt_start(void) {
     ESP_ERROR_CHECK(mqtt_identity_init(&identity));
     
-    const esp_mqtt_client_config_t mqtt_cfg = {
-        .broker.address.uri = CONFIG_PWS_MQTT_BROKER_URI,
-        .credentials = {
-            .client_id = identity.device_id,
-            .username = CONFIG_PWS_MQTT_USERNAME,
-            .authentication = {
-                .password = CONFIG_PWS_MQTT_PASSWORD,
-            },
-        },
-        .session.last_will = {
-            .topic = identity.availability_topic,
-            .msg = "offline",
-            .qos = 1,
-            .retain = 1,
-        },
-    };
+    esp_mqtt_client_config_t mqtt_cfg = {};
+    mqtt_cfg.broker.address.uri = CONFIG_PWS_MQTT_BROKER_URI;
+    mqtt_cfg.credentials.client_id = identity.device_id;
+    mqtt_cfg.credentials.username = CONFIG_PWS_MQTT_USERNAME;
+    mqtt_cfg.credentials.authentication.password = CONFIG_PWS_MQTT_PASSWORD;
+    mqtt_cfg.session.last_will.topic = identity.availability_topic;
+    mqtt_cfg.session.last_will.msg = "offline";
+    mqtt_cfg.session.last_will.qos = 1;
+    mqtt_cfg.session.last_will.retain = 1;
 
     esp_mqtt_client_handle_t client = esp_mqtt_client_init(&mqtt_cfg);
-    esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
+    esp_mqtt_client_register_event(client, MQTT_EVENT_ANY, mqtt_event_handler, NULL);
     esp_mqtt_client_start(client);
 }
 
@@ -143,12 +137,13 @@ static void wifi_start(void) {
     ESP_ERROR_CHECK(esp_event_handler_register(WIFI_EVENT, ESP_EVENT_ANY_ID, wifi_event_handler, NULL));
     ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_STA_GOT_IP, wifi_event_handler, NULL));
 
-    wifi_config_t wifi_cfg = {
-        .sta = {
-            .ssid = CONFIG_PWS_WIFI_SSID,
-            .password = CONFIG_PWS_WIFI_PASSWORD,
-        },
-    };
+    wifi_config_t wifi_cfg = {};
+    static_assert(sizeof(CONFIG_PWS_WIFI_SSID) - 1 <= sizeof(wifi_cfg.sta.ssid),
+                  "Wi-Fi SSID exceeds the supported length");
+    static_assert(sizeof(CONFIG_PWS_WIFI_PASSWORD) - 1 <= sizeof(wifi_cfg.sta.password),
+                  "Wi-Fi password exceeds the supported length");
+    memcpy(wifi_cfg.sta.ssid, CONFIG_PWS_WIFI_SSID, sizeof(CONFIG_PWS_WIFI_SSID) - 1);
+    memcpy(wifi_cfg.sta.password, CONFIG_PWS_WIFI_PASSWORD, sizeof(CONFIG_PWS_WIFI_PASSWORD) - 1);
 
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_cfg));
@@ -169,7 +164,7 @@ static void flash_start(void) {
     ESP_ERROR_CHECK(flash_error);
 }
 
-void app_main(void) {
+extern "C" void app_main(void) {
     esp_log_level_set("*", ESP_LOG_INFO);
 
     ESP_LOGI(PWS_LOG_TAG, "Startup..");
@@ -180,6 +175,7 @@ void app_main(void) {
     gpio_set_direction(LED_GPIO, GPIO_MODE_OUTPUT);
 
     flash_start();
+    ESP_ERROR_CHECK(moisture_sensor_start());
     wifi_start();
     mqtt_start();
 }

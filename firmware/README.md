@@ -1,10 +1,12 @@
 # Watering system firmware
 
-Experimental firmware for the [Smart Plant Pot](../README.md), written in C using
+Experimental firmware for the [Smart Plant Pot](../README.md), written in C and C++ using
 ESP-IDF and PlatformIO. The current target is an **ESP32 Dev Module** (`esp32dev`).
 
-For now, the firmware connects to Wi-Fi and MQTT and exposes an LED on **GPIO 2**
-to Home Assistant. Soil moisture sensing and pump control are still planned.
+The firmware connects to Wi-Fi and MQTT and exposes an LED on **GPIO 2**
+to Home Assistant. It also reads an analog moisture sensor on **GPIO 34 (D34)**
+and logs raw readings and calibrated percentages over serial. Pump control is
+still planned.
 
 ## What you need
 
@@ -17,7 +19,7 @@ to Home Assistant. Soil moisture sensing and pump control are still planned.
 
 The current experiment uses GPIO 2 for the LED. Check your board's pinout if its
 onboard LED is connected elsewhere; the pin is set by `LED_GPIO` in
-[`src/main.c`](src/main.c).
+[`src/main.cpp`](src/main.cpp).
 
 ## 1. Open the project
 
@@ -139,14 +141,71 @@ You can also test directly with any MQTT client:
 | `esp32/blinky/status`                         | Availability: `online`; the broker publishes the configured `offline` last will when it detects a lost connection. |
 | `homeassistant/light/esp32_blinky_led/config` | Retained Home Assistant discovery configuration.                                                                   |
 
-The MQTT topics and discovery identifiers are currently fixed in `src/main.c`.
+The MQTT topics and discovery identifiers are currently fixed in `src/main.cpp`.
 Use one board at a time with these defaults, or give each board unique topics and
 identifiers before running multiple copies against the same broker.
+
+## Read and calibrate the moisture sensor
+
+Connect the sensor's **analog output (AO)** to **D34 / GPIO 34** and connect
+its ground to ESP32 GND. Power it according to its specifications; use 3.3 V
+if supported, and ensure its analog output is safe for the ESP32 (never feed
+5 V into GPIO 34). A digital threshold output (DO) cannot measure a percentage.
+
+GPIO 34 is ADC1 channel 6 on this ESP32. The driver uses 12-bit readings and
+12 dB attenuation; ADC1 works alongside Wi-Fi. See Espressif's
+[ADC documentation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/adc.html)
+and [oneshot driver guide](https://docs.espressif.com/projects/esp-idf/en/v5.4/esp32/api-reference/peripherals/adc_oneshot.html).
+
+Build, upload, and open the serial monitor:
+
+```sh
+pio run -e esp32dev -t upload
+pio device monitor -b 115200
+```
+
+Once per second, the firmware logs the average of 32 ADC samples (0–4095).
+Readings start even if Wi-Fi is unavailable. Initially, both calibration
+settings are zero, so the output looks like this (example only):
+
+```text
+I (...) moisture: GPIO34 raw=2874 (uncalibrated)
+```
+
+1. Place the probe in your dry reference soil at the intended insertion depth.
+   Wait for the readings to settle and record the raw value as **0% (dry)**.
+2. Measure the same soil when thoroughly watered and allowed to drain, at the
+   same insertion depth. Record the stable raw value as **100% (wet)**.
+   Keep the sensor electronics dry.
+3. Exit the monitor, then run `pio run -e esp32dev -t menuconfig`.
+   Under **Plant Watering System Configuration**, enter the two measurements
+   in **Moisture sensor raw reading at 0% (dry)** and
+   **Moisture sensor raw reading at 100% (wet)**. Save and exit.
+4. Build and upload again, then reopen the monitor. It now shows both values:
+
+```text
+I (...) moisture: GPIO34 raw=2100 moisture=50%
+```
+
+The conversion is `100 × (raw − dry) / (wet − dry)`, rounded to the nearest
+whole percent and clamped to 0–100%. Either endpoint may be larger. Equal
+endpoints leave the sensor uncalibrated and keep raw logging enabled. A reading
+stuck near 0 or 4095 in both conditions needs a wiring/output-range check before
+calibration. Percentages describe your chosen soil reference conditions, not
+an absolute volumetric water content measurement. Moisture readings currently
+appear in the serial log; they are not published to MQTT.
+
+To run the calibration conversion checks on the host:
+
+```sh
+c++ -std=c++11 -Wall -Wextra -Werror -Isrc test/test_moisture_calibration.cpp -o /tmp/pws-moisture-test
+/tmp/pws-moisture-test
+```
 
 ## Developing in VS Code
 
 After the first build, run **PlatformIO: Rebuild C/C++ Project Index**. Open
-`src/main.c`; Ctrl+Space should offer completions, and F12 on `GPIO_NUM_2` should
+`src/main.cpp`; Ctrl+Space should offer completions, and F12 on `GPIO_NUM_2` should
 open its definition.
 
 Workspace settings select Microsoft C/C++ for IntelliSense and disable clangd.
@@ -165,4 +224,4 @@ changing dependencies or the build environment.
 | Wi-Fi works but MQTT does not connect       | Check the broker URI, credentials, broker listener, and firewall. The ESP32 must be able to reach the broker's port.                                                                                                                                       |
 | The LED does not change                     | Check the exact topic and uppercase `ON` / `OFF` payload, then verify that your board has an LED on GPIO 2.                                                                                                                                                |
 | Home Assistant does not discover the device | Confirm `MQTT_EVENT_CONNECTED`, verify both use the same broker, and check that MQTT discovery is enabled with the `homeassistant` prefix.                                                                                                                 |
-| Includes or completion are missing          | Build once, run **PlatformIO: Rebuild C/C++ Project Index**, then **C/C++: Reset IntelliSense Database** if needed. Check that `main.c` uses C language mode and the C/C++ configuration is PlatformIO.                                                    |
+| Includes or completion are missing          | Build once, run **PlatformIO: Rebuild C/C++ Project Index**, then **C/C++: Reset IntelliSense Database** if needed. Check that `main.cpp` uses C++ language mode and the C/C++ configuration is PlatformIO.                                                    |

@@ -19,4 +19,14 @@ menu "Plant Watering System Configuration"
     config PWS_MQTT_PASSWORD
         string "MQTT password"
 
+    config PWS_MOISTURE_DRY_RAW
+        int "Moisture sensor raw reading at 0% (dry)"
+        range -1 4095
+        default -1
+
+    config PWS_MOISTURE_WET_RAW
+        int "Moisture sensor raw reading at 100% (wet)"
+        range -1 4095
+        default -1
+
 endmenu
