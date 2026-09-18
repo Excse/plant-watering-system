@@ -16,9 +16,6 @@ static constexpr adc_channel_t ADC_CHANNEL = ADC_CHANNEL_6;
 static constexpr adc_unit_t ADC_UNIT = ADC_UNIT_1;
 static adc_oneshot_unit_handle_t ADC_HANDLE;
 
-static int WET_RAW = CONFIG_PWS_MOISTURE_WET_RAW;
-static int DRY_RAW = CONFIG_PWS_MOISTURE_DRY_RAW;
-
 static constexpr int SAMPLE_COUNT = 32;
 static constexpr int SAMPLE_FREQ = 10;
 static constexpr int READ_FREQ = 1000;
@@ -28,30 +25,30 @@ static std::atomic<int> LATEST_MOISTURE_PERCENTAGE{-1};
 static constexpr float FILTER_ALPHA = 0.25f;
 static float FILTERED_MOISTURE = -1.0f;
 
-static int moisture_filter(int measurement) {
+static int moisture_filter(int measurement, float alpha) {
     if (FILTERED_MOISTURE < 0.0f) {
         FILTERED_MOISTURE = measurement;
     } else {
-        FILTERED_MOISTURE = FILTER_ALPHA * measurement + (1.0f - FILTER_ALPHA) * FILTERED_MOISTURE;
+        FILTERED_MOISTURE = alpha * measurement + (1.0f - alpha) * FILTERED_MOISTURE;
     }
 
     return static_cast<int>(FILTERED_MOISTURE + 0.5f);
 }
 
-static int moisture_percent(int raw) {
-    if (DRY_RAW < 0 || DRY_RAW > 4095) {
+static int moisture_percent(int raw, int dry_raw, int wet_raw) {
+    if (dry_raw < 0 || dry_raw > 4095) {
         return -1;
     }
 
-    if (WET_RAW < 0 || WET_RAW > 4095) {
+    if (wet_raw < 0 || wet_raw > 4095) {
         return -1;
     }
 
-    if (DRY_RAW == WET_RAW) {
+    if (dry_raw == wet_raw) {
         return -1;
     }
  
-    const float percent = 100.0f * (raw - DRY_RAW) / (WET_RAW - DRY_RAW);
+    const float percent = 100.0f * (raw - dry_raw) / (wet_raw - dry_raw);
     if (percent <= 0.0f) {
         return 0;
     }
@@ -92,9 +89,13 @@ static void moisture_task(void *) {
         } else {
             // Take the rounded mean value of all samples as the raw reading 
             const int raw = (sum + SAMPLE_COUNT / 2) / SAMPLE_COUNT;
-            const int filtered = moisture_filter(raw);
+            const int filtered = moisture_filter(raw, FILTER_ALPHA);
 
-            const int percent = moisture_percent(filtered);
+            const int percent = moisture_percent(
+                filtered,
+                CONFIG_PWS_MOISTURE_DRY_RAW,
+                CONFIG_PWS_MOISTURE_WET_RAW
+            );
             LATEST_MOISTURE_PERCENTAGE.store(percent);
 
             if (percent < 0) {
@@ -122,21 +123,17 @@ esp_err_t moisture_sensor_start(void) {
         ESP_LOGW(TAG, "The wet (100%%) raw reading in menuconfig has not been set yet");
     }
 
-    adc_oneshot_unit_init_cfg_t unit_config = {
-        .unit_id = ADC_UNIT,
-        .clk_src = static_cast<adc_oneshot_clk_src_t>(0),
-        .ulp_mode = ADC_ULP_MODE_DISABLE,
-    };
+    adc_oneshot_unit_init_cfg_t unit_config = {};
+    unit_config.unit_id = ADC_UNIT;
 
     const esp_err_t handle_error = adc_oneshot_new_unit(&unit_config, &ADC_HANDLE);
     if (handle_error != ESP_OK) {
         return handle_error;
     }
 
-    adc_oneshot_chan_cfg_t channel_config = {
-        .atten = ADC_ATTEN_DB_12,
-        .bitwidth = ADC_BITWIDTH_12,
-    };
+    adc_oneshot_chan_cfg_t channel_config = {};
+    channel_config.atten = ADC_ATTEN_DB_12;
+    channel_config.bitwidth = ADC_BITWIDTH_12;
 
     const esp_err_t channel_error = adc_oneshot_config_channel(ADC_HANDLE, ADC_CHANNEL, &channel_config);
     if (channel_error != ESP_OK) {

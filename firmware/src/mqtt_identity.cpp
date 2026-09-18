@@ -43,7 +43,7 @@ static char *replace_token(const char *source, const char *token, const char *re
     }
 
     // Allocate the rendered string, including the null terminator
-    char *result = malloc(result_length + 1);
+    char *result = static_cast<char*>(malloc(result_length + 1));
     if (result == NULL) {
         return NULL;
     }
