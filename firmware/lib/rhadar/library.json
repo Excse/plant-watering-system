@@ -1,0 +1,7 @@
+{
+  "name": "rhadar",
+  "version": "0.1.0",
+  "description": "Radar for Home Assistant: a generic C++ library for MQTT discovery.",
+  "frameworks": "*",
+  "platforms": "*"
+}
