@@ -4,8 +4,8 @@
 
 A generic C++ library for Home Assistant MQTT discovery, intended for reuse
 across projects, boards, and frameworks.
-The API requires C++23 or later and includes a sensor configuration builder with
-validation using `std::expected`.
+The API requires C++23 or later and includes sensor, device, connection, and origin
+configuration builders with validation using `std::expected`.
 Discovery serialization and MQTT publishing are not implemented yet.
 
 ## Documentation
@@ -19,9 +19,13 @@ payloads, topic and abbreviation indexes, and lifecycle behavior.
 - `include/rhadar.h`: public C++ API.
 - `include/components/base.h`: entity configuration, validation and shared builder.
 - `include/components/sensor.h`: sensor configuration, builder and validation.
+- `include/connection.h`, `include/device.h`, `include/origin.h`: read-only
+  configuration classes, builders, and validation declarations.
 - `include/result.h`: validation errors and the `std::expected` result alias.
 - `src/components/sensor.cpp`: sensor builder and validation definitions.
 - `src/components/base.cpp`: entity validation, shared setters and builder instantiations.
+- `src/connection.cpp`, `src/device.cpp`, `src/origin.cpp`: corresponding builder
+  constructors, setters, and validators.
 - `library.json`: PlatformIO library metadata.
 
 ## Usage
@@ -63,8 +67,9 @@ values; `add_option()` appends. `options({})` clears the list, meaning it is omi
 Unspecified optional fields remain unset; explicitly supplied `false` and `0` are
 preserved.
 
-`Entity` and `Sensor` expose read-only accessors and keep all configuration fields
-private. Use `SensorBuilder` for validated configurations; getters such as `name()` and
+`Entity`, `Sensor`, `Connection`, `Device`, and `Origin` expose read-only accessors
+and keep all configuration fields private. Use their builders for validated
+configurations; getters such as `name()` and
 `options()` return const references, while small optional values are returned by
 value. References remain valid while the owning sensor exists and is not replaced
 or moved from. Fields cannot be assigned directly. Default construction is available
@@ -74,6 +79,51 @@ Each successful build returns an independent snapshot. You can copy, move, or
 replace an entire `Sensor`. Construction, copying, moving, and assignment use
 compiler-generated special members. The builder remains reusable and subsequent changes do not affect
 previous results.
+
+Device and publisher metadata use the same pattern:
+
+```cpp
+auto connection = rhadar::ConnectionBuilder{"mac", "02:5b:26:a8:dc:12"}.build();
+if (!connection) {
+    // Handle connection.error().
+    return;
+}
+
+auto device = rhadar::DeviceBuilder{"pws_abc123"}
+    .name("Plant watering system")
+    .manufacturer("DIY")
+    .model("ESP32")
+    .add_connection(*connection)
+    .build();
+if (!device) {
+    // Handle device.error().
+    return;
+}
+
+auto origin = rhadar::OriginBuilder{"plant-watering-system"}
+    .sw_version("1.0.0")
+    .build();
+if (!origin) {
+    // Handle origin.error().
+    return;
+}
+
+// Read device->name(), device->connections(), origin->sw_version(), etc.
+```
+
+`ConnectionBuilder` takes a type and identifier; both must be nonempty. Connection
+types remain strings so additional connection types can be used without library
+changes. `OriginBuilder` takes the publisher name, which must be nonempty.
+
+`DeviceBuilder` starts with an identifier or a `Connection`. `identifiers()` and
+`connections()` replace the respective collections; `add_identifier()` and
+`add_connection()` append. Its validator requires at least one identifier or
+connection, rejects empty identifier entries, and validates every nested
+connection. Nested errors identify the entry, for example
+`connections[0].identifier`. Each class has its own `validate(const T&)` overload,
+and `build()` returns `Result<T>` without consuming the builder. These objects
+remain separate metadata values; this library does not yet serialize or publish
+them with a sensor.
 
 `SensorBuilder` inherits common settings from `EntityBuilder<SensorBuilder, Sensor>`.
 The base owns the complete sensor configuration and initializes its entity identity.
@@ -101,7 +151,8 @@ sensor-specific rules, including the restriction to the diagnostic category.
 existing snapshots and read their configuration through the public accessors.
 
 These checks are not full Home Assistant schema validation: topic syntax,
-templates, and the full device-class/unit compatibility table are not checked.
+templates, metadata URLs, and the full device-class/unit compatibility table are
+not checked.
 JSON null values are not modeled separately from omitted optional values yet.
 Cross-field rules follow the
 [Home Assistant MQTT sensor schema](https://github.com/home-assistant/core/blob/2026.9.2/homeassistant/components/mqtt/sensor.py).
