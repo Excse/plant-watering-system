@@ -4,16 +4,17 @@
 #include <vector>
 #include <string>
 
+#include "utils/enum.h"
 #include "result.h"
 
 namespace rhadar {
 
 // Code Source: https://github.com/home-assistant/core/blob/2026.9.2/homeassistant/const.py#L1026
 // Documentation Source: NaN
-enum class EntityCategory {
-    CONFIG, // config
-    DIAGNOSTIC, // diagnostic
-};
+#define ENTITY_CATEGORIES(X, TargetEnum)    \
+    X(TargetEnum, Config,     "config")     \
+    X(TargetEnum, Diagnostic, "diagnostic")
+DEFINE_ENUM(EntityCategory, ENTITY_CATEGORIES)
 
 // Code Source: https://github.com/home-assistant/core/blob/2026.9.2/homeassistant/components/mqtt/schemas.py#L175
 // Documentation Source: NaN
@@ -39,6 +40,8 @@ public:
     
     [[nodiscard]] std::optional<bool> visible_by_default() const noexcept { return _visible_by_default; }
 
+    [[nodiscard]] const std::optional<std::string>& availability_topic() const noexcept { return _availability_topic; }
+
 private:
     std::optional<std::string> _entity_picture; // entity_picture or ent_pic
     std::optional<bool> _enabled_by_default; // enabled_by_default or en
@@ -50,6 +53,7 @@ private:
     std::optional<int> _message_expiry_interval; // message_expiry_interval or msg_exp_int
     std::optional<std::string> _unique_id; // unique_id or uniq_id
     std::optional<bool> _visible_by_default; // visible_by_default or vis
+    std::optional<std::string> _availability_topic; // availability_topic or avty_t
 
     template <typename Derived, typename Config>
     friend class EntityBuilder;
@@ -77,6 +81,8 @@ public:
     [[nodiscard]] Derived& message_expiry_interval(int value);
 
     [[nodiscard]] Derived& visible_by_default(bool value);
+
+    [[nodiscard]] Derived& availability_topic(std::string value);
 
 protected:
     explicit EntityBuilder(std::string unique_id);

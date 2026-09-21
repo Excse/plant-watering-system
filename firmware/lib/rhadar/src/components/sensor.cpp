@@ -11,46 +11,48 @@ std::optional<ValidationError> validate(const Sensor& sensor) {
 
     if (sensor.state_topic().empty()) {
         return ValidationError{
-            ValidationErrorCode::MISSING_STATE_TOPIC, "state_topic", 
+            ValidationErrorCode::MissingStateTopic, "state_topic",
             "state_topic must not be empty"
         };
     }
+
     if (sensor.expire_after() && sensor.expire_after()->count() < 0) {
         return ValidationError{
-            ValidationErrorCode::NEGATIVE_VALUE, "expire_after", 
+            ValidationErrorCode::NegativeValue, "expire_after",
             "expire_after must be nonnegative"
         };
     }
+    
     if (sensor.suggested_display_precision() && *sensor.suggested_display_precision() < 0) {
         return ValidationError{
-            ValidationErrorCode::NEGATIVE_VALUE, "suggested_display_precision", 
+            ValidationErrorCode::NegativeValue, "suggested_display_precision",
             "suggested_display_precision must be nonnegative"
         };
     }
 
-    if (sensor.entity_category() && *sensor.entity_category() != EntityCategory::DIAGNOSTIC) {
+    if (sensor.entity_category() && *sensor.entity_category() != EntityCategory::Diagnostic) {
         return ValidationError{
-            ValidationErrorCode::INVALID_ENTITY_CATEGORY, "entity_category", 
+            ValidationErrorCode::InvalidEntityCategory, "entity_category",
             "sensor entity_category must be DIAGNOSTIC when set"};
     }
 
-    if (!sensor.options().empty() && (sensor.device_class() != SensorDeviceClass::ENUM || sensor.state_class() || sensor.unit_of_measurement())) {
+    if (!sensor.options().empty() && (sensor.device_class() != SensorDeviceClass::Enum || sensor.state_class() || sensor.unit_of_measurement())) {
         return ValidationError{
-            ValidationErrorCode::INCOMPATIBLE_OPTIONS, "options", 
+            ValidationErrorCode::IncompatibleOptions, "options",
             "options require device_class ENUM and no state_class or unit_of_measurement"
         };
     }
 
-    if (sensor.last_reset_value_template() && sensor.state_class() != SensorStateClass::TOTAL) {
+    if (sensor.last_reset_value_template() && sensor.state_class() != SensorStateClass::Total) {
         return ValidationError{
-            ValidationErrorCode::INCOMPATIBLE_LAST_RESET, "last_reset_value_template", 
+            ValidationErrorCode::IncompatibleLastReset, "last_reset_value_template",
             "last_reset_value_template requires state_class TOTAL"
         };
     }
 
-    if (sensor.state_class() == SensorStateClass::MEASUREMENT_ANGLE && sensor.unit_of_measurement() != "\u00b0") {
+    if (sensor.state_class() == SensorStateClass::MeasurementAngle && sensor.unit_of_measurement() != "\u00b0") {
         return ValidationError{
-            ValidationErrorCode::INCOMPATIBLE_STATE_CLASS_UNIT, "unit_of_measurement",
+            ValidationErrorCode::IncompatibleStateClassUnit, "unit_of_measurement",
             "state_class MEASUREMENT_ANGLE requires degree units (\u00b0)"};
     }
 

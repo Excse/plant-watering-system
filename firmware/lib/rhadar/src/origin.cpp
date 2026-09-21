@@ -7,7 +7,7 @@ namespace rhadar {
 std::optional<ValidationError> validate(const Origin& origin) {
     if (origin.name().empty()) {
         return ValidationError{
-            ValidationErrorCode::MISSING_ORIGIN_NAME, "name",
+            ValidationErrorCode::MissingOriginName, "name",
             "origin name must not be empty"
         };
     }

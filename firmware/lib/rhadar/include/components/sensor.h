@@ -12,78 +12,78 @@ namespace rhadar {
 
 // Code Source: https://github.com/home-assistant/core/blob/2026.9.2/homeassistant/components/sensor/const.py
 // Documentation Source: https://www.home-assistant.io/integrations/sensor/#device-class
-enum class SensorDeviceClass {
-    DATE, // date
-    ENUM, // enum
-    TIMESTAMP, // timestamp
-    UPTIME, // uptime
-    ABSOLUTE_HUMIDITY, // absolute_humidity
-    APPARENT_POWER, // apparent_power
-    AQI, // aqi
-    AREA, // area
-    ATMOSPHERIC_PRESSURE, // atmospheric_pressure
-    BATTERY, // battery
-    BLOOD_GLUCOSE_CONCENTRATION, // blood_glucose_concentration
-    CO, // carbon_monoxide
-    CO2, // carbon_dioxide
-    CONDUCTIVITY, // conductivity
-    CURRENT, // current
-    DATA_RATE, // data_rate
-    DATA_SIZE, // data_size
-    DISTANCE, // distance
-    DURATION, // duration
-    ENERGY, // energy
-    ENERGY_DISTANCE, // energy_distance
-    ENERGY_STORAGE, // energy_storage
-    FREQUENCY, // frequency
-    GAS, // gas
-    HUMIDITY, // humidity
-    ILLUMINANCE, // illuminance
-    IRRADIANCE, // irradiance
-    MOISTURE, // moisture
-    MONETARY, // monetary
-    NITROGEN_DIOXIDE, // nitrogen_dioxide
-    NITROGEN_MONOXIDE, // nitrogen_monoxide
-    NITROUS_OXIDE, // nitrous_oxide
-    OZONE, // ozone
-    PH, // ph
-    PM1, // pm1
-    PM10, // pm10
-    PM25, // pm25
-    PM4, // pm4
-    POWER_FACTOR, // power_factor
-    PRECIPITATION, // precipitation
-    PRECIPITATION_INTENSITY, // precipitation_intensity
-    PRESSURE, // pressure
-    RADON, // radon
-    REACTIVE_ENERGY, // reactive_energy
-    REACTIVE_POWER, // reactive_power
-    SIGNAL_STRENGTH, // signal_strength
-    SOUND_PRESSURE, // sound_pressure
-    SPEED, // speed
-    SULPHUR_DIOXIDE, // sulphur_dioxide
-    TEMPERATURE, // temperature
-    TEMPERATURE_DELTA, // temperature_delta
-    VOLATILE_ORGANIC_COMPOUNDS, // volatile_organic_compounds
-    VOLATILE_ORGANIC_COMPOUNDS_PARTS, // volatile_organic_compounds_parts
-    VOLTAGE, // voltage
-    VOLUME, // volume
-    VOLUME_STORAGE, // volume_storage
-    VOLUME_FLOW_RATE, // volume_flow_rate
-    WATER, // water
-    WEIGHT, // weight
-    WIND_DIRECTION, // wind_direction
-    WIND_SPEED, // wind_speed
-};
+#define SENSOR_DEVICE_CLASSES(X, TargetEnum)                                            \
+    X(TargetEnum, Date,                          "date")                                \
+    X(TargetEnum, Enum,                          "enum")                                \
+    X(TargetEnum, Timestamp,                     "timestamp")                           \
+    X(TargetEnum, Uptime,                        "uptime")                              \
+    X(TargetEnum, AbsoluteHumidity,              "absolute_humidity")                   \
+    X(TargetEnum, ApparentPower,                 "apparent_power")                      \
+    X(TargetEnum, Aqi,                           "aqi")                                 \
+    X(TargetEnum, Area,                          "area")                                \
+    X(TargetEnum, AtmosphericPressure,           "atmospheric_pressure")                \
+    X(TargetEnum, Battery,                       "battery")                             \
+    X(TargetEnum, BloodGlucoseConcentration,     "blood_glucose_concentration")         \
+    X(TargetEnum, Co,                            "carbon_monoxide")                     \
+    X(TargetEnum, Co2,                           "carbon_dioxide")                      \
+    X(TargetEnum, Conductivity,                  "conductivity")                        \
+    X(TargetEnum, Current,                       "current")                             \
+    X(TargetEnum, DataRate,                      "data_rate")                           \
+    X(TargetEnum, DataSize,                      "data_size")                           \
+    X(TargetEnum, Distance,                      "distance")                            \
+    X(TargetEnum, Duration,                      "duration")                            \
+    X(TargetEnum, Energy,                        "energy")                              \
+    X(TargetEnum, EnergyDistance,                "energy_distance")                     \
+    X(TargetEnum, EnergyStorage,                 "energy_storage")                      \
+    X(TargetEnum, Frequency,                     "frequency")                           \
+    X(TargetEnum, Gas,                           "gas")                                 \
+    X(TargetEnum, Humidity,                      "humidity")                            \
+    X(TargetEnum, Illuminance,                   "illuminance")                         \
+    X(TargetEnum, Irradiance,                    "irradiance")                          \
+    X(TargetEnum, Moisture,                      "moisture")                            \
+    X(TargetEnum, Monetary,                      "monetary")                            \
+    X(TargetEnum, NitrogenDioxide,               "nitrogen_dioxide")                    \
+    X(TargetEnum, NitrogenMonoxide,              "nitrogen_monoxide")                   \
+    X(TargetEnum, NitrousOxide,                  "nitrous_oxide")                       \
+    X(TargetEnum, Ozone,                         "ozone")                               \
+    X(TargetEnum, Ph,                            "ph")                                  \
+    X(TargetEnum, Pm1,                           "pm1")                                 \
+    X(TargetEnum, Pm10,                          "pm10")                                \
+    X(TargetEnum, Pm25,                          "pm25")                                \
+    X(TargetEnum, Pm4,                           "pm4")                                 \
+    X(TargetEnum, PowerFactor,                   "power_factor")                        \
+    X(TargetEnum, Precipitation,                 "precipitation")                       \
+    X(TargetEnum, PrecipitationIntensity,        "precipitation_intensity")             \
+    X(TargetEnum, Pressure,                      "pressure")                            \
+    X(TargetEnum, Radon,                         "radon")                               \
+    X(TargetEnum, ReactiveEnergy,                "reactive_energy")                     \
+    X(TargetEnum, ReactivePower,                 "reactive_power")                      \
+    X(TargetEnum, SignalStrength,                "signal_strength")                     \
+    X(TargetEnum, SoundPressure,                 "sound_pressure")                      \
+    X(TargetEnum, Speed,                         "speed")                               \
+    X(TargetEnum, SulphurDioxide,                "sulphur_dioxide")                     \
+    X(TargetEnum, Temperature,                   "temperature")                         \
+    X(TargetEnum, TemperatureDelta,              "temperature_delta")                   \
+    X(TargetEnum, VolatileOrganicCompounds,      "volatile_organic_compounds")          \
+    X(TargetEnum, VolatileOrganicCompoundsParts, "volatile_organic_compounds_parts")    \
+    X(TargetEnum, Voltage,                       "voltage")                             \
+    X(TargetEnum, Volume,                        "volume")                              \
+    X(TargetEnum, VolumeStorage,                 "volume_storage")                      \
+    X(TargetEnum, VolumeFlowRate,                "volume_flow_rate")                    \
+    X(TargetEnum, Water,                         "water")                               \
+    X(TargetEnum, Weight,                        "weight")                              \
+    X(TargetEnum, WindDirection,                 "wind_direction")                      \
+    X(TargetEnum, WindSpeed,                     "wind_speed")
+DEFINE_ENUM(SensorDeviceClass, SENSOR_DEVICE_CLASSES)
 
 // Code Source: https://github.com/home-assistant/core/blob/2026.9.2/homeassistant/components/sensor/const.py#L572
 // Documentation Source: NaN
-enum class SensorStateClass {
-    MEASUREMENT, // measurement
-    MEASUREMENT_ANGLE, // measurement_angle
-    TOTAL, // total
-    TOTAL_INCREASING, // total_increasing
-};
+#define SENSOR_STATE_CLASSES(X, TargetEnum)                 \
+    X(TargetEnum, Measurement,      "measurement")          \
+    X(TargetEnum, MeasurementAngle, "measurement_angle")    \
+    X(TargetEnum, Total,            "total")                \
+    X(TargetEnum, TotalIncreasing,  "total_increasing")
+DEFINE_ENUM(SensorStateClass, SENSOR_STATE_CLASSES)
 
 class SensorBuilder;
 

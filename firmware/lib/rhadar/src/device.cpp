@@ -7,7 +7,8 @@ namespace rhadar {
 std::optional<ValidationError> validate(const Device& device) {
     if (device.identifiers().empty() && device.connections().empty()) {
         return ValidationError{
-            ValidationErrorCode::MISSING_DEVICE_IDENTITY, "identifiers",
+            ValidationErrorCode::MissingDeviceIdentity, 
+            "identifiers",
             "device requires at least one identifier or connection"
         };
     }
@@ -15,7 +16,7 @@ std::optional<ValidationError> validate(const Device& device) {
     for (std::size_t index = 0; index < device.identifiers().size(); ++index) {
         if (device.identifiers()[index].empty()) {
             return ValidationError{
-                ValidationErrorCode::EMPTY_DEVICE_IDENTIFIER,
+                ValidationErrorCode::EmptyDeviceIdentifier,
                 "identifiers[" + std::to_string(index) + "]",
                 "device identifier must not be empty"
             };
@@ -24,8 +25,11 @@ std::optional<ValidationError> validate(const Device& device) {
 
     for (std::size_t index = 0; index < device.connections().size(); ++index) {
         if (auto error = validate(device.connections()[index])) {
-            error->field = "connections[" + std::to_string(index) + "]." + error->field;
-            return error;
+            return ValidationError {
+                error->code,
+                "connections[" + std::to_string(index) + "]." + error->field,
+                error->message,
+            };
         }
     }
 
@@ -92,11 +96,6 @@ DeviceBuilder& DeviceBuilder::sw_version(std::string value) {
 
 DeviceBuilder& DeviceBuilder::hw_version(std::string value) {
     _config._hw_version = std::move(value);
-    return *this;
-}
-
-DeviceBuilder& DeviceBuilder::via_device(std::string value) {
-    _config._via_device = std::move(value);
     return *this;
 }
 

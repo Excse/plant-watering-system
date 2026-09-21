@@ -8,6 +8,7 @@
 namespace rhadar {
 
 // Code Source: https://github.com/home-assistant/core/blob/2026.9.2/homeassistant/components/mqtt/schemas.py#L138C13-L140C15
+// Documentation Source: NaN
 class Connection final {
 public:
     [[nodiscard]] const std::string& type() const noexcept { return _type; }

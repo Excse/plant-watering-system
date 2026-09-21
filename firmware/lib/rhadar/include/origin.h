@@ -8,6 +8,7 @@
 namespace rhadar {
 
 // Code Source: https://github.com/home-assistant/core/blob/2026.9.2/homeassistant/components/mqtt/schemas.py#L157
+// Documentation Source: NaN
 class Origin final {
 public:
     [[nodiscard]] const std::string& name() const noexcept { return _name; }

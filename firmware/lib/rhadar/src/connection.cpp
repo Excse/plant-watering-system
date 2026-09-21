@@ -7,14 +7,14 @@ namespace rhadar {
 std::optional<ValidationError> validate(const Connection& connection) {
     if (connection.type().empty()) {
         return ValidationError{
-            ValidationErrorCode::MISSING_CONNECTION_TYPE, "type",
+            ValidationErrorCode::MissingConnectionType, "type",
             "connection type must not be empty"
         };
     }
 
     if (connection.identifier().empty()) {
         return ValidationError{
-            ValidationErrorCode::MISSING_CONNECTION_IDENTIFIER, "identifier",
+            ValidationErrorCode::MissingConnectionIdentifier, "identifier",
             "connection identifier must not be empty"
         };
     }

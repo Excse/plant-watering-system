@@ -9,22 +9,31 @@ namespace rhadar {
 std::optional<ValidationError> validate(const Entity& entity) {
     if (!entity.unique_id() || entity.unique_id()->empty()) {
         return ValidationError{
-            ValidationErrorCode::MISSING_UNIQUE_ID, "unique_id",
+            ValidationErrorCode::MissingUniqueId, "unique_id",
             "unique_id must not be empty"
         };
     }
 
     if (entity.message_expiry_interval() && *entity.message_expiry_interval() < 0) {
         return ValidationError{
-            ValidationErrorCode::NEGATIVE_VALUE, "message_expiry_interval",
+            ValidationErrorCode::NegativeValue, "message_expiry_interval",
             "message_expiry_interval must be nonnegative"
         };
     }
 
-    if (entity.entity_category() && (*entity.entity_category() != EntityCategory::CONFIG && *entity.entity_category() != EntityCategory::DIAGNOSTIC)) {
+    if (entity.entity_category() &&
+        *entity.entity_category() != EntityCategory::Config &&
+        *entity.entity_category() != EntityCategory::Diagnostic) {
         return ValidationError{
-            ValidationErrorCode::INVALID_ENTITY_CATEGORY, "entity_category",
+            ValidationErrorCode::InvalidEntityCategory, "entity_category",
             "entity_category must be CONFIG or DIAGNOSTIC when set"
+        };
+    }
+
+    if (entity.availability_topic() && entity.availability_topic()->empty()) {
+        return ValidationError{
+            ValidationErrorCode::InvalidAvailabilityTopic, "availability_topic",
+            "availability_topic must not be empty when set"
         };
     }
 
@@ -90,7 +99,12 @@ Derived& EntityBuilder<Derived, Config>::visible_by_default(bool value) {
     return static_cast<Derived&>(*this);
 }
 
-// Add an instantiation here for each supported component builder.
+template <typename Derived, typename Config>
+Derived& EntityBuilder<Derived, Config>::availability_topic(std::string value) {
+    _config._availability_topic = std::move(value);
+    return static_cast<Derived&>(*this);
+}
+
 template class EntityBuilder<SensorBuilder, Sensor>;
 
 } // namespace rhadar

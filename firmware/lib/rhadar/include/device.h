@@ -10,6 +10,7 @@
 namespace rhadar {
 
 // Code Source: https://github.com/home-assistant/core/blob/2026.9.2/homeassistant/components/mqtt/schemas.py#L131
+// Documentation Source: NaN
 class Device final {
 public:
     [[nodiscard]] const std::vector<std::string>& identifiers() const noexcept { return _identifiers; }

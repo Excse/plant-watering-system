@@ -19,11 +19,15 @@ payloads, topic and abbreviation indexes, and lifecycle behavior.
 - `include/rhadar.h`: public C++ API.
 - `include/components/base.h`: entity configuration, validation and shared builder.
 - `include/components/sensor.h`: sensor configuration, builder and validation.
+- `include/message.h`: transport-independent MQTT discovery messages.
 - `include/connection.h`, `include/device.h`, `include/origin.h`: read-only
   configuration classes, builders, and validation declarations.
 - `include/result.h`: validation errors and the `std::expected` result alias.
+- `include/utils/enum.h`: shared enum declaration and string conversion macros.
 - `src/components/sensor.cpp`: sensor builder and validation definitions.
 - `src/components/base.cpp`: entity validation, shared setters and builder instantiations.
+- `src/message.cpp`: message construction and discovery-topic validation.
+- `src/utils/json.cpp`: JSON encoding and message-payload serialization.
 - `src/connection.cpp`, `src/device.cpp`, `src/origin.cpp`: corresponding builder
   constructors, setters, and validators.
 - `library.json`: PlatformIO library metadata.
@@ -43,9 +47,10 @@ auto result = rhadar::SensorBuilder{"pws_abc123_moisture"}
     .icon("mdi:water-percent")
     .state_topic("pws_abc123/moisture/state")
     .name("Soil moisture")
-    .device_class(rhadar::SensorDeviceClass::MOISTURE)
-    .state_class(rhadar::SensorStateClass::MEASUREMENT)
+    .device_class(rhadar::SensorDeviceClass::Moisture)
+    .state_class(rhadar::SensorStateClass::Measurement)
     .unit_of_measurement("%")
+    .availability_topic("pws_abc123/status")
     .expire_after(std::chrono::seconds{300})
     .suggested_display_precision(0)
     .enabled_by_default(true)
@@ -121,9 +126,76 @@ changes. `OriginBuilder` takes the publisher name, which must be nonempty.
 connection, rejects empty identifier entries, and validates every nested
 connection. Nested errors identify the entry, for example
 `connections[0].identifier`. Each class has its own `validate(const T&)` overload,
-and `build()` returns `Result<T>` without consuming the builder. These objects
-remain separate metadata values; this library does not yet serialize or publish
-them with a sensor.
+and `build()` returns `Result<T>` without consuming the builder.
+
+Compose those snapshots into a transport-independent device-discovery message.
+`Device` and `Origin` are constructor arguments because Home Assistant requires
+both at the root of a device-discovery envelope:
+
+```cpp
+auto message = rhadar::MessageBuilder{
+        *device,
+        *origin,
+        "pws_abc123"
+    }
+    .add_component("moisture", *sensor_result)
+    .qos(1)
+    .build();
+
+if (!message) {
+    // Handle message.error().
+    return;
+}
+
+esp_mqtt_client_publish(
+    client,
+    message->topic().c_str(),
+    message->payload().c_str(),
+    static_cast<int>(message->payload().size()),
+    message->qos(),
+    message->retain()
+);
+```
+
+With the values above, the topic is
+`homeassistant/device/pws_abc123/config`. Calling `node_id("greenhouse")` produces
+`homeassistant/device/greenhouse/pws_abc123/config`. `discovery_prefix()` overrides
+the default `homeassistant` prefix. Node, object, and component IDs accept letters,
+digits, `_`, and `-`.
+
+Add components individually, or replace the complete collection:
+
+```cpp
+std::vector<rhadar::DiscoveryComponent> components{
+    {"moisture", *moisture_sensor},
+    {"temperature", *temperature_sensor},
+};
+
+auto message = rhadar::MessageBuilder{*device, *origin, "pws_abc123"}
+    .components(std::move(components))
+    .build();
+```
+
+`components()` replaces the vector, while `add_component()` appends. Component
+IDs must be unique, and at least one component is required. Each component owns
+an immutable `ComponentEntity`, which is a `std::variant` of the supported entity
+configuration types. Validation, platform selection, and serialization use
+`std::visit`, making dispatch exhaustive at compile time without virtual methods
+or per-component heap allocation.
+
+The variant currently contains `Sensor`, the component type implemented by the
+library today. When `Light` is added, it should become
+`std::variant<Sensor, Light>` with corresponding validation and serialization
+overloads. `MessageBuilder` and its component vector do not otherwise
+change, and the serialized light component will select `"platform":"light"`.
+
+The message owns its topic and compact JSON payload, so their `c_str()` pointers
+remain valid while the message exists. Discovery messages are always retained;
+QoS defaults to 0 and may be set to 0, 1, or 2. The builder validates its required
+device and origin and every component again before serializing. It escapes JSON
+strings and omits unset optional fields while preserving explicitly configured
+`false` and `0` values. MQTT connection management and publication remain the
+application's responsibility.
 
 `SensorBuilder` inherits common settings from `EntityBuilder<SensorBuilder, Sensor>`.
 The base owns the complete sensor configuration and initializes its entity identity.
@@ -181,5 +253,24 @@ header there and add `template class EntityBuilder<NewBuilder, NewConfig>;` afte
 the template definitions. Add the matching `extern template` declaration after
 the new builder's class declaration in its header.
 
-Error enum values
-use `UPPER_SNAKE_CASE`, for example `ValidationErrorCode::MISSING_STATE_TOPIC`.
+Enum values use `PascalCase`, for example
+`ValidationErrorCode::MissingStateTopic`.
+All library enums use an X-macro value table. `DEFINE_ENUM` accepts one wire
+name per value. `DEFINE_ABBREVIATED_ENUM` accepts distinct full and abbreviated
+wire names. Both provide the enum declaration and the shared
+`rhadar::to_string()` conversion without a separate enum-specific switch. Pass
+`EnumStringFormat::Abbreviated` to select the abbreviated form.
+
+## Test
+
+The repository contains one host-side construction test for a complete device
+discovery message. Run it from the firmware directory:
+
+```sh
+c++ -std=c++23 -Wall -Wextra -Werror -pedantic -fno-exceptions -fno-rtti \
+    -Ilib/rhadar/include \
+    lib/rhadar/src/*.cpp lib/rhadar/src/components/*.cpp \
+    lib/rhadar/src/utils/*.cpp \
+    test/rhadar_message.cpp -o /tmp/rhadar-message-test
+/tmp/rhadar-message-test
+```
