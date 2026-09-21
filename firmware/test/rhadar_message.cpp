@@ -10,8 +10,6 @@
 #include "device.h"
 #include "origin.h"
 
-namespace {
-
 void require(bool condition, const char* message) {
     if (condition) return;
     std::cerr << message << '\n';
@@ -19,29 +17,24 @@ void require(bool condition, const char* message) {
 }
 
 void constructs_entire_message() {
-    auto connection = rhadar::ConnectionBuilder{
-        "mac", "02:5b:26:a8:dc:12"
-    }.build();
-    require(connection.has_value(), "connection construction failed");
-
-    auto device = rhadar::DeviceBuilder{"pws_abc123"}
+    auto device = rhadar::DeviceBuilder("pws_abc123")
         .name("Plant watering system")
         .manufacturer("DIY")
         .model("ESP32")
-        .add_connection(*connection)
+        .add_connection("mac", "02:5b:26:a8:dc:12")
         .build();
     require(device.has_value(), "device construction failed");
 
-    auto origin = rhadar::OriginBuilder{"plant-watering-system"}
+    auto origin = rhadar::OriginBuilder("plant-watering-system")
         .sw_version("1.0.0")
         .build();
     require(origin.has_value(), "origin construction failed");
 
-    auto moisture = rhadar::SensorBuilder{"pws_abc123_moisture"}
+    auto moisture = rhadar::SensorBuilder("pws_abc123_moisture")
         .state_topic("pws_abc123/moisture/state")
         .name("Soil moisture")
-        .device_class(rhadar::SensorDeviceClass::MOISTURE)
-        .state_class(rhadar::SensorStateClass::MEASUREMENT)
+        .device_class(rhadar::SensorDeviceClass::Moisture)
+        .state_class(rhadar::SensorStateClass::Measurement)
         .unit_of_measurement("%")
         .availability_topic("pws_abc123/status")
         .force_update(false)
@@ -49,11 +42,11 @@ void constructs_entire_message() {
         .build();
     require(moisture.has_value(), "moisture sensor construction failed");
 
-    auto temperature = rhadar::SensorBuilder{"pws_abc123_temperature"}
+    auto temperature = rhadar::SensorBuilder("pws_abc123_temperature")
         .state_topic("pws_abc123/temperature/state")
         .name("Temperature")
-        .device_class(rhadar::SensorDeviceClass::TEMPERATURE)
-        .state_class(rhadar::SensorStateClass::MEASUREMENT)
+        .device_class(rhadar::SensorDeviceClass::Temperature)
+        .state_class(rhadar::SensorStateClass::Measurement)
         .unit_of_measurement("C")
         .build();
     require(temperature.has_value(), "temperature sensor construction failed");
@@ -63,22 +56,14 @@ void constructs_entire_message() {
         {"temperature", *temperature},
     };
 
-    auto message = rhadar::MessageBuilder{
-            *device,
-            *origin,
-            "pws_abc123"
-        }
+    auto message = rhadar::MessageBuilder(*device, *origin, "pws_abc123")
         .node_id("greenhouse")
         .components(std::move(components))
         .qos(1)
         .build();
     require(message.has_value(), "message construction failed");
 
-    require(
-        message->topic() ==
-            "homeassistant/device/greenhouse/pws_abc123/config",
-        "unexpected discovery topic"
-    );
+    require(message->topic() == "homeassistant/device/greenhouse/pws_abc123/config", "unexpected discovery topic");
     require(message->qos() == 1, "unexpected discovery QoS");
     require(message->retain(), "message must be retained");
 
@@ -105,8 +90,6 @@ void constructs_entire_message() {
 
     require(message->payload() == expected_payload, "unexpected discovery payload");
 }
-
-} // namespace
 
 int main() {
     constructs_entire_message();
