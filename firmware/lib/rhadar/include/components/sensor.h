@@ -10,6 +10,8 @@
 
 namespace rhadar {
 
+class SensorBuilder;
+
 // Code Source: https://github.com/home-assistant/core/blob/2026.9.2/homeassistant/components/sensor/const.py
 // Documentation Source: https://www.home-assistant.io/integrations/sensor/#device-class
 #define SENSOR_DEVICE_CLASSES(X, TargetEnum)                                            \
@@ -85,10 +87,22 @@ DEFINE_ENUM(SensorDeviceClass, SENSOR_DEVICE_CLASSES)
     X(TargetEnum, TotalIncreasing,  "total_increasing")
 DEFINE_ENUM(SensorStateClass, SENSOR_STATE_CLASSES)
 
-class SensorBuilder;
-
 // Code Source: https://github.com/home-assistant/core/blob/2026.9.2/homeassistant/components/mqtt/sensor.py#L77
 // Documentation Source: NaN
+#define SENSOR_FIELDS(X, TargetEnum)                                                    \
+    X(TargetEnum, StateTopic,                "state_topic",                 "stat_t")  \
+    X(TargetEnum, ValueTemplate,             "value_template",              "val_tpl") \
+    X(TargetEnum, DeviceClass,               "device_class",                "dev_cla") \
+    X(TargetEnum, ExpireAfter,               "expire_after",                "exp_aft") \
+    X(TargetEnum, ForceUpdate,               "force_update",                "frc_upd") \
+    X(TargetEnum, LastResetValueTemplate,    "last_reset_value_template",   "lrst_val_tpl") \
+    X(TargetEnum, Name,                      "name",                        "name") \
+    X(TargetEnum, Options,                   "options",                     "ops") \
+    X(TargetEnum, SuggestedDisplayPrecision, "suggested_display_precision", "sug_dsp_prc") \
+    X(TargetEnum, StateClass,                "state_class",                 "stat_cla") \
+    X(TargetEnum, UnitOfMeasurement,         "unit_of_measurement",         "unit_of_meas")
+DEFINE_ABBREVIATED_ENUM(SensorFields, SENSOR_FIELDS)
+
 class Sensor final : public Entity {
 public:
     [[nodiscard]] const std::string& state_topic() const noexcept { return _state_topic; }
@@ -114,17 +128,17 @@ public:
     [[nodiscard]] const std::optional<std::string>& unit_of_measurement() const noexcept { return _unit_of_measurement; }
 
 private:
-    std::string _state_topic; // Required topic for incoming sensor values.
-    std::optional<std::string> _value_template; // value_template or val_tpl
-    std::optional<SensorDeviceClass> _device_class; // device_class or dev_cla
-    std::optional<std::chrono::seconds> _expire_after; // expire_after or exp_aft
-    std::optional<bool> _force_update; // force_update or frc_upd
-    std::optional<std::string> _last_reset_value_template; // last_reset_value_template or lrst_val_tpl
-    std::optional<std::string> _name; // name or name
-    std::vector<std::string> _options; // options or ops
-    std::optional<int> _suggested_display_precision; // suggested_display_precision or sug_dsp_prc
-    std::optional<SensorStateClass> _state_class; // state_class or stat_cla
-    std::optional<std::string> _unit_of_measurement; // unit_of_measurement or unit_of_meas
+    std::string _state_topic;
+    std::optional<std::string> _value_template;
+    std::optional<SensorDeviceClass> _device_class;
+    std::optional<std::chrono::seconds> _expire_after;
+    std::optional<bool> _force_update;
+    std::optional<std::string> _last_reset_value_template;
+    std::optional<std::string> _name;
+    std::vector<std::string> _options;
+    std::optional<int> _suggested_display_precision;
+    std::optional<SensorStateClass> _state_class;
+    std::optional<std::string> _unit_of_measurement;
 
     friend class SensorBuilder;
     friend class EntityBuilder<SensorBuilder, Sensor>;

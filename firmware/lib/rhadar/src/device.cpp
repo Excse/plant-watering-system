@@ -109,6 +109,14 @@ DeviceBuilder& DeviceBuilder::add_connection(Connection value) {
     return *this;
 }
 
+DeviceBuilder& DeviceBuilder::add_connection(std::string type, std::string identifier) {
+    Connection connection;
+    connection._type = std::move(type);
+    connection._identifier = std::move(identifier);
+    _config._connections.push_back(std::move(connection));
+    return *this;
+}
+
 Result<Device> DeviceBuilder::build() const {
     if (auto error = validate(_config)) {
         return std::unexpected(std::move(*error));

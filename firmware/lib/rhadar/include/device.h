@@ -11,6 +11,20 @@ namespace rhadar {
 
 // Code Source: https://github.com/home-assistant/core/blob/2026.9.2/homeassistant/components/mqtt/schemas.py#L131
 // Documentation Source: NaN
+#define DEVICE_FIELDS(X, TargetEnum)                                      \
+    X(TargetEnum, Identifiers,      "identifiers",       "ids")          \
+    X(TargetEnum, Name,             "name",              "name")         \
+    X(TargetEnum, SuggestedArea,    "suggested_area",    "sa")           \
+    X(TargetEnum, SerialNumber,     "serial_number",     "sn")           \
+    X(TargetEnum, ConfigurationUrl, "configuration_url", "cu")           \
+    X(TargetEnum, Connections,      "connections",       "cns")          \
+    X(TargetEnum, Manufacturer,     "manufacturer",      "mf")           \
+    X(TargetEnum, Model,            "model",             "mdl")          \
+    X(TargetEnum, ModelId,          "model_id",          "mdl_id")       \
+    X(TargetEnum, SwVersion,        "sw_version",        "sw")           \
+    X(TargetEnum, HwVersion,        "hw_version",        "hw")
+DEFINE_ABBREVIATED_ENUM(DeviceFields, DEVICE_FIELDS)
+
 class Device final {
 public:
     [[nodiscard]] const std::vector<std::string>& identifiers() const noexcept { return _identifiers; }
@@ -36,17 +50,17 @@ public:
     [[nodiscard]] const std::optional<std::string>& hw_version() const noexcept { return _hw_version; }
 
 private:
-    std::vector<std::string> _identifiers; // identifiers or ids
-    std::string _name; // name
-    std::optional<std::string> _suggested_area; // suggested_area or sa
-    std::optional<std::string> _serial_number; // serial_number or sn
-    std::optional<std::string> _configuration_url; // configuration_url or cu
-    std::vector<Connection> _connections; // connections or cns
-    std::optional<std::string> _manufacturer; // manufacturer or mf
-    std::optional<std::string> _model; // model or mdl
-    std::optional<std::string> _model_id; // model_id or mdl_id
-    std::optional<std::string> _sw_version; // sw_version or sw
-    std::optional<std::string> _hw_version; // hw_version or hw
+    std::vector<std::string> _identifiers;
+    std::string _name;
+    std::optional<std::string> _suggested_area;
+    std::optional<std::string> _serial_number;
+    std::optional<std::string> _configuration_url;
+    std::vector<Connection> _connections;
+    std::optional<std::string> _manufacturer;
+    std::optional<std::string> _model;
+    std::optional<std::string> _model_id;
+    std::optional<std::string> _sw_version;
+    std::optional<std::string> _hw_version;
 
     friend class DeviceBuilder;
 };
@@ -84,6 +98,8 @@ public:
     [[nodiscard]] DeviceBuilder& add_identifier(std::string value);
 
     [[nodiscard]] DeviceBuilder& add_connection(Connection value);
+
+    [[nodiscard]] DeviceBuilder& add_connection(std::string type, std::string identifier);
 
     [[nodiscard]] Result<Device> build() const;
 

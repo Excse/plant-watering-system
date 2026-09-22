@@ -16,6 +16,10 @@ using ComponentEntity = std::variant<Sensor>;
 
 // Code Source: NaN
 // Documentation Source: NaN
+#define COMPONENT_FIELDS(X, TargetEnum)           \
+    X(TargetEnum, Platform, "platform", "p")
+DEFINE_ABBREVIATED_ENUM(ComponentFields, COMPONENT_FIELDS)
+
 class Component final {
 public:
     Component(std::string id, ComponentEntity entity);
@@ -31,6 +35,12 @@ private:
 
 // Code Source: NaN
 // Documentation Source: NaN
+#define MESSAGE_FIELDS(X, TargetEnum)                  \
+    X(TargetEnum, Device,     "device",     "dev")     \
+    X(TargetEnum, Origin,     "origin",     "o")       \
+    X(TargetEnum, Components, "components", "cmps")
+DEFINE_ABBREVIATED_ENUM(MessageFields, MESSAGE_FIELDS)
+
 class Message final {
 public:
     [[nodiscard]] const std::string& topic() const noexcept { return _topic; }

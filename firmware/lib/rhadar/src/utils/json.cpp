@@ -1,19 +1,41 @@
 #include "utils/json.h"
 
+#include <chrono>
 #include <cstdint>
+#include <optional>
 #include <string_view>
+#include <type_traits>
 #include <utility>
 
 #include "message.h"
 
-namespace rhadar::utils {
-namespace {
+namespace rhadar {
 
 class JsonObject {
 public:
+    explicit JsonObject(EnumStringFormat key_format = EnumStringFormat::Full) 
+        : _key_format(key_format) {}
+
     void string(std::string_view key, std::string_view value) {
         key_prefix(key);
         quoted(value);
+    }
+
+    template <typename E>
+        requires std::is_enum_v<E>
+    void string(E key, std::string_view value) {
+        string(to_string(key, _key_format), value);
+    }
+
+    template <typename Key, typename T>
+        requires (std::is_same_v<T, std::string> || std::is_enum_v<T>)
+    void string(const Key& key, const std::optional<T>& value) {
+        if (!value) return;
+        if constexpr (std::is_enum_v<T>) {
+            string(key, to_string(*value));
+        } else {
+            string(key, *value);
+        }
     }
 
     void boolean(std::string_view key, bool value) {
@@ -21,9 +43,38 @@ public:
         _json += value ? "true" : "false";
     }
 
+    template <typename E>
+        requires std::is_enum_v<E>
+    void boolean(E key, bool value) {
+        boolean(to_string(key, _key_format), value);
+    }
+
+    template <typename Key>
+    void boolean(const Key& key, const std::optional<bool>& value) {
+        if (value) boolean(key, *value);
+    }
+
     void integer(std::string_view key, std::int64_t value) {
         key_prefix(key);
         _json += std::to_string(value);
+    }
+
+    template <typename E>
+        requires std::is_enum_v<E>
+    void integer(E key, std::int64_t value) {
+        integer(to_string(key, _key_format), value);
+    }
+
+    template <typename Key, typename T>
+        requires std::is_integral_v<T>
+    void integer(const Key& key, const std::optional<T>& value) {
+        if (value) integer(key, static_cast<std::int64_t>(*value));
+    }
+
+    template <typename Key, typename Rep, typename Period>
+        requires std::is_integral_v<Rep>
+    void integer(const Key& key, const std::optional<std::chrono::duration<Rep, Period>>& value) {
+        if (value) integer(key, static_cast<std::int64_t>(value->count()));
     }
 
     void object(std::string_view key, std::string value) {
@@ -31,10 +82,13 @@ public:
         _json += std::move(value);
     }
 
-    void string_array(
-        std::string_view key,
-        const std::vector<std::string>& values
-    ) {
+    template <typename E>
+        requires std::is_enum_v<E>
+    void object(E key, std::string value) {
+        object(to_string(key, _key_format), std::move(value));
+    }
+
+    void string_array(std::string_view key, const std::vector<std::string>& values) {
         key_prefix(key);
         _json += '[';
         bool first = true;
@@ -46,10 +100,13 @@ public:
         _json += ']';
     }
 
-    void connections(
-        std::string_view key,
-        const std::vector<Connection>& values
-    ) {
+    template <typename E>
+        requires std::is_enum_v<E>
+    void string_array(E key, const std::vector<std::string>& values) {
+        string_array(to_string(key, _key_format), values);
+    }
+
+    void connections(std::string_view key, const std::vector<Connection>& values) {
         key_prefix(key);
         _json += '[';
         bool first = true;
@@ -63,6 +120,12 @@ public:
             _json += ']';
         }
         _json += ']';
+    }
+
+    template <typename E>
+        requires std::is_enum_v<E>
+    void connections(E key, const std::vector<Connection>& values) {
+        connections(to_string(key, _key_format), values);
     }
 
     [[nodiscard]] std::string finish() && {
@@ -105,117 +168,62 @@ private:
 
     std::string _json = "{";
     bool _first = true;
+    EnumStringFormat _key_format;
 };
 
-std::string serialize_device(const Device& value) {
+std::string serialize_device(JsonObject& json, const Device& value) {
     JsonObject json;
     if (!value.identifiers().empty()) {
-        json.string_array("identifiers", value.identifiers());
+        json.string_array(DeviceFields::Identifiers, value.identifiers());
     }
-    if (!value.name().empty()) json.string("name", value.name());
-    if (value.suggested_area()) {
-        json.string("suggested_area", *value.suggested_area());
-    }
-    if (value.serial_number()) {
-        json.string("serial_number", *value.serial_number());
-    }
-    if (value.configuration_url()) {
-        json.string("configuration_url", *value.configuration_url());
-    }
+    if (!value.name().empty()) json.string(DeviceFields::Name, value.name());
+    json.string(DeviceFields::SuggestedArea, value.suggested_area());
+    json.string(DeviceFields::SerialNumber, value.serial_number());
+    json.string(DeviceFields::ConfigurationUrl, value.configuration_url());
     if (!value.connections().empty()) {
-        json.connections("connections", value.connections());
+        json.connections(DeviceFields::Connections, value.connections());
     }
-    if (value.manufacturer()) {
-        json.string("manufacturer", *value.manufacturer());
-    }
-    if (value.model()) json.string("model", *value.model());
-    if (value.model_id()) json.string("model_id", *value.model_id());
-    if (value.sw_version()) json.string("sw_version", *value.sw_version());
-    if (value.hw_version()) json.string("hw_version", *value.hw_version());
+    json.string(DeviceFields::Manufacturer, value.manufacturer());
+    json.string(DeviceFields::Model, value.model());
+    json.string(DeviceFields::ModelId, value.model_id());
+    json.string(DeviceFields::SwVersion, value.sw_version());
+    json.string(DeviceFields::HwVersion, value.hw_version());
     return std::move(json).finish();
 }
 
 std::string serialize_origin(const Origin& value) {
     JsonObject json;
-    json.string("name", value.name());
-    if (value.sw_version()) json.string("sw_version", *value.sw_version());
-    if (value.support_url()) json.string("support_url", *value.support_url());
+    json.string(OriginFields::Name, value.name());
+    json.string(OriginFields::SwVersion, value.sw_version());
+    json.string(OriginFields::SupportUrl, value.support_url());
     return std::move(json).finish();
 }
 
 std::string serialize_component(const Sensor& value) {
     JsonObject json;
-    json.string("platform", "sensor");
-    json.string("unique_id", *value.unique_id());
-    json.string("state_topic", value.state_topic());
-    if (value.name()) json.string("name", *value.name());
-    if (value.value_template()) {
-        json.string("value_template", *value.value_template());
-    }
-    if (value.device_class()) {
-        json.string("device_class", to_string(*value.device_class()));
-    }
-    if (value.expire_after()) {
-        json.integer("expire_after", value.expire_after()->count());
-    }
-    if (value.force_update()) {
-        json.boolean("force_update", *value.force_update());
-    }
-    if (value.last_reset_value_template()) {
-        json.string(
-            "last_reset_value_template",
-            *value.last_reset_value_template()
-        );
-    }
-    if (!value.options().empty()) {
-        json.string_array("options", value.options());
-    }
-    if (value.suggested_display_precision()) {
-        json.integer(
-            "suggested_display_precision",
-            *value.suggested_display_precision()
-        );
-    }
-    if (value.state_class()) {
-        json.string("state_class", to_string(*value.state_class()));
-    }
-    if (value.unit_of_measurement()) {
-        json.string("unit_of_measurement", *value.unit_of_measurement());
-    }
-    if (value.entity_picture()) {
-        json.string("entity_picture", *value.entity_picture());
-    }
-    if (value.enabled_by_default()) {
-        json.boolean("enabled_by_default", *value.enabled_by_default());
-    }
-    if (value.entity_category()) {
-        json.string("entity_category", to_string(*value.entity_category()));
-    }
-    if (value.icon()) json.string("icon", *value.icon());
-    if (value.json_attributes_topic()) {
-        json.string("json_attributes_topic", *value.json_attributes_topic());
-    }
-    if (value.json_attributes_template()) {
-        json.string(
-            "json_attributes_template",
-            *value.json_attributes_template()
-        );
-    }
-    if (value.default_entity_id()) {
-        json.string("default_entity_id", *value.default_entity_id());
-    }
-    if (value.message_expiry_interval()) {
-        json.integer(
-            "message_expiry_interval",
-            *value.message_expiry_interval()
-        );
-    }
-    if (value.visible_by_default()) {
-        json.boolean("visible_by_default", *value.visible_by_default());
-    }
-    if (value.availability_topic()) {
-        json.string("availability_topic", *value.availability_topic());
-    }
+    json.string(ComponentFields::Platform, "sensor");
+    json.string(EntityFields::UniqueId, value.unique_id());
+    json.string(SensorFields::StateTopic, value.state_topic());
+    json.string(SensorFields::Name, value.name());
+    json.string(SensorFields::ValueTemplate, value.value_template());
+    json.string(SensorFields::DeviceClass, value.device_class());
+    json.integer(SensorFields::ExpireAfter, value.expire_after());
+    json.boolean(SensorFields::ForceUpdate, value.force_update());
+    json.string(SensorFields::LastResetValueTemplate, value.last_reset_value_template());
+    json.string_array(SensorFields::Options, value.options());
+    json.integer(SensorFields::SuggestedDisplayPrecision, value.suggested_display_precision());
+    json.string(SensorFields::StateClass, value.state_class());
+    json.string(SensorFields::UnitOfMeasurement, value.unit_of_measurement());
+    json.string(EntityFields::EntityPicture, value.entity_picture());
+    json.boolean(EntityFields::EnabledByDefault, value.enabled_by_default());
+    json.string(EntityFields::EntityCategory, value.entity_category());
+    json.string(EntityFields::Icon, value.icon());
+    json.string(EntityFields::JsonAttributesTopic, value.json_attributes_topic());
+    json.string(EntityFields::JsonAttributesTemplate, value.json_attributes_template());
+    json.string(EntityFields::DefaultEntityId, value.default_entity_id());
+    json.integer(EntityFields::MessageExpiryInterval, value.message_expiry_interval());
+    json.boolean(EntityFields::VisibleByDefault, value.visible_by_default());
+    json.string(EntityFields::AvailabilityTopic, value.availability_topic());
     return std::move(json).finish();
 }
 
@@ -234,18 +242,16 @@ std::string serialize_components(const std::vector<Component>& values) {
     return std::move(json).finish();
 }
 
-} // namespace
-
 std::string serialize_message_payload(
     const Device& device,
     const Origin& origin,
     const std::vector<Component>& components
 ) {
     JsonObject payload;
-    payload.object("device", serialize_device(device));
-    payload.object("origin", serialize_origin(origin));
-    payload.object("components", serialize_components(components));
+    payload.object(MessageFields::Device, serialize_device(device));
+    payload.object(MessageFields::Origin, serialize_origin(origin));
+    payload.object(MessageFields::Components, serialize_components(components));
     return std::move(payload).finish();
 }
 
-} // namespace rhadar::utils
+} // namespace rhadar

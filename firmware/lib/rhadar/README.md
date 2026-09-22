@@ -260,6 +260,9 @@ name per value. `DEFINE_ABBREVIATED_ENUM` accepts distinct full and abbreviated
 wire names. Both provide the enum declaration and the shared
 `rhadar::to_string()` conversion without a separate enum-specific switch. Pass
 `EnumStringFormat::Abbreviated` to select the abbreviated form.
+Protocol keys are centralized in `EntityFields`, `SensorFields`, `DeviceFields`,
+`OriginFields`, `MessageFields`, and `ComponentFields`. JSON serialization uses
+these enums directly rather than repeating key strings.
 
 ## Test
 

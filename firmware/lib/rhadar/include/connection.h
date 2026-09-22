@@ -20,6 +20,7 @@ private:
     std::string _identifier; // e.g. "02:5b:26:a8:dc:12"
 
     friend class ConnectionBuilder;
+    friend class DeviceBuilder;
 };
 
 [[nodiscard]] std::optional<ValidationError> validate(const Connection& connection);

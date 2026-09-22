@@ -9,6 +9,12 @@ namespace rhadar {
 
 // Code Source: https://github.com/home-assistant/core/blob/2026.9.2/homeassistant/components/mqtt/schemas.py#L157
 // Documentation Source: NaN
+#define ORIGIN_FIELDS(X, TargetEnum)                         \
+    X(TargetEnum, Name,       "name",        "name")        \
+    X(TargetEnum, SwVersion,  "sw_version",  "sw")          \
+    X(TargetEnum, SupportUrl, "support_url", "url")
+DEFINE_ABBREVIATED_ENUM(OriginFields, ORIGIN_FIELDS)
+
 class Origin final {
 public:
     [[nodiscard]] const std::string& name() const noexcept { return _name; }
@@ -18,9 +24,9 @@ public:
     [[nodiscard]] const std::optional<std::string>& support_url() const noexcept { return _support_url; }
 
 private:
-    std::string _name; // name or name
-    std::optional<std::string> _sw_version; // sw_version or sw
-    std::optional<std::string> _support_url; // support_url or url
+    std::string _name;
+    std::optional<std::string> _sw_version;
+    std::optional<std::string> _support_url;
 
     friend class OriginBuilder;
 };
