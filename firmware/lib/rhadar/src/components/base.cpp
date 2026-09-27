@@ -7,7 +7,7 @@
 namespace rhadar {
 
 std::optional<ValidationError> validate(const Entity& entity) {
-    if (!entity.unique_id() || entity.unique_id()->empty()) {
+    if (entity.unique_id().empty()) {
         return ValidationError{
             ValidationErrorCode::MissingUniqueId, "unique_id",
             "unique_id must not be empty"

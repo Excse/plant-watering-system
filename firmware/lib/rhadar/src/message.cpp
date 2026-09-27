@@ -2,7 +2,7 @@
 
 #include <utility>
 
-#include "utils/json.h"
+#include "utils/serializer.h"
 
 namespace rhadar {
 

@@ -6,7 +6,7 @@ A generic C++ library for Home Assistant MQTT discovery, intended for reuse
 across projects, boards, and frameworks.
 The API requires C++23 or later and includes sensor, device, connection, and origin
 configuration builders with validation using `std::expected`.
-Discovery serialization and MQTT publishing are not implemented yet.
+Discovery serialization is included; MQTT publishing is the application’s responsibility.
 
 ## Documentation
 
@@ -27,7 +27,8 @@ payloads, topic and abbreviation indexes, and lifecycle behavior.
 - `src/components/sensor.cpp`: sensor builder and validation definitions.
 - `src/components/base.cpp`: entity validation, shared setters and builder instantiations.
 - `src/message.cpp`: message construction and discovery-topic validation.
-- `src/utils/json.cpp`: JSON encoding and message-payload serialization.
+- `include/utils/json.h`, `src/utils/json.cpp`: JSON object builder and encoding.
+- `include/utils/serializer.h`, `src/utils/serializer.cpp`: message-payload serialization.
 - `src/connection.cpp`, `src/device.cpp`, `src/origin.cpp`: corresponding builder
   constructors, setters, and validators.
 - `library.json`: PlatformIO library metadata.
@@ -194,7 +195,7 @@ remain valid while the message exists. Discovery messages are always retained;
 QoS defaults to 0 and may be set to 0, 1, or 2. The builder validates its required
 device and origin and every component again before serializing. It escapes JSON
 strings and omits unset optional fields while preserving explicitly configured
-`false` and `0` values. MQTT connection management and publication remain the
+`false` and `0` values. Empty sensor options are serialized as `"options":[]`. MQTT connection management and publication remain the
 application's responsibility.
 
 `SensorBuilder` inherits common settings from `EntityBuilder<SensorBuilder, Sensor>`.
@@ -264,10 +265,28 @@ Protocol keys are centralized in `EntityFields`, `SensorFields`, `DeviceFields`,
 `OriginFields`, `MessageFields`, and `ComponentFields`. JSON serialization uses
 these enums directly rather than repeating key strings.
 
+## JSON utility
+
+`JsonObject::object(key, callback)` and `array(key, callback)` write nested values
+into the root object's buffer without intermediate JSON strings. Arrays support
+strings, booleans, integers, objects, and nested arrays. Raw JSON strings cannot be
+inserted. Callbacks run synchronously; use the supplied writer only during the
+callback and call `std::move(root).finish()` after all callbacks return. If a
+callback throws, discard the unfinished builder.
+
+Integer methods accept signed and unsigned integral types up to 64 bits, excluding
+`bool`; unsigned values retain their full range. Duration methods require an
+integral, non-boolean representation and serialize `count()` in the duration's
+own units without conversion. Optional values are omitted when absent.
+
+Keys and string values must be valid UTF-8. The writer escapes JSON control
+characters but preserves non-ASCII bytes without validating their encoding.
+
 ## Test
 
-The repository contains one host-side construction test for a complete device
-discovery message. Run it from the firmware directory:
+The host tests cover complete discovery messages, identity validation, nested JSON,
+optional fields, escaping, integer boundaries, durations, and connections. Run them
+from the firmware directory:
 
 ```sh
 c++ -std=c++23 -Wall -Wextra -Werror -pedantic -fno-exceptions -fno-rtti \
@@ -276,4 +295,9 @@ c++ -std=c++23 -Wall -Wextra -Werror -pedantic -fno-exceptions -fno-rtti \
     lib/rhadar/src/utils/*.cpp \
     test/rhadar_message.cpp -o /tmp/rhadar-message-test
 /tmp/rhadar-message-test
+
+c++ -std=c++23 -Wall -Wextra -Werror -pedantic -fno-exceptions -fno-rtti \
+    -Ilib/rhadar/include lib/rhadar/src/utils/json.cpp \
+    test/rhadar_json.cpp -o /tmp/rhadar-json-test
+/tmp/rhadar-json-test
 ```
