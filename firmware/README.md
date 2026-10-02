@@ -3,10 +3,10 @@
 Experimental firmware for the [Smart Plant Pot](../README.md), written in C and C++ using
 ESP-IDF and PlatformIO. The current target is an **ESP32 Dev Module** (`esp32dev`).
 
-The firmware connects to Wi-Fi and MQTT and exposes an LED on **GPIO 2**
-to Home Assistant. It also reads an analog moisture sensor on **GPIO 34 (D34)**
-and logs raw readings and calibrated percentages over serial. Pump control is
-still planned.
+The firmware connects to Wi-Fi and MQTT and exposes an LED on **GPIO 2** and a
+soil moisture sensor on **GPIO 34 (D34)** to Home Assistant. It logs raw readings
+and calibrated percentages over serial and publishes the percentage over MQTT.
+Pump control is still planned.
 
 ## What you need
 
@@ -23,8 +23,30 @@ onboard LED is connected elsewhere; the pin is set by `LED_GPIO` in
 
 ## 1. Open the project
 
-Clone this repository, then open its **`firmware` folder** directly in VS Code.
+Clone this repository with its submodules, then open its **`firmware` folder** directly in VS Code.
 This is the folder containing `platformio.ini`.
+
+```sh
+git clone --recurse-submodules git@github.com:Excse/plant-watering-system.git
+```
+
+For an existing checkout, run `git submodule update --init --recursive` from the
+repository root. The Home Assistant discovery library lives in
+[`lib/rhadar`](lib/rhadar) as a submodule of
+[Excse/rhadar](https://github.com/Excse/rhadar).
+
+Work on the standalone library under `/home/timo/development/rhadar`. After
+pushing a library commit, update the firmware checkout with
+`git -C lib/rhadar fetch origin` and `git -C lib/rhadar checkout <commit>`, then
+commit the new submodule pointer in the parent repository.
+
+Run the library's host tests independently of the firmware:
+
+```sh
+cmake -S lib/rhadar -B /tmp/rhadar-build
+cmake --build /tmp/rhadar-build
+ctest --test-dir /tmp/rhadar-build --output-on-failure
+```
 
 Install the recommended extensions when prompted, then run **Developer: Reload
 Window** from the command palette. With WSL or Remote SSH, install the extensions
@@ -129,21 +151,31 @@ The firmware waits for Wi-Fi before starting MQTT. Exit the monitor with **Ctrl+
 ## 5. Test the LED
 
 With Home Assistant's MQTT integration connected to the same broker and discovery
-enabled, the firmware publishes discovery information for an **ESP32 Blinky**
-device with an **LED** light entity. Toggle that entity to control GPIO 2.
+enabled, the firmware publishes discovery information for a **PWS pws_<MAC>**
+device with an **LED** light entity and a **Soil moisture** sensor. Toggle the LED
+entity to control GPIO 2. The moisture sensor displays the calibrated percentage.
 
 You can also test directly with any MQTT client:
 
 | Topic                                         | Purpose / payload                                                                                                  |
 | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| `esp32/blinky/led/set`                        | Publish exactly `ON` or `OFF` to control the LED.                                                                  |
-| `esp32/blinky/led/state`                      | Subscribe to receive reported `ON` / `OFF` state.                                                                  |
-| `esp32/blinky/status`                         | Availability: `online`; the broker publishes the configured `offline` last will when it detects a lost connection. |
-| `homeassistant/light/esp32_blinky_led/config` | Retained Home Assistant discovery configuration.                                                                   |
+| `pws_<MAC>/led/set` | Publish exactly `ON` or `OFF` to control the LED. |
+| `pws_<MAC>/led/state` | Retained `ON` / `OFF` state. |
+| `pws_<MAC>/moisture/state` | Retained integer percentage (`0`–`100`), or `None` when unknown. |
+| `pws_<MAC>/status` | Availability: `online`; the broker publishes the `offline` last will when it detects a lost connection. |
+| `homeassistant/light/pws_<MAC>/config` | Retained LED discovery configuration. |
+| `homeassistant/sensor/pws_<MAC>/moisture/config` | Retained soil moisture discovery configuration. |
 
-The MQTT topics and discovery identifiers are currently fixed in `src/main.cpp`.
-Use one board at a time with these defaults, or give each board unique topics and
-identifiers before running multiple copies against the same broker.
+Replace `<MAC>` with the board's 12 lowercase hexadecimal MAC digits, without
+separators. The complete device identifier is printed over serial at MQTT startup.
+Each board gets distinct topics and entity identifiers automatically.
+
+Moisture is published every five seconds while connected and immediately on MQTT
+connection or reconnection. Both entities share the device's availability topic.
+Retained discovery and state messages let Home Assistant restore them after a
+restart. Missing or invalid calibration and failed ADC reads are reported as
+`None`, which Home Assistant displays as **Unknown** according to its
+[MQTT sensor documentation](https://www.home-assistant.io/integrations/sensor.mqtt/#state_topic).
 
 ## Read and calibrate the moisture sensor
 
@@ -192,15 +224,9 @@ whole percent and clamped to 0–100%. Either endpoint may be larger. Equal
 endpoints leave the sensor uncalibrated and keep raw logging enabled. A reading
 stuck near 0 or 4095 in both conditions needs a wiring/output-range check before
 calibration. Percentages describe your chosen soil reference conditions, not
-an absolute volumetric water content measurement. Moisture readings currently
-appear in the serial log; they are not published to MQTT.
-
-To run the calibration conversion checks on the host:
-
-```sh
-c++ -std=c++11 -Wall -Wextra -Werror -Isrc test/test_moisture_calibration.cpp -o /tmp/pws-moisture-test
-/tmp/pws-moisture-test
-```
+an absolute volumetric water content measurement. Raw and filtered readings appear
+in the serial log; the calibrated percentage is also published to MQTT and shown
+by the discovered Home Assistant soil moisture sensor.
 
 ## Developing in VS Code
 
@@ -225,3 +251,15 @@ changing dependencies or the build environment.
 | The LED does not change                     | Check the exact topic and uppercase `ON` / `OFF` payload, then verify that your board has an LED on GPIO 2.                                                                                                                                                |
 | Home Assistant does not discover the device | Confirm `MQTT_EVENT_CONNECTED`, verify both use the same broker, and check that MQTT discovery is enabled with the `homeassistant` prefix.                                                                                                                 |
 | Includes or completion are missing          | Build once, run **PlatformIO: Rebuild C/C++ Project Index**, then **C/C++: Reset IntelliSense Database** if needed. Check that `main.cpp` uses C++ language mode and the C/C++ configuration is PlatformIO.                                                    |
+
+## VS Code run profiles
+
+Open `firmware.code-workspace` for the firmware and rhadar host-test debug
+profiles. This keeps the custom profiles separate from PlatformIO’s generated
+`.vscode/launch.json`. **Ctrl+Shift+B** builds the ESP32 firmware.
+
+Use **Terminal → Run Task** for firmware build, upload, serial monitoring,
+upload-and-monitor, clean, and ESP-IDF configuration. The `rhadar` tasks provide
+Debug, Release, and shared-library builds, tests, local installation, clean, and
+Doxygen documentation. Host tests run on your computer and require no ESP32.
+The firmware debug profile uses your configured PlatformIO debug probe.

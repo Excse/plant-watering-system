@@ -1,0 +1,20 @@
+{
+  "device": {
+    "identifiers": ["{{device_id}}"],
+    "name": "PWS {{device_id}}",
+    "manufacturer": "DIY",
+    "model": "ESP32"
+  },
+  "name": "Soil moisture",
+  "unique_id": "{{device_id}}_moisture",
+  "state_topic": "{{device_id}}/moisture/state",
+  "availability_topic": "{{device_id}}/status",
+  "device_class": "moisture",
+  "state_class": "measurement",
+  "unit_of_measurement": "%",
+  "suggested_display_precision": 0,
+  "origin": {
+    "name": "esp32-idf",
+    "sw_version": "1.0.0"
+  }
+}

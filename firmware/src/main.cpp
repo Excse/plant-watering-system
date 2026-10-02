@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <inttypes.h>
+#include <atomic>
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -21,6 +22,9 @@
 #define LED_GPIO GPIO_NUM_2
 
 static mqtt_identity_t identity;
+static std::atomic<bool> mqtt_connected{false};
+
+static constexpr int MOISTURE_PUBLISH_INTERVAL_MS = 5000;
 
 static const char *WIFI_LOG_TAG = "wifi";
 static const char *MQTT_LOG_TAG = "mqtt";
@@ -31,6 +35,20 @@ static EventGroupHandle_t wifi_event_group;
 static void log_error_if_nonzero(const char *tag, const char *message, int error_code) {
     if (error_code != 0) {
         ESP_LOGE(tag, "Last error %s: 0x%x", message, error_code);
+    }
+}
+
+static void mqtt_publish_moisture(esp_mqtt_client_handle_t client) {
+    const int percent = moisture_sensor_percentage();
+    // Home Assistant uses "None" for an unknown numeric sensor value.
+    char payload[5] = "None";
+    if (percent >= 0 && percent <= 100) {
+        snprintf(payload, sizeof(payload), "%d", percent);
+    }
+
+    // QoS 0 avoids accumulating stale readings while the broker is unreachable.
+    if (esp_mqtt_client_publish(client, identity.moisture_state_topic, payload, 0, 0, 1) < 0) {
+        ESP_LOGW(MQTT_LOG_TAG, "Failed to publish moisture; retrying on next update");
     }
 }
 
@@ -46,11 +64,15 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
 
             esp_mqtt_client_subscribe(client, identity.command_topic, 1);
             esp_mqtt_client_publish(client, identity.discovery_topic, identity.discovery_payload, 0, 1, 1);
+            esp_mqtt_client_publish(client, identity.moisture_discovery_topic, identity.moisture_discovery_payload, 0, 1, 1);
+            mqtt_publish_moisture(client);
             esp_mqtt_client_publish(client, identity.availability_topic, "online", 0, 1, 1);
             esp_mqtt_client_publish(client, identity.state_topic, gpio_get_level(LED_GPIO) ? "ON" : "OFF", 0, 1, 1);
+            mqtt_connected.store(true);
             break;
         
         case MQTT_EVENT_DISCONNECTED:
+            mqtt_connected.store(false);
             ESP_LOGI(MQTT_LOG_TAG, "MQTT_EVENT_DISCONNECTED");
             break;
 
@@ -88,7 +110,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
     }
 }
 
-void mqtt_start(void) {
+static esp_mqtt_client_handle_t mqtt_start(void) {
     ESP_ERROR_CHECK(mqtt_identity_init(&identity));
     
     esp_mqtt_client_config_t mqtt_cfg = {};
@@ -102,8 +124,10 @@ void mqtt_start(void) {
     mqtt_cfg.session.last_will.retain = 1;
 
     esp_mqtt_client_handle_t client = esp_mqtt_client_init(&mqtt_cfg);
-    esp_mqtt_client_register_event(client, MQTT_EVENT_ANY, mqtt_event_handler, NULL);
-    esp_mqtt_client_start(client);
+    ESP_ERROR_CHECK(client != nullptr ? ESP_OK : ESP_ERR_NO_MEM);
+    ESP_ERROR_CHECK(esp_mqtt_client_register_event(client, MQTT_EVENT_ANY, mqtt_event_handler, NULL));
+    ESP_ERROR_CHECK(esp_mqtt_client_start(client));
+    return client;
 }
 
 static void wifi_event_handler(void *arg, esp_event_base_t event_base, int32_t event_id, void *event_data) {
@@ -177,5 +201,11 @@ extern "C" void app_main(void) {
     flash_start();
     ESP_ERROR_CHECK(moisture_sensor_start());
     wifi_start();
-    mqtt_start();
+    esp_mqtt_client_handle_t client = mqtt_start();
+    while (true) {
+        vTaskDelay(pdMS_TO_TICKS(MOISTURE_PUBLISH_INTERVAL_MS));
+        if (mqtt_connected.load()) {
+            mqtt_publish_moisture(client);
+        }
+    }
 }

@@ -85,6 +85,7 @@ static void moisture_task(void *) {
 
         if (error != ESP_OK) {
             // Do not convert a failed or incomplete reading into a moisture value
+            LATEST_MOISTURE_PERCENTAGE.store(-1);
             ESP_LOGW(TAG, "ADC read failed: %s", esp_err_to_name(error));
         } else {
             // Take the rounded mean value of all samples as the raw reading 

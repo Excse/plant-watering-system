@@ -1,0 +1,409 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Firmware: Build",
+            "type": "process",
+            "command": "${env:HOME}/.platformio/penv/bin/platformio",
+            "args": [
+                "run",
+                "-e",
+                "esp32dev"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "windows": {
+                "command": "${env:USERPROFILE}/.platformio/penv/Scripts/platformio.exe"
+            }
+        },
+        {
+            "label": "Firmware: Upload",
+            "type": "process",
+            "command": "${env:HOME}/.platformio/penv/bin/platformio",
+            "args": [
+                "run",
+                "-e",
+                "esp32dev",
+                "-t",
+                "upload"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "windows": {
+                "command": "${env:USERPROFILE}/.platformio/penv/Scripts/platformio.exe"
+            }
+        },
+        {
+            "label": "Firmware: Monitor",
+            "type": "process",
+            "command": "${env:HOME}/.platformio/penv/bin/platformio",
+            "args": [
+                "device",
+                "monitor",
+                "-e",
+                "esp32dev"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "windows": {
+                "command": "${env:USERPROFILE}/.platformio/penv/Scripts/platformio.exe"
+            }
+        },
+        {
+            "label": "Firmware: Upload and Monitor",
+            "type": "process",
+            "command": "${env:HOME}/.platformio/penv/bin/platformio",
+            "args": [
+                "run",
+                "-e",
+                "esp32dev",
+                "-t",
+                "upload",
+                "-t",
+                "monitor"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "windows": {
+                "command": "${env:USERPROFILE}/.platformio/penv/Scripts/platformio.exe"
+            }
+        },
+        {
+            "label": "Firmware: Clean",
+            "type": "process",
+            "command": "${env:HOME}/.platformio/penv/bin/platformio",
+            "args": [
+                "run",
+                "-e",
+                "esp32dev",
+                "-t",
+                "clean"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "windows": {
+                "command": "${env:USERPROFILE}/.platformio/penv/Scripts/platformio.exe"
+            }
+        },
+        {
+            "label": "Firmware: Configure ESP-IDF",
+            "type": "process",
+            "command": "${env:HOME}/.platformio/penv/bin/platformio",
+            "args": [
+                "run",
+                "-e",
+                "esp32dev",
+                "-t",
+                "menuconfig"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "windows": {
+                "command": "${env:USERPROFILE}/.platformio/penv/Scripts/platformio.exe"
+            }
+        },
+        {
+            "label": "rhadar: Configure Debug",
+            "type": "process",
+            "command": "cmake",
+            "args": [
+                "-S",
+                "${workspaceFolder}/lib/rhadar",
+                "-B",
+                "${workspaceFolder}/build/rhadar/debug",
+                "-DCMAKE_BUILD_TYPE=Debug",
+                "-DBUILD_SHARED_LIBS=OFF",
+                "-DBUILD_TESTING=ON",
+                "-DMAKE_INSTALLABLE=ON",
+                "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "rhadar: Build Debug",
+            "type": "process",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build/rhadar/debug",
+                "--parallel"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "dependsOn": "rhadar: Configure Debug",
+            "dependsOrder": "sequence",
+            "group": "build"
+        },
+        {
+            "label": "rhadar: Test Debug",
+            "type": "process",
+            "command": "ctest",
+            "args": [
+                "--test-dir",
+                "${workspaceFolder}/build/rhadar/debug",
+                "--output-on-failure"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "dependsOn": "rhadar: Build Debug",
+            "dependsOrder": "sequence",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "rhadar: Install Debug",
+            "type": "process",
+            "command": "cmake",
+            "args": [
+                "--install",
+                "${workspaceFolder}/build/rhadar/debug",
+                "--prefix",
+                "${workspaceFolder}/build/rhadar/install/debug"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "dependsOn": "rhadar: Build Debug",
+            "dependsOrder": "sequence"
+        },
+        {
+            "label": "rhadar: Clean Debug",
+            "type": "process",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build/rhadar/debug",
+                "--target",
+                "clean"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "dependsOn": "rhadar: Configure Debug",
+            "dependsOrder": "sequence"
+        },
+        {
+            "label": "rhadar: Configure Release",
+            "type": "process",
+            "command": "cmake",
+            "args": [
+                "-S",
+                "${workspaceFolder}/lib/rhadar",
+                "-B",
+                "${workspaceFolder}/build/rhadar/release",
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DBUILD_SHARED_LIBS=OFF",
+                "-DBUILD_TESTING=ON",
+                "-DMAKE_INSTALLABLE=ON",
+                "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "rhadar: Build Release",
+            "type": "process",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build/rhadar/release",
+                "--parallel"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "dependsOn": "rhadar: Configure Release",
+            "dependsOrder": "sequence",
+            "group": "build"
+        },
+        {
+            "label": "rhadar: Test Release",
+            "type": "process",
+            "command": "ctest",
+            "args": [
+                "--test-dir",
+                "${workspaceFolder}/build/rhadar/release",
+                "--output-on-failure"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "dependsOn": "rhadar: Build Release",
+            "dependsOrder": "sequence",
+            "group": "test"
+        },
+        {
+            "label": "rhadar: Install Release",
+            "type": "process",
+            "command": "cmake",
+            "args": [
+                "--install",
+                "${workspaceFolder}/build/rhadar/release",
+                "--prefix",
+                "${workspaceFolder}/build/rhadar/install/release"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "dependsOn": "rhadar: Build Release",
+            "dependsOrder": "sequence"
+        },
+        {
+            "label": "rhadar: Clean Release",
+            "type": "process",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build/rhadar/release",
+                "--target",
+                "clean"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "dependsOn": "rhadar: Configure Release",
+            "dependsOrder": "sequence"
+        },
+        {
+            "label": "rhadar: Configure Shared",
+            "type": "process",
+            "command": "cmake",
+            "args": [
+                "-S",
+                "${workspaceFolder}/lib/rhadar",
+                "-B",
+                "${workspaceFolder}/build/rhadar/shared",
+                "-DCMAKE_BUILD_TYPE=Debug",
+                "-DBUILD_SHARED_LIBS=ON",
+                "-DBUILD_TESTING=ON",
+                "-DMAKE_INSTALLABLE=ON",
+                "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "rhadar: Build Shared",
+            "type": "process",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build/rhadar/shared",
+                "--parallel"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "dependsOn": "rhadar: Configure Shared",
+            "dependsOrder": "sequence",
+            "group": "build"
+        },
+        {
+            "label": "rhadar: Test Shared",
+            "type": "process",
+            "command": "ctest",
+            "args": [
+                "--test-dir",
+                "${workspaceFolder}/build/rhadar/shared",
+                "--output-on-failure"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "dependsOn": "rhadar: Build Shared",
+            "dependsOrder": "sequence",
+            "group": "test"
+        },
+        {
+            "label": "rhadar: Install Shared",
+            "type": "process",
+            "command": "cmake",
+            "args": [
+                "--install",
+                "${workspaceFolder}/build/rhadar/shared",
+                "--prefix",
+                "${workspaceFolder}/build/rhadar/install/shared"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "dependsOn": "rhadar: Build Shared",
+            "dependsOrder": "sequence"
+        },
+        {
+            "label": "rhadar: Clean Shared",
+            "type": "process",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build/rhadar/shared",
+                "--target",
+                "clean"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "dependsOn": "rhadar: Configure Shared",
+            "dependsOrder": "sequence"
+        },
+        {
+            "label": "rhadar: Generate Documentation",
+            "type": "process",
+            "command": "doxygen",
+            "args": [
+                "Doxyfile"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/lib/rhadar"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

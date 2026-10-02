@@ -1,0 +1,3 @@
+[submodule "firmware/lib/rhadar"]
+	path = firmware/lib/rhadar
+	url = git@github.com:Excse/rhadar.git

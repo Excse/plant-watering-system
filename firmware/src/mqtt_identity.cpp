@@ -12,6 +12,7 @@ static const char *TAG = "mqtt_identity";
 
 extern const char DISCOVERY_TEMPLATE_START[] asm("_binary_discovery_json_start");
 extern const char DISCOVERY_TEMPLATE_END[] asm("_binary_discovery_json_end");
+extern const char MOISTURE_DISCOVERY_TEMPLATE_START[] asm("_binary_moisture_discovery_json_start");
 
 static char *replace_token(const char *source, const char *token, const char *replacement) {
     if (source == NULL || token == NULL || replacement == NULL) {
@@ -100,6 +101,20 @@ esp_err_t mqtt_identity_init(mqtt_identity_t *identity) {
     );
 
     snprintf(
+        identity->moisture_discovery_topic,
+        sizeof(identity->moisture_discovery_topic),
+        "homeassistant/sensor/%s/moisture/config",
+        identity->device_id
+    );
+
+    snprintf(
+        identity->moisture_state_topic,
+        sizeof(identity->moisture_state_topic),
+        "%s/moisture/state",
+        identity->device_id
+    );
+
+    snprintf(
         identity->command_topic,
         sizeof(identity->command_topic),
         "%s/led/set",
@@ -130,6 +145,16 @@ esp_err_t mqtt_identity_init(mqtt_identity_t *identity) {
         return ESP_ERR_NO_MEM;
     }
 
+    identity->moisture_discovery_payload = replace_token(
+        MOISTURE_DISCOVERY_TEMPLATE_START,
+        "{{device_id}}",
+        identity->device_id
+    );
+    if (identity->moisture_discovery_payload == NULL) {
+        mqtt_identity_destroy(identity);
+        return ESP_ERR_NO_MEM;
+    }
+
     ESP_LOGI(TAG, "Device identifier: %s", identity->device_id);
     ESP_LOGD(TAG, "Discovery topic: %s", identity->discovery_topic);
 
@@ -143,4 +168,6 @@ void mqtt_identity_destroy(mqtt_identity_t *identity) {
 
     free(identity->discovery_payload);
     identity->discovery_payload = NULL;
+    free(identity->moisture_discovery_payload);
+    identity->moisture_discovery_payload = NULL;
 }
