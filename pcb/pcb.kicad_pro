@@ -254,7 +254,8 @@
   "libraries": {
     "pinned_footprint_libs": [],
     "pinned_symbol_libs": [
-      "pcb"
+      "pcb",
+      "SamacSys"
     ]
   },
   "meta": {
@@ -393,6 +394,72 @@
           "label": "Description",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Distributor Link 2",
+          "name": "Distributor Link 2",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Distributor Link 1",
+          "name": "Distributor Link 1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Distribution Link 1",
+          "name": "Distribution Link 1",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -443,7 +510,7 @@
         "uuid": "4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
       }
     ],
-    "used_designators": "P1,U1,#FLG1-3,R1-5,J1,D1-2,#PWR1-8,C1-4",
+    "used_designators": "P1,U1-2,R1-11,#FLG1-3,J1,D1-2,#PWR1-16,C1-6,BT1,IC1,L1",
     "variants": []
   },
   "sheets": [

@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP TPS63802DLAT
+D Switching Voltage Regulators High current, high efficiency single inductor buck-boost converter 10-VSON-HR -40 to 125
+K
+F https://www.ti.com/lit/gpn/TPS63802
+$ENDCMP
+#
+#End Doc Library
