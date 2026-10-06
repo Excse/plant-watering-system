@@ -595,7 +595,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin power_in line
 				(at -2.54 39.37 270)
 				(length 2.54)
 				(name "3V3"
