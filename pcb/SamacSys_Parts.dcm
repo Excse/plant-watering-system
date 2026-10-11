@@ -18,4 +18,10 @@ K
 F https://www.ti.com/lit/gpn/tusb320li
 $ENDCMP
 #
+$CMP PESD5V0S2BT-QR
+D PESD5V0S2BT-Q - Low capacitance bidirectional double ESD protection diode@en-us
+K
+F https://assets.nexperia.com/documents/data-sheet/PESD5V0S2BT.pdf
+$ENDCMP
+#
 #End Doc Library
