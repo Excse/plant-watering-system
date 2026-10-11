@@ -1,0 +1,99 @@
+name: KiCad checks and previews
+
+on:
+  push:
+    paths:
+      - 'pcb/**'
+      - 'scripts/kicad.py'
+      - '.github/workflows/schematic.yml'
+  pull_request:
+    paths:
+      - 'pcb/**'
+      - 'scripts/kicad.py'
+      - '.github/workflows/schematic.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kicad-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  kicad:
+    name: Checks and documentation previews
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - name: Check out hardware files
+        uses: actions/checkout@v4
+        with:
+          # Check PR merge commits; use the latest branch for push/manual runs.
+          ref: ${{ github.event_name == 'pull_request' && github.ref || github.ref_name }}
+          persist-credentials: ${{ github.event_name != 'pull_request' && github.ref_name == github.event.repository.default_branch }}
+
+      - name: Pull KiCad once for checks and previews
+        run: docker pull kicad/kicad:10.0.6-full
+
+      - name: Run electrical and design rule checks
+        id: checks
+        continue-on-error: true
+        run: |
+          mkdir -p reports/kicad
+          docker run --rm \
+            --user "$(id -u):$(id -g)" \
+            --env HOME=/tmp \
+            --volume "$GITHUB_WORKSPACE:/workspace" \
+            --workdir /workspace \
+            --entrypoint python3 \
+            kicad/kicad:10.0.6-full \
+            scripts/kicad.py checks
+
+      - name: Publish check summary
+        if: always()
+        run: |
+          if [ -f reports/kicad/summary.md ]; then
+            cat reports/kicad/summary.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kicad-reports
+          path: reports/kicad/
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Export schematic, PCB layers, and 3D preview
+        id: previews
+        if: ${{ !cancelled() && github.event_name != 'pull_request' && github.ref_name == github.event.repository.default_branch }}
+        run: |
+          docker run --rm \
+            --user "$(id -u):$(id -g)" \
+            --env HOME=/tmp \
+            --volume "$GITHUB_WORKSPACE:/workspace" \
+            --workdir /workspace \
+            --entrypoint python3 \
+            kicad/kicad:10.0.6-full \
+            scripts/kicad.py previews
+
+      - name: Commit updated previews
+        if: ${{ !cancelled() && steps.previews.outcome == 'success' }}
+        run: |
+          git add -- docs/schematic/pcb.svg docs/pcb/front.svg docs/pcb/back.svg docs/pcb/3d.png docs/pcb/3d.sha256
+          if git diff --cached --quiet; then
+            echo "Documentation previews are already up to date."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "docs: update KiCad previews"
+          git push
+
+      - name: Fail when checks find violations or cannot run
+        if: always() && steps.checks.outcome == 'failure'
+        run: exit 1

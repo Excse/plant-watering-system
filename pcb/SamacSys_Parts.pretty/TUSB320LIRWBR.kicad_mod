@@ -35,7 +35,7 @@
   (pad 10 smd rect (at 0.200 -0.75 0) (size 0.200 0.500) (layers F.Cu F.Paste F.Mask))
   (pad 11 smd rect (at -0.200 -0.75 0) (size 0.200 0.500) (layers F.Cu F.Paste F.Mask))
   (pad 12 smd rect (at -0.600 -0.75 0) (size 0.200 0.500) (layers F.Cu F.Paste F.Mask))
-  (model "\\\\wsl.localhost\\Ubuntu-24.04\\home\\timo\\development\\plant-watering-system\\pcb\\SamacSys_Parts.3dshapes\\TUSB320LIRWBR.stp"
+  (model "${KIPRJMOD}/SamacSys_Parts.3dshapes/TUSB320LIRWBR.stp"
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

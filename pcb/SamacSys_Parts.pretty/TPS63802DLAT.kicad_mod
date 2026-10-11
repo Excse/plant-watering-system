@@ -35,7 +35,7 @@
   (pad 8 smd rect (at 0.550 -0 90) (size 0.250 1.300) (layers F.Cu F.Paste F.Mask))
   (pad 9 smd rect (at 0.750 -0.5 90) (size 0.250 0.900) (layers F.Cu F.Paste F.Mask))
   (pad 10 smd rect (at 0.750 -1 90) (size 0.250 0.900) (layers F.Cu F.Paste F.Mask))
-  (model "\\\\wsl.localhost\\Ubuntu-24.04\\home\\timo\\development\\plant-watering-system\\pcb\\SamacSys_Parts.3dshapes\\TPS63802DLAT.stp"
+  (model "${KIPRJMOD}/SamacSys_Parts.3dshapes/TPS63802DLAT.stp"
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
