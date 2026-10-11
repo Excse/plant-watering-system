@@ -6,7 +6,6 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/event_groups.h"
-#include "driver/gpio.h"
 
 #include "moisture_sensor.h"
 #include "esp_wifi.h"
@@ -16,10 +15,8 @@
 #include "mqtt_identity.h"
 #include "nvs_flash.h"
 #include "sdkconfig.h"
-#include "rhadar.h"
 
 #define WIFI_CONNECTED_BIT BIT0
-#define LED_GPIO GPIO_NUM_2
 
 static mqtt_identity_t identity;
 static std::atomic<bool> mqtt_connected{false};
@@ -62,35 +59,24 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
         case MQTT_EVENT_CONNECTED:
             ESP_LOGI(MQTT_LOG_TAG, "MQTT_EVENT_CONNECTED");
 
-            esp_mqtt_client_subscribe(client, identity.command_topic, 1);
-            esp_mqtt_client_publish(client, identity.discovery_topic, identity.discovery_payload, 0, 1, 1);
-            esp_mqtt_client_publish(client, identity.moisture_discovery_topic, identity.moisture_discovery_payload, 0, 1, 1);
+            // Retain the migration marker so Home Assistant can migrate even if
+            // it is offline now. Keep the existing entity's unique ID and device ID.
+            if (esp_mqtt_client_publish(client, identity.legacy_moisture_discovery_topic,
+                    "{\"migrate_discovery\":true}", 0, 1, 1) < 0) {
+                ESP_LOGW(MQTT_LOG_TAG, "Failed to publish moisture discovery migration; retrying on reconnect");
+            } else if (esp_mqtt_client_publish(client, identity.moisture_discovery_topic,
+                    identity.moisture_discovery_payload, 0, identity.moisture_discovery_qos,
+                    identity.moisture_discovery_retain) < 0) {
+                ESP_LOGW(MQTT_LOG_TAG, "Failed to publish moisture discovery; retrying on reconnect");
+            }
             mqtt_publish_moisture(client);
             esp_mqtt_client_publish(client, identity.availability_topic, "online", 0, 1, 1);
-            esp_mqtt_client_publish(client, identity.state_topic, gpio_get_level(LED_GPIO) ? "ON" : "OFF", 0, 1, 1);
             mqtt_connected.store(true);
             break;
         
         case MQTT_EVENT_DISCONNECTED:
             mqtt_connected.store(false);
             ESP_LOGI(MQTT_LOG_TAG, "MQTT_EVENT_DISCONNECTED");
-            break;
-
-        case MQTT_EVENT_DATA:
-            ESP_LOGI(MQTT_LOG_TAG, "MQTT_EVENT_DATA");
-            
-            if (event->topic_len == strlen(identity.command_topic) && strncmp(event->topic, identity.command_topic, event->topic_len) ==  0) {
-                if (event->data_len == 2 && strncmp(event->data, "ON", 2) == 0) {
-                    gpio_set_level(LED_GPIO, 1);
-
-                    esp_mqtt_client_publish(client, identity.state_topic, "ON", 0, 1, 1);
-                }
-                else if (event->data_len == 3 && strncmp(event->data, "OFF", 3) == 0) {
-                    gpio_set_level(LED_GPIO, 0);
-
-                    esp_mqtt_client_publish(client, identity.state_topic, "OFF", 0, 1, 1);
-                }
-            }
             break;
 
         case MQTT_EVENT_ERROR:
@@ -194,9 +180,6 @@ extern "C" void app_main(void) {
     ESP_LOGI(PWS_LOG_TAG, "Startup..");
     ESP_LOGI(PWS_LOG_TAG, "Free heap: %u KiB", (esp_get_free_heap_size() / 1024));
     ESP_LOGI(PWS_LOG_TAG, "IDF version: %s", esp_get_idf_version());
-
-    gpio_reset_pin(LED_GPIO);
-    gpio_set_direction(LED_GPIO, GPIO_MODE_OUTPUT);
 
     flash_start();
     ESP_ERROR_CHECK(moisture_sensor_start());

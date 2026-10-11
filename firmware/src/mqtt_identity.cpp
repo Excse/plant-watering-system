@@ -7,68 +7,66 @@
 #include "esp_err.h"
 #include "esp_log.h"
 #include "esp_mac.h"
+#include "rhadar.h"
 
 static const char *TAG = "mqtt_identity";
 
-extern const char DISCOVERY_TEMPLATE_START[] asm("_binary_discovery_json_start");
-extern const char DISCOVERY_TEMPLATE_END[] asm("_binary_discovery_json_end");
-extern const char MOISTURE_DISCOVERY_TEMPLATE_START[] asm("_binary_moisture_discovery_json_start");
+static esp_err_t discovery_validation_error(const rhadar::ValidationError& error) {
+    ESP_LOGE(TAG, "Invalid discovery field %s: %s", error.field.c_str(), error.message.c_str());
+    return ESP_ERR_INVALID_ARG;
+}
 
-static char *replace_token(const char *source, const char *token, const char *replacement) {
-    if (source == NULL || token == NULL || replacement == NULL) {
-        return NULL;
+static esp_err_t moisture_discovery_init(mqtt_identity_t *identity) {
+    const std::string device_id = identity->device_id;
+    auto device = rhadar::DeviceBuilder{device_id}
+        .name("PWS " + device_id)
+        .manufacturer("DIY")
+        .model("ESP32")
+        .build();
+    if (!device) {
+        return discovery_validation_error(device.error());
     }
 
-    const size_t replacement_length = strlen(replacement);
-    const size_t token_length = strlen(token);
-
-    // An empty token would cause the search loop to never advance
-    if (token_length == 0) {
-        return NULL;
+    auto origin = rhadar::OriginBuilder{"esp32-idf"}
+        .sw_version("1.0.0")
+        .build();
+    if (!origin) {
+        return discovery_validation_error(origin.error());
     }
 
-    // First pass: determine how much memory the rendered string will require
-    size_t result_length = strlen(source);
-
-    const char *input_cursor = source;
-    const char *match;
-
-    while ((match = strstr(input_cursor, token)) != NULL) {
-        if (replacement_length >= token_length) {
-            result_length += replacement_length - token_length;
-        } else {
-            result_length -= token_length - replacement_length;
-        }
-
-        input_cursor = match + token_length;
+    auto sensor = rhadar::SensorBuilder{device_id + "_moisture"}
+        .name("Soil moisture")
+        .state_topic(identity->moisture_state_topic)
+        .availability_topic(identity->availability_topic)
+        .device_class(rhadar::SensorDeviceClass::Moisture)
+        .state_class(rhadar::SensorStateClass::Measurement)
+        .unit_of_measurement("%")
+        .suggested_display_precision(0)
+        .build();
+    if (!sensor) {
+        return discovery_validation_error(sensor.error());
     }
 
-    // Allocate the rendered string, including the null terminator
-    char *result = static_cast<char*>(malloc(result_length + 1));
-    if (result == NULL) {
-        return NULL;
+    auto message = rhadar::MessageBuilder{*device, *origin, device_id}
+        .add_component("moisture", *sensor)
+        .qos(1)
+        .build();
+    if (!message) {
+        return discovery_validation_error(message.error());
+    }
+    if (message->topic().size() >= sizeof(identity->moisture_discovery_topic)) {
+        return ESP_ERR_INVALID_SIZE;
     }
 
-    // Second pass: copy the original string while replacing every occurrence of the token
-    input_cursor = source;
-    char *output_cursor = result;
-
-    while ((match = strstr(input_cursor, token)) != NULL) {
-        const size_t segment_length = (size_t)(match - input_cursor);
-
-        memcpy(output_cursor, input_cursor, segment_length);
-        output_cursor += segment_length;
-
-        memcpy(output_cursor, replacement, replacement_length);
-        output_cursor += replacement_length;
-
-        input_cursor = match + token_length;
+    // Copy the built message into the identity's lifetime-owned buffers.
+    identity->moisture_discovery_payload = strdup(message->payload().c_str());
+    if (identity->moisture_discovery_payload == nullptr) {
+        return ESP_ERR_NO_MEM;
     }
-
-    // Copy everything remaining after the final token
-    strcpy(output_cursor, input_cursor);
-
-    return result;
+    memcpy(identity->moisture_discovery_topic, message->topic().c_str(), message->topic().size() + 1);
+    identity->moisture_discovery_qos = message->qos();
+    identity->moisture_discovery_retain = message->retain();
+    return ESP_OK;
 }
 
 esp_err_t mqtt_identity_init(mqtt_identity_t *identity) {
@@ -94,15 +92,8 @@ esp_err_t mqtt_identity_init(mqtt_identity_t *identity) {
     );
 
     snprintf(
-        identity->discovery_topic,
-        sizeof(identity->discovery_topic),
-        "homeassistant/light/%s/config",
-        identity->device_id
-    );
-
-    snprintf(
-        identity->moisture_discovery_topic,
-        sizeof(identity->moisture_discovery_topic),
+        identity->legacy_moisture_discovery_topic,
+        sizeof(identity->legacy_moisture_discovery_topic),
         "homeassistant/sensor/%s/moisture/config",
         identity->device_id
     );
@@ -115,48 +106,20 @@ esp_err_t mqtt_identity_init(mqtt_identity_t *identity) {
     );
 
     snprintf(
-        identity->command_topic,
-        sizeof(identity->command_topic),
-        "%s/led/set",
-        identity->device_id
-    );
-
-    snprintf(
-        identity->state_topic,
-        sizeof(identity->state_topic),
-        "%s/led/state",
-        identity->device_id
-    );
-
-    snprintf(
         identity->availability_topic,
         sizeof(identity->availability_topic),
         "%s/status",
         identity->device_id
     );
 
-    identity->discovery_payload = replace_token(
-        DISCOVERY_TEMPLATE_START,
-        "{{device_id}}",
-        identity->device_id
-    );
-
-    if (identity->discovery_payload == NULL) {
-        return ESP_ERR_NO_MEM;
-    }
-
-    identity->moisture_discovery_payload = replace_token(
-        MOISTURE_DISCOVERY_TEMPLATE_START,
-        "{{device_id}}",
-        identity->device_id
-    );
-    if (identity->moisture_discovery_payload == NULL) {
+    const esp_err_t discovery_error = moisture_discovery_init(identity);
+    if (discovery_error != ESP_OK) {
         mqtt_identity_destroy(identity);
-        return ESP_ERR_NO_MEM;
+        return discovery_error;
     }
 
     ESP_LOGI(TAG, "Device identifier: %s", identity->device_id);
-    ESP_LOGD(TAG, "Discovery topic: %s", identity->discovery_topic);
+    ESP_LOGD(TAG, "Discovery topic: %s", identity->moisture_discovery_topic);
 
     return ESP_OK;
 }
@@ -166,8 +129,6 @@ void mqtt_identity_destroy(mqtt_identity_t *identity) {
         return;
     }
 
-    free(identity->discovery_payload);
-    identity->discovery_payload = NULL;
     free(identity->moisture_discovery_payload);
     identity->moisture_discovery_payload = NULL;
 }
