@@ -11,6 +11,7 @@ Pump control is still planned.
 ## What you need
 
 - An ESP32 development board compatible with the `esp32dev` target and a USB data cable.
+- An analog soil moisture sensor with an output suitable for an ESP32 input.
 - A Wi-Fi network the ESP32 can join.
 - An MQTT broker reachable from that network, plus its credentials if required.
 - VS Code with the **PlatformIO IDE** and **C/C++** extensions, or an existing
@@ -30,22 +31,6 @@ For an existing checkout, run `git submodule update --init --recursive` from the
 repository root. The Home Assistant discovery library lives in
 [`lib/rhadar`](lib/rhadar) as a submodule of
 [Excse/rhadar](https://github.com/Excse/rhadar).
-
-Work on the standalone library under `/home/timo/development/rhadar`. After
-pushing a library commit, update the firmware checkout with
-`git -C lib/rhadar fetch origin` and `git -C lib/rhadar checkout <commit>`, then
-commit the new submodule pointer in the parent repository.
-
-Run the library's host tests independently of the firmware:
-
-```sh
-cmake -S lib/rhadar -B /tmp/rhadar-build
-cmake --build /tmp/rhadar-build
-ctest --test-dir /tmp/rhadar-build --output-on-failure
-
-# Firmware identity and discovery integration test (requires a C++23 host compiler)
-python3 test/mqtt_identity_test.py
-```
 
 Install the recommended extensions when prompted, then run **Developer: Reload
 Window** from the command palette. With WSL or Remote SSH, install the extensions
@@ -205,11 +190,13 @@ pio device monitor -b 115200
 ```
 
 Once per second, the firmware logs the average of 32 ADC samples (0–4095).
+Samples within each batch are spaced 10 ms apart; the batch average is then
+smoothed before conversion to a percentage.
 Readings start even if Wi-Fi is unavailable. Initially, both calibration
-settings are zero, so the output looks like this (example only):
+settings are `-1` (unset), so the output looks like this (example only):
 
 ```text
-I (...) moisture: GPIO34 raw=2874 (uncalibrated)
+I (...) moisture: GPIO34 raw=2874 filtered=2874 (uncalibrated)
 ```
 
 1. Place the probe in your dry reference soil at the intended insertion depth.
@@ -224,12 +211,14 @@ I (...) moisture: GPIO34 raw=2874 (uncalibrated)
 4. Build and upload again, then reopen the monitor. It now shows both values:
 
 ```text
-I (...) moisture: GPIO34 raw=2100 moisture=50%
+I (...) moisture: GPIO34 raw=2100 filtered=2100 moisture=50%
 ```
 
 The conversion is `100 × (raw − dry) / (wet − dry)`, rounded to the nearest
 whole percent and clamped to 0–100%. Either endpoint may be larger. Equal
-endpoints leave the sensor uncalibrated and keep raw logging enabled. A reading
+endpoints or unset values leave the sensor uncalibrated and keep raw logging enabled.
+The conversion uses the filtered reading: an exponential moving average with
+`alpha = 0.25`, applied to each batch average. A reading
 stuck near 0 or 4095 in both conditions needs a wiring/output-range check before
 calibration. Percentages describe your chosen soil reference conditions, not
 an absolute volumetric water content measurement. Raw and filtered readings appear
@@ -239,7 +228,7 @@ by the discovered Home Assistant soil moisture sensor.
 ## Developing in VS Code
 
 After the first build, run **PlatformIO: Rebuild C/C++ Project Index**. Open
-`src/main.cpp`; Ctrl+Space should offer completions, and F12 on `GPIO_NUM_2` should
+`src/main.cpp`; Ctrl+Space should offer completions, and F12 on `esp_wifi_connect` should
 open its definition.
 
 Workspace settings select Microsoft C/C++ for IntelliSense and disable clangd.
@@ -259,14 +248,29 @@ changing dependencies or the build environment.
 | Home Assistant does not discover the device | Confirm `MQTT_EVENT_CONNECTED`, verify both use the same broker, and check that MQTT discovery is enabled with the `homeassistant` prefix.                                                                                                                 |
 | Includes or completion are missing          | Build once, run **PlatformIO: Rebuild C/C++ Project Index**, then **C/C++: Reset IntelliSense Database** if needed. Check that `main.cpp` uses C++ language mode and the C/C++ configuration is PlatformIO.                                                    |
 
-## VS Code run profiles
+## VS Code tasks
 
-Open `firmware.code-workspace` for the firmware and rhadar host-test debug
-profiles. This keeps the custom profiles separate from PlatformIO’s generated
-`.vscode/launch.json`. **Ctrl+Shift+B** builds the ESP32 firmware.
+Open the `firmware` folder in VS Code. **Ctrl+Shift+B** builds the ESP32 firmware
+using the tasks in [`.vscode/tasks.json`](.vscode/tasks.json).
 
 Use **Terminal → Run Task** for firmware build, upload, serial monitoring,
 upload-and-monitor, clean, and ESP-IDF configuration. The `rhadar` tasks provide
 Debug, Release, and shared-library builds, tests, local installation, clean, and
 Doxygen documentation. Host tests run on your computer and require no ESP32.
-The firmware debug profile uses your configured PlatformIO debug probe.
+
+## Library development and host tests
+
+Develop library changes in a separate checkout of
+[Excse/rhadar](https://github.com/Excse/rhadar). After pushing a library commit,
+update the firmware checkout from the `firmware` directory with
+`git -C lib/rhadar fetch origin` and `git -C lib/rhadar checkout <commit>`, then
+commit the new submodule pointer in the parent repository.
+
+Run the library's host tests independently of the firmware (requires CMake and a
+C++23-capable host compiler). Run these commands from the `firmware` directory:
+
+```sh
+cmake -S lib/rhadar -B /tmp/rhadar-build
+cmake --build /tmp/rhadar-build
+ctest --test-dir /tmp/rhadar-build --output-on-failure
+```
