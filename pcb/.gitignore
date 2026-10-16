@@ -43,3 +43,7 @@ out/
 
 # End of https://www.toptal.com/developers/gitignore/api/kicad
 .history/
+
+# easyeda2kicad API response and model download cache
+.easyeda_cache/
+.easyeda-import-*/

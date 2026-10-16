@@ -1,15 +1,18 @@
+#!/usr/bin/env python3
+
 """Generate documentation previews or run KiCad checks (requires KiCad 10)."""
 
-import argparse
 from collections import Counter
+from pathlib import Path
+
+import xml.etree.ElementTree as ET
+import subprocess
+import argparse
 import hashlib
+import shutil
 import json
 import os
-from pathlib import Path
 import re
-import shutil
-import subprocess
-import xml.etree.ElementTree as ET
 
 
 def run(*args):

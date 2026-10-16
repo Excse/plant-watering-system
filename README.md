@@ -80,6 +80,8 @@ Follow the [firmware guide](firmware/README.md) to wire the sensor, configure Wi
 
 Open [pcb/pcb.kicad_pro](pcb/pcb.kicad_pro) in KiCad to explore the editable design. GitHub Actions keeps the preview updated when the schematic or project files change on the default branch.
 
+Local symbols, footprints, and 3D models are organized in [pcb/libraries/](pcb/libraries/README.md).
+
 ## PCB previews
 
 <p align="center">

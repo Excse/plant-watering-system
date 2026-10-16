@@ -150,7 +150,7 @@
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
+        "min_hole_clearance": 0.127,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
@@ -158,11 +158,11 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "min_through_hole_diameter": 0.15,
+        "min_track_width": 0.127,
+        "min_via_annular_width": 0.05,
+        "min_via_diameter": 0.25,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -508,7 +508,8 @@
     ],
     "pinned_symbol_libs": [
       "pcb",
-      "SamacSys"
+      "SamacSys",
+      "EasyEDA2KiCAD"
     ]
   },
   "meta": {
@@ -519,7 +520,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.127,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -540,7 +541,19 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
+    "net_colors": {
+      "+3.3V": "rgb(93, 255, 23)",
+      "BAT_SENSE": "rgb(255, 64, 66)",
+      "CC1": "rgb(35, 105, 255)",
+      "CC2": "rgb(243, 154, 255)",
+      "EN1": "rgb(255, 62, 188)",
+      "EN2": "rgb(69, 255, 158)",
+      "GND": "rgb(3, 224, 255)",
+      "Net-(BT1-+)": "rgb(181, 25, 255)",
+      "VBUS": "rgb(90, 255, 179)",
+      "VIMM": "rgb(179, 255, 124)",
+      "WATER_OUT": "rgb(255, 91, 253)"
+    },
     "netclass_assignments": null,
     "netclass_patterns": []
   },
@@ -712,7 +725,7 @@
           "group_by": false,
           "label": "Distribution Link 1",
           "name": "Distribution Link 1",
-          "show": false
+          "show": true
         }
       ],
       "filter_string": "",
@@ -771,7 +784,7 @@
         "uuid": "4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
       }
     ],
-    "used_designators": "P1,U1-2,R1-20,#FLG1-3,J1-6,D1-5,#PWR1-40,C1-11,BT1,IC1-2,L1,Q1-3,JP1,TP1-11",
+    "used_designators": "P1,U1-8,J1-6,R1-22,#FLG1-5,#PWR1-46,D1-7,C1-12,BT1,IC1-2,L1,Q1-5,JP1,TP1-11,USB1-2,H1-2,CN1-11",
     "variants": []
   },
   "sheets": [

@@ -1,5 +1,6 @@
 (sym_lib_table
 	(version 7)
-	(lib (name "pcb") (type "KiCad") (uri "${KIPRJMOD}/pcb.kicad_sym") (options "") (descr ""))
-	(lib (name "SamacSys") (type "KiCad") (uri "${KIPRJMOD}/SamacSys_Parts.kicad_sym") (options "") (descr ""))
+	(lib (name "pcb") (type "KiCad") (uri "${KIPRJMOD}/libraries/custom/pcb.kicad_sym") (options "") (descr "Project-specific symbols"))
+	(lib (name "SamacSys") (type "KiCad") (uri "${KIPRJMOD}/libraries/samacsys/SamacSys_Parts.kicad_sym") (options "") (descr "SamacSys component symbols"))
+	(lib (name "EasyEDA") (type "KiCad") (uri "${KIPRJMOD}/libraries/EasyEDA/EasyEDA.kicad_sym") (options "") (descr "EasyEDA/LCSC component symbols"))
 )
