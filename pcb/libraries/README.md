@@ -10,14 +10,12 @@ register the local libraries using `${KIPRJMOD}` paths, relative to `pcb/`.
 | Directory | Contents | KiCad library name |
 | --- | --- | --- |
 | `custom/` | Project-specific `pcb.kicad_sym` and `pcb.pretty/` footprints | `pcb` |
-| `samacsys/` | Imported SamacSys symbols, `.pretty/` footprints, and `.3dshapes/` models | `SamacSys` |
-| `samacsys/legacy/` | Original `.lib` and `.dcm` symbol files, retained for reference | Not registered |
 | `easyeda/` | Symbols, footprints, and available 3D models imported from EasyEDA/LCSC | `easyeda2kicad` |
 
-Keep new custom parts in `custom/` and SamacSys imports in `samacsys/`. Preserve
-the `pcb` and `SamacSys` library names: the schematic and board use these names
-to identify parts. Both footprint files and placed board footprints reference
-SamacSys models under `${KIPRJMOD}/libraries/samacsys/SamacSys_Parts.3dshapes/`.
+Keep new custom parts in `custom/`. Preserve the `pcb` library name for
+project-specific parts. EasyEDA/LCSC components use the `EasyEDA` library;
+their 3D models are stored in
+`${KIPRJMOD}/libraries/EasyEDA/EasyEDA.3dshapes/`.
 
 The existing `generated/` directory is reserved for generated libraries and is
 currently empty and not registered.

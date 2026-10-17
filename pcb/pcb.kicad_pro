@@ -508,7 +508,6 @@
     ],
     "pinned_symbol_libs": [
       "pcb",
-      "SamacSys",
       "EasyEDA2KiCAD",
       "EasyEDA"
     ]

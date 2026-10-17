@@ -1,6 +1,5 @@
 (fp_lib_table
 	(version 7)
 	(lib (name "pcb") (type "KiCad") (uri "${KIPRJMOD}/libraries/custom/pcb.pretty") (options "") (descr "Project-specific footprints"))
-	(lib (name "SamacSys") (type "KiCad") (uri "${KIPRJMOD}/libraries/samacsys/SamacSys_Parts.pretty") (options "") (descr "SamacSys component footprints"))
 	(lib (name "EasyEDA") (type "KiCad") (uri "${KIPRJMOD}/libraries/EasyEDA/EasyEDA.pretty") (options "") (descr "EasyEDA/LCSC component footprints"))
 )
