@@ -694,7 +694,7 @@
 				)
 			)
 			(property "Value" "100nF"
-				(at 0.254 3.048 0)
+				(at 0 3.048 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -887,7 +887,7 @@
 				)
 			)
 			(property "Value" "100uF"
-				(at 0.254 3.048 0)
+				(at 0 3.048 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1080,7 +1080,7 @@
 				)
 			)
 			(property "Value" "10uF"
-				(at 0 3.302 0)
+				(at 0 3.048 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1273,7 +1273,7 @@
 				)
 			)
 			(property "Value" "22uF"
-				(at 0.254 3.048 0)
+				(at 0 3.048 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1649,7 +1649,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "L"
-				(at 0 4.064 0)
+				(at 0 4.572 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1659,7 +1659,7 @@
 				)
 			)
 			(property "Value" "470nH"
-				(at 0.254 2.286 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -11282,7 +11282,7 @@
 		(dnp no)
 		(uuid "0230f47f-8033-46ed-ac86-e862e45a1ab3")
 		(property "Reference" "C10"
-			(at 350.52 104.648 90)
+			(at 351.028 104.394 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11293,7 +11293,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 350.52 106.426 90)
+			(at 351.028 106.426 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11718,7 +11718,7 @@
 		(dnp no)
 		(uuid "0e540166-9a64-4a87-ae5d-4452b4b5186d")
 		(property "Reference" "C5"
-			(at 118.11 186.9439 90)
+			(at 118.618 186.944 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11729,7 +11729,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 118.11 188.722 90)
+			(at 118.618 188.976 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12218,25 +12218,25 @@
 		(dnp no)
 		(uuid "14e8a6cd-9a1d-42a1-93be-f4225eff65ed")
 		(property "Reference" "C1"
-			(at 53.086 154.178 90)
+			(at 55.372 153.924 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "100nF"
-			(at 49.784 155.956 90)
+			(at 55.372 155.956 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EasyEDA:C0805"
@@ -12409,7 +12409,7 @@
 		(dnp no)
 		(uuid "188b9252-28da-436f-9619-7722e08d215e")
 		(property "Reference" "C9"
-			(at 259.08 109.728 90)
+			(at 259.588 109.474 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12420,7 +12420,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 259.08 111.506 90)
+			(at 259.588 111.506 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13278,25 +13278,25 @@
 		(dnp no)
 		(uuid "2bacceeb-dbb9-41c1-899b-fcee7a674e41")
 		(property "Reference" "C6"
-			(at 110.49 205.994 90)
+			(at 112.522 205.994 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "22uF"
-			(at 108.204 208.0259 90)
+			(at 112.522 208.026 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EasyEDA:C0805"
@@ -14594,7 +14594,7 @@
 		(dnp no)
 		(uuid "4d1da600-868e-462c-9022-635139354444")
 		(property "Reference" "C3"
-			(at 73.66 128.778 90)
+			(at 74.168 128.524 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14605,7 +14605,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 73.66 130.556 90)
+			(at 74.168 130.556 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15695,25 +15695,25 @@
 		(dnp no)
 		(uuid "6c28252a-7c90-4a0f-8163-36a1e6a4bdec")
 		(property "Reference" "C7"
-			(at 135.89 113.538 90)
+			(at 139.192 113.284 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 134.366 115.316 90)
+			(at 139.192 115.316 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EasyEDA:C0805"
@@ -16003,7 +16003,7 @@
 		(dnp no)
 		(uuid "74440333-e6f5-41a0-a4d0-35dbe691bd59")
 		(property "Reference" "C8"
-			(at 175.26 41.148 90)
+			(at 175.768 40.894 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16014,7 +16014,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 175.26 42.926 90)
+			(at 175.768 42.926 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18140,7 +18140,7 @@
 		(dnp no)
 		(uuid "99cc51f3-eb34-4f2a-a238-9d9716d81973")
 		(property "Reference" "C11"
-			(at 363.22 104.394 90)
+			(at 363.728 104.394 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18151,7 +18151,7 @@
 			)
 		)
 		(property "Value" "100uF"
-			(at 363.22 106.1719 90)
+			(at 363.728 106.426 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19012,25 +19012,25 @@
 		(dnp no)
 		(uuid "ad60b7e8-540b-43a9-a200-8a204ab86219")
 		(property "Reference" "C2"
-			(at 63.5 44.958 90)
+			(at 65.532 44.704 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 60.706 46.736 90)
+			(at 65.532 46.736 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EasyEDA:C0805"
@@ -20707,25 +20707,25 @@
 		(dnp no)
 		(uuid "e56347b3-a8f3-4b4e-bdfc-3a7bb1dc2a9b")
 		(property "Reference" "C4"
-			(at 76.2 44.958 90)
+			(at 78.232 44.704 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "100nF"
-			(at 72.898 46.736 90)
+			(at 78.232 46.736 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "EasyEDA:C0805"
@@ -21242,7 +21242,7 @@
 		(dnp no)
 		(uuid "f471ad4d-1f99-4295-a526-cecd114618a4")
 		(property "Reference" "L2"
-			(at 130.81 195.58 0)
+			(at 130.81 194.818 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21252,7 +21252,7 @@
 			)
 		)
 		(property "Value" "470nH"
-			(at 130.81 197.358 0)
+			(at 130.81 196.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

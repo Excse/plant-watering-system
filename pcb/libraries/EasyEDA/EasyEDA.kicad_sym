@@ -19,7 +19,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 0.254 3.048 0)
+			(at 0 3.048 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -212,7 +212,7 @@
 			)
 		)
 		(property "Value" "100uF"
-			(at 0.254 3.048 0)
+			(at 0 3.048 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -405,7 +405,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 3.302 0)
+			(at 0 3.048 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -598,7 +598,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 0.254 3.048 0)
+			(at 0 3.048 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -974,7 +974,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "L"
-			(at 0 4.064 0)
+			(at 0 4.572 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -984,7 +984,7 @@
 			)
 		)
 		(property "Value" "470nH"
-			(at 0.254 2.286 0)
+			(at 0 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
