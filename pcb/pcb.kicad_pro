@@ -274,12 +274,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "power_pin_not_driven|2209800|330200|ccbce092-8db0-48fb-ac8f-e4dfa25e14cd|00000000-0000-0000-0000-000000000000|/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04|/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04|",
-        "Used for programming the ESP32 DevBoard using the given USB-C. Disconnecting this jumper will not power the ESP using the external battery power"
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -783,7 +778,7 @@
         "uuid": "4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
       }
     ],
-    "used_designators": "P1,U1-8,J1-6,R1-23,#FLG1-5,#PWR1-46,D1-7,C1-16,BT1,IC1-2,L1-2,Q1-5,JP1,TP1-11,USB1-2,H1-2,CN1-12",
+    "used_designators": "P1,U1-9,R1-23,#FLG1-5,J1-6,D1-7,#PWR1-46,C1-16,BT1,IC1-2,L1-2,Q1-5,JP1,TP1-11,USB1-2,H1-2,CN1-12",
     "variants": []
   },
   "sheets": [

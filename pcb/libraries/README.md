@@ -14,6 +14,24 @@ KiCad's standard symbols, footprints and 3D models come from the KiCad
 installation. Both project libraries above are committed to this repository.
 Preserve the directory names and capitalization, including `EasyEDA`.
 
+The imported symbols use electrical pin types for ERC, and the schematic's
+embedded symbol definitions must stay synchronized with the library. Power
+inputs/outputs, control inputs, open-drain status outputs and MOSFET gates are
+typed according to their functions. Connectors, discrete diodes, MOSFET
+source/drain terminals and ordinary passive components remain passive.
+
+Some IC pins intentionally remain passive: TPS63802 L1/L2 are switching-stage
+inductor connections. For BQ24075, BAT pin 2 and OUT pin 10 are power outputs;
+their internally common companion pins 3 and 11 are passive, following KiCad's
+standard charger-symbol convention. This represents each common terminal once
+as a power source. Both pins of each pair still need to be connected. TUSB320
+SDA/OUT1 and SCL/OUT2 are bidirectional because they combine I²C and GPIO roles.
+
+Pin-function references: [TPS63802](https://www.ti.com/lit/ds/symlink/tps63802.pdf),
+[BQ24075](https://www.ti.com/lit/ds/symlink/bq24075.pdf),
+[TUSB320LI](https://www.ti.com/lit/ds/symlink/tusb320li.pdf), and
+[PESD5V0S2BT](https://assets.nexperia.com/documents/data-sheet/PESD5V0S2BT.pdf).
+
 ## Add or update a part
 
 - Store project-specific symbols and footprints in `custom/`, preserving the

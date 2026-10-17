@@ -3215,7 +3215,7 @@
 			)
 		)
 		(symbol "AO3400A_1_1"
-			(pin passive line
+			(pin input line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "G"
@@ -3534,7 +3534,7 @@
 			)
 		)
 		(symbol "AO3401A_1_1"
-			(pin passive line
+			(pin input line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "G"
@@ -3706,7 +3706,7 @@
 					(type background)
 				)
 			)
-			(pin power_in line
+			(pin power_out line
 				(at -15.24 3.81 0)
 				(length 5.08)
 				(name "BAT"
@@ -3724,7 +3724,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin passive line
 				(at -15.24 -1.27 0)
 				(length 5.08)
 				(name "BAT"
@@ -3816,7 +3816,7 @@
 			)
 		)
 		(symbol "BQ24075RGTR_1_1"
-			(pin passive line
+			(pin input line
 				(at -15.24 8.89 0)
 				(length 5.08)
 				(name "TS"
@@ -3834,7 +3834,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at 15.24 -8.89 180)
 				(length 5.08)
 				(name "#CE"
@@ -3852,7 +3852,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at 15.24 -3.81 180)
 				(length 5.08)
 				(name "EN2"
@@ -3870,7 +3870,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at 15.24 -1.27 180)
 				(length 5.08)
 				(name "EN1"
@@ -3888,7 +3888,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin open_collector line
 				(at 15.24 3.81 180)
 				(length 5.08)
 				(name "#PGOOD"
@@ -3906,7 +3906,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin open_collector line
 				(at 15.24 8.89 180)
 				(length 5.08)
 				(name "#CHG"
@@ -3924,7 +3924,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_out line
 				(at 15.24 16.51 180)
 				(length 5.08)
 				(name "OUT"
@@ -3960,7 +3960,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -15.24 -11.43 0)
 				(length 5.08)
 				(name "ILIM"
@@ -3978,7 +3978,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -15.24 -6.35 0)
 				(length 5.08)
 				(name "TMR"
@@ -3996,7 +3996,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at 15.24 -6.35 180)
 				(length 5.08)
 				(name "SYSOFF"
@@ -4877,7 +4877,7 @@
 					(type none)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at -5.08 -10.16 90)
 				(length 5.08)
 				(name "1"
@@ -4895,7 +4895,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 5.08 -10.16 90)
 				(length 5.08)
 				(name "2"
@@ -4913,7 +4913,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin passive line
 				(at 0 10.16 270)
 				(length 5.08)
 				(name "3"
@@ -5566,7 +5566,7 @@
 			)
 		)
 		(symbol "SOT-23 2N7002_1_1"
-			(pin passive line
+			(pin input line
 				(at -7.62 0 0)
 				(length 0)
 				(name "G"
@@ -5751,7 +5751,7 @@
 			)
 		)
 		(symbol "TPS63802DLAT_1_1"
-			(pin passive line
+			(pin input line
 				(at -11.43 5.08 0)
 				(length 2.54)
 				(name "EN"
@@ -5769,7 +5769,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -11.43 2.54 0)
 				(length 2.54)
 				(name "MODE"
@@ -5787,7 +5787,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at -11.43 0 0)
 				(length 2.54)
 				(name "AGND"
@@ -5805,7 +5805,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -11.43 -2.54 0)
 				(length 2.54)
 				(name "FB"
@@ -5823,7 +5823,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin open_collector line
 				(at -11.43 -5.08 0)
 				(length 2.54)
 				(name "PG"
@@ -5841,7 +5841,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_out line
 				(at 11.43 -5.08 180)
 				(length 2.54)
 				(name "VOUT"
@@ -5877,7 +5877,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at 11.43 0 180)
 				(length 2.54)
 				(name "GND"
@@ -5913,7 +5913,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at 11.43 5.08 180)
 				(length 2.54)
 				(name "VIN"
@@ -6062,7 +6062,7 @@
 			)
 		)
 		(symbol "TUSB320LIRWBR_1_1"
-			(pin passive line
+			(pin bidirectional line
 				(at -20.32 6.35 0)
 				(length 2.54)
 				(name "CC1"
@@ -6080,7 +6080,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin bidirectional line
 				(at -20.32 3.81 0)
 				(length 2.54)
 				(name "CC2"
@@ -6098,7 +6098,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -20.32 1.27 0)
 				(length 2.54)
 				(name "PORT"
@@ -6116,7 +6116,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -20.32 -1.27 0)
 				(length 2.54)
 				(name "VBUS_DET"
@@ -6134,7 +6134,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -20.32 -3.81 0)
 				(length 2.54)
 				(name "ADDR"
@@ -6152,7 +6152,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin open_collector line
 				(at -20.32 -6.35 0)
 				(length 2.54)
 				(name "INT_N/OUT3"
@@ -6170,7 +6170,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin bidirectional line
 				(at 20.32 -6.35 180)
 				(length 2.54)
 				(name "SDA/OUT1"
@@ -6188,7 +6188,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin bidirectional line
 				(at 20.32 -3.81 180)
 				(length 2.54)
 				(name "SCL/OUT2"
@@ -6206,7 +6206,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin open_collector line
 				(at 20.32 -1.27 180)
 				(length 2.54)
 				(name "ID"
@@ -6224,7 +6224,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at 20.32 1.27 180)
 				(length 2.54)
 				(name "GND"
@@ -6242,7 +6242,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at 20.32 3.81 180)
 				(length 2.54)
 				(name "EN_N"
@@ -6260,7 +6260,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at 20.32 6.35 180)
 				(length 2.54)
 				(name "VDD"
