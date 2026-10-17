@@ -1,5 +1,5 @@
 (sym_lib_table
 	(version 7)
-	(lib (name "pcb") (type "KiCad") (uri "${KIPRJMOD}/libraries/custom/pcb.kicad_sym") (options "") (descr "Project-specific symbols"))
+	(lib (name "custom") (type "KiCad") (uri "${KIPRJMOD}/libraries/custom/custom.kicad_sym") (options "") (descr "Project-specific symbols"))
 	(lib (name "EasyEDA") (type "KiCad") (uri "${KIPRJMOD}/libraries/EasyEDA/EasyEDA.kicad_sym") (options "") (descr "EasyEDA/LCSC component symbols"))
 )

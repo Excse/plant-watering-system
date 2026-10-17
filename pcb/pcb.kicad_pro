@@ -504,10 +504,10 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "pcb"
+      "custom"
     ],
     "pinned_symbol_libs": [
-      "pcb",
+      "custom",
       "EasyEDA2KiCAD",
       "EasyEDA"
     ]

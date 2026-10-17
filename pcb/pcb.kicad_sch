@@ -6811,7 +6811,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "pcb:ESP-32S_USB-C_CH340_DevBoard"
+		(symbol "custom:ESP-32S_USB-C_CH340_DevBoard"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -20531,7 +20531,7 @@
 		)
 	)
 	(symbol
-		(lib_id "pcb:ESP-32S_USB-C_CH340_DevBoard")
+		(lib_id "custom:ESP-32S_USB-C_CH340_DevBoard")
 		(at 223.52 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -20563,7 +20563,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "pcb:ESP-32S_USB-C_CH340_DevBoard"
+		(property "Footprint" "custom:ESP-32S_USB-C_CH340_DevBoard"
 			(at 223.52 54.61 0)
 			(hide yes)
 			(show_name no)

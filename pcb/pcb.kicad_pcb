@@ -12235,7 +12235,7 @@
 			)
 		)
 	)
-	(footprint "pcb:ESP-32S_USB-C_CH340_DevBoard"
+	(footprint "custom:ESP-32S_USB-C_CH340_DevBoard"
 		(layer "F.Cu")
 		(uuid "9d6519e2-7134-4a65-9076-13a94e5fad8b")
 		(at 122.925 79.125)

@@ -9,10 +9,10 @@ register the local libraries using `${KIPRJMOD}` paths, relative to `pcb/`.
 
 | Directory | Contents | KiCad library name |
 | --- | --- | --- |
-| `custom/` | Project-specific `pcb.kicad_sym` and `pcb.pretty/` footprints | `pcb` |
+| `custom/` | Project-specific `custom.kicad_sym` and `custom.pretty/` footprints | `custom` |
 | `easyeda/` | Symbols, footprints, and available 3D models imported from EasyEDA/LCSC | `easyeda2kicad` |
 
-Keep new custom parts in `custom/`. Preserve the `pcb` library name for
+Keep new custom parts in `custom/`. Preserve the `custom` library name for
 project-specific parts. EasyEDA/LCSC components use the `EasyEDA` library;
 their 3D models are stored in
 `${KIPRJMOD}/libraries/EasyEDA/EasyEDA.3dshapes/`.
