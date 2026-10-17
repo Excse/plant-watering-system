@@ -9,7 +9,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 2.286 0)
+			(at 0 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24,7 +24,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -107,8 +107,8 @@
 		)
 		(symbol "0805R 1.5k_0_1"
 			(rectangle
-				(start -2.54 1.02)
-				(end 2.54 -1.02)
+				(start -2.54 1.27)
+				(end 2.54 -1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -165,7 +165,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 2.286 0)
+			(at 0 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -180,7 +180,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -252,8 +252,8 @@
 		)
 		(symbol "0805R 1.62k_0_1"
 			(rectangle
-				(start -2.54 1.016)
-				(end 2.54 -1.024)
+				(start -2.54 1.27)
+				(end 2.54 -1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -325,7 +325,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -408,8 +408,8 @@
 		)
 		(symbol "0805R 100_0_1"
 			(rectangle
-				(start -2.54 1.02)
-				(end 2.54 -1.02)
+				(start -2.54 1.27)
+				(end 2.54 -1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -481,7 +481,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -564,8 +564,8 @@
 		)
 		(symbol "0805R 100k_0_1"
 			(rectangle
-				(start -2.54 1.02)
-				(end 2.54 -1.02)
+				(start -2.54 1.27)
+				(end 2.54 -1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -637,7 +637,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -720,8 +720,8 @@
 		)
 		(symbol "0805R 10k_0_1"
 			(rectangle
-				(start -2.54 1.02)
-				(end 2.54 -1.02)
+				(start -2.54 1.27)
+				(end 2.54 -1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -793,7 +793,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -876,8 +876,8 @@
 		)
 		(symbol "0805R 1k_0_1"
 			(rectangle
-				(start -2.54 1.02)
-				(end 2.54 -1.02)
+				(start -2.54 1.27)
+				(end 2.54 -1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -949,7 +949,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -1032,8 +1032,8 @@
 		)
 		(symbol "0805R 2.2k_0_1"
 			(rectangle
-				(start -2.54 1.02)
-				(end 2.54 -1.02)
+				(start -2.54 1.27)
+				(end 2.54 -1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -1090,7 +1090,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 2.286 0)
+			(at 0 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1105,7 +1105,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -1188,8 +1188,8 @@
 		)
 		(symbol "0805R 47k_0_1"
 			(rectangle
-				(start -2.54 1.02)
-				(end 2.54 -1.02)
+				(start -2.54 1.27)
+				(end 2.54 -1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -1261,7 +1261,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -1406,7 +1406,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -1478,8 +1478,8 @@
 		)
 		(symbol "0805R 56.2k_0_1"
 			(rectangle
-				(start -2.54 1.016)
-				(end 2.54 -1.024)
+				(start -2.54 1.27)
+				(end 2.54 -1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -1536,7 +1536,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "R"
-			(at 0 2.286 0)
+			(at 0 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1551,7 +1551,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -1696,7 +1696,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)

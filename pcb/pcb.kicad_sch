@@ -18,7 +18,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
-				(at 0 2.286 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -33,7 +33,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
@@ -105,8 +105,8 @@
 			)
 			(symbol "0805R 1.62k_1_0_1"
 				(rectangle
-					(start -2.54 1.016)
-					(end 2.54 -1.024)
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -1241,7 +1241,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
-				(at 0 2.286 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1256,7 +1256,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
@@ -1339,8 +1339,8 @@
 			)
 			(symbol "0805R 1.5k_0_1"
 				(rectangle
-					(start -2.54 1.02)
-					(end 2.54 -1.02)
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -1412,7 +1412,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
@@ -1495,8 +1495,8 @@
 			)
 			(symbol "0805R 100_0_1"
 				(rectangle
-					(start -2.54 1.02)
-					(end 2.54 -1.02)
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -1568,7 +1568,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
@@ -1651,8 +1651,8 @@
 			)
 			(symbol "0805R 100k_0_1"
 				(rectangle
-					(start -2.54 1.02)
-					(end 2.54 -1.02)
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -1724,7 +1724,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
@@ -1807,8 +1807,8 @@
 			)
 			(symbol "0805R 10k_0_1"
 				(rectangle
-					(start -2.54 1.02)
-					(end 2.54 -1.02)
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -1880,7 +1880,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
@@ -1963,8 +1963,8 @@
 			)
 			(symbol "0805R 1k_0_1"
 				(rectangle
-					(start -2.54 1.02)
-					(end 2.54 -1.02)
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -2036,7 +2036,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
@@ -2119,8 +2119,8 @@
 			)
 			(symbol "0805R 2.2k_0_1"
 				(rectangle
-					(start -2.54 1.02)
-					(end 2.54 -1.02)
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -2177,7 +2177,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
-				(at 0 2.286 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2192,7 +2192,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
@@ -2275,8 +2275,8 @@
 			)
 			(symbol "0805R 47k_0_1"
 				(rectangle
-					(start -2.54 1.02)
-					(end 2.54 -1.02)
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -2333,7 +2333,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
-				(at 0 5.08 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2348,7 +2348,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
@@ -2493,7 +2493,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
@@ -2565,8 +2565,8 @@
 			)
 			(symbol "0805R 56.2k_0_1"
 				(rectangle
-					(start -2.54 1.016)
-					(end 2.54 -1.024)
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -2623,7 +2623,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
-				(at 0 2.286 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2638,7 +2638,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
@@ -2783,7 +2783,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
@@ -7366,7 +7366,7 @@
 		(uuid "48d993a8-f66f-49cc-b778-a5d934851527")
 	)
 	(junction
-		(at 171.45 49.53)
+		(at 172.72 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "52eb3da5-386d-40ce-b489-044a9010daa6")
@@ -8003,7 +8003,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 50.8) (xy 171.45 50.8)
+			(xy 170.18 50.8) (xy 172.72 50.8)
 		)
 		(stroke
 			(width 0)
@@ -8093,7 +8093,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 80.01) (xy 171.45 58.42)
+			(xy 172.72 80.01) (xy 172.72 58.42)
 		)
 		(stroke
 			(width 0)
@@ -8563,7 +8563,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 80.01) (xy 171.45 80.01)
+			(xy 156.21 80.01) (xy 172.72 80.01)
 		)
 		(stroke
 			(width 0)
@@ -8703,7 +8703,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 50.8) (xy 171.45 49.53)
+			(xy 172.72 50.8) (xy 172.72 49.53)
 		)
 		(stroke
 			(width 0)
@@ -8723,7 +8723,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 48.26) (xy 171.45 49.53)
+			(xy 172.72 48.26) (xy 172.72 49.53)
 		)
 		(stroke
 			(width 0)
@@ -8863,7 +8863,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 58.42) (xy 170.18 58.42)
+			(xy 172.72 58.42) (xy 170.18 58.42)
 		)
 		(stroke
 			(width 0)
@@ -9273,7 +9273,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 48.26) (xy 171.45 48.26)
+			(xy 170.18 48.26) (xy 172.72 48.26)
 		)
 		(stroke
 			(width 0)
@@ -9503,7 +9503,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 49.53) (xy 175.26 49.53)
+			(xy 172.72 49.53) (xy 175.26 49.53)
 		)
 		(stroke
 			(width 0)
@@ -10308,7 +10308,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -11161,25 +11161,23 @@
 		(dnp no)
 		(uuid "14dd19d7-9d35-4b7b-9a61-e787638db328")
 		(property "Reference" "R18"
-			(at 285.75 53.34 90)
+			(at 288.29 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "1k"
-			(at 284.48 52.324 0)
+			(at 284.48 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "EasyEDA:R0805"
@@ -11688,12 +11686,12 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 94.234 125.73 0)
+			(at 93.98 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -11948,7 +11946,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -12408,12 +12406,12 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 152.654 130.81 0)
+			(at 152.4 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -12839,7 +12837,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -13308,25 +13306,23 @@
 		(dnp no)
 		(uuid "4436eac0-da1b-4e78-a10c-a6837efc0733")
 		(property "Reference" "R20"
-			(at 316.23 132.08 90)
+			(at 318.262 132.08 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "10k"
-			(at 314.96 130.302 0)
+			(at 314.96 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "EasyEDA:R0805"
@@ -14068,12 +14064,12 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 152.654 125.73 0)
+			(at 152.4 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -14718,25 +14714,23 @@
 		(dnp no)
 		(uuid "5ecd4dca-dd2f-423a-9b91-8098c0f28a1b")
 		(property "Reference" "R3"
-			(at 77.47 139.7 90)
+			(at 78.994 139.7 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "100k"
-			(at 76.2 137.414 0)
+			(at 76.2 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "EasyEDA:R0805"
@@ -14847,7 +14841,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -15139,25 +15133,23 @@
 		(dnp no)
 		(uuid "75e7b9c6-6a6a-4449-a98b-3e29e841adf5")
 		(property "Reference" "R17"
-			(at 285.75 40.64 90)
+			(at 288.29 40.64 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "100k"
-			(at 284.48 38.354 0)
+			(at 284.48 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "EasyEDA:R0805"
@@ -15268,7 +15260,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -15559,7 +15551,7 @@
 		(dnp no)
 		(uuid "79188d53-776b-406b-88df-151ab53f8eca")
 		(property "Reference" "R6"
-			(at 93.98 138.938 0)
+			(at 93.98 138.684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15574,7 +15566,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -15671,25 +15663,23 @@
 		(dnp no)
 		(uuid "7d13f255-572f-42ce-b4ba-af3df291bc71")
 		(property "Reference" "R2"
-			(at 76.454 205.74 90)
+			(at 77.724 205.74 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "91k"
-			(at 74.93 203.962 0)
+			(at 74.93 205.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "EasyEDA:R0805"
@@ -15943,25 +15933,23 @@
 		(dnp no)
 		(uuid "7ec013b2-5bc6-4d58-b900-f4528c1053d6")
 		(property "Reference" "R15"
-			(at 224.536 127 90)
+			(at 226.822 127 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "100k"
-			(at 223.52 124.714 0)
+			(at 223.52 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "EasyEDA:R0805"
@@ -16793,25 +16781,23 @@
 		(dnp no)
 		(uuid "8e74e315-7421-4d79-b123-10fafa8e67f5")
 		(property "Reference" "R1"
-			(at 76.454 193.04 90)
+			(at 77.724 193.04 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "511k"
-			(at 74.93 190.754 0)
+			(at 74.93 193.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "EasyEDA:R0805"
@@ -17374,7 +17360,7 @@
 		(dnp no)
 		(uuid "a0eb2b97-b86b-46a4-8916-667d5bafe5db")
 		(property "Reference" "R19"
-			(at 307.34 123.698 0)
+			(at 307.34 123.444 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17389,7 +17375,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -17496,7 +17482,7 @@
 			)
 		)
 		(property "Value" "Soil_Drain"
-			(at 217.678 112.776 0)
+			(at 218.186 112.776 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18130,25 +18116,23 @@
 		(dnp no)
 		(uuid "b7661734-1ba2-460a-a8ef-b57f644d749a")
 		(property "Reference" "R4"
-			(at 77.47 154.94 90)
+			(at 78.994 154.94 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "100k"
-			(at 76.2 152.654 0)
+			(at 76.2 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "EasyEDA:R0805"
@@ -19589,7 +19573,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
@@ -19995,7 +19979,7 @@
 		(dnp no)
 		(uuid "f59923b5-33d3-442f-8920-0cc931136b21")
 		(property "Reference" "R14"
-			(at 217.17 118.618 0)
+			(at 217.17 118.364 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20010,7 +19994,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 			)
 		)
