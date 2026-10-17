@@ -8,6 +8,8 @@ The firmware connects to Wi-Fi and MQTT and exposes a soil moisture sensor on
 and calibrated percentages over serial and publishes the percentage over MQTT.
 Pump control is still planned.
 
+[Setup](#1-open-the-project) · [Wiring](#2-wire-the-moisture-sensor) · [Calibration](#read-and-calibrate-the-moisture-sensor) · [MQTT topics](#6-test-moisture-discovery) · [Troubleshooting](#troubleshooting)
+
 ## What you need
 
 - An ESP32 development board compatible with the `esp32dev` target and a USB data cable.
@@ -49,7 +51,24 @@ run may take a while to download and install dependencies. See the
 [PlatformIO ESP-IDF guide](https://docs.platformio.org/en/latest/frameworks/espidf.html)
 for framework setup details.
 
-## 2. Configure Wi-Fi and MQTT
+## 2. Wire the moisture sensor
+
+Disconnect power before wiring the sensor.
+
+| Sensor connection | ESP32 connection |
+| --- | --- |
+| Analog output (AO) | D34 / GPIO 34 |
+| Ground (GND) | GND |
+| Power (VCC) | 3.3 V if supported by the sensor; otherwise follow its specifications and ensure AO is safe for the ESP32 |
+
+Never feed 5 V into GPIO 34. Use the analog output; a digital threshold output
+(DO) cannot measure a percentage.
+
+GPIO 34 is ADC1 channel 6 on this ESP32. The driver uses 12-bit readings and
+12 dB attenuation. See [`src/moisture_sensor.cpp`](src/moisture_sensor.cpp)
+for the sampling and conversion implementation.
+
+## 3. Configure Wi-Fi and MQTT
 
 Open the interactive ESP-IDF configuration menu through PlatformIO:
 
@@ -59,13 +78,13 @@ pio run -e esp32dev -t menuconfig
 
 Select **Plant Watering System Configuration** and fill in these settings:
 
-| Setting         | What to enter                                                                                                       |
-| --------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Wi-Fi SSID      | Your wireless network name.                                                                                         |
-| Wi-Fi password  | Your wireless network password.                                                                                     |
+| Setting | What to enter |
+| --- | --- |
+| Wi-Fi SSID | Your wireless network name. |
+| Wi-Fi password | Your wireless network password. |
 | MQTT broker URI | Your broker's address, for example `mqtt://192.168.1.100:1883`. Replace the existing default with your own address. |
-| MQTT username   | Your broker username, or leave empty if authentication is not required.                                             |
-| MQTT password   | Your broker password, or leave empty if authentication is not required.                                             |
+| MQTT username | Your broker username, or leave empty if authentication is not required. |
+| MQTT password | Your broker password, or leave empty if authentication is not required. |
 
 Use the arrow keys to navigate and Enter to open or edit an item. Use the menu's
 **Save** action, keep the suggested configuration filename, then **Exit**.
@@ -79,7 +98,7 @@ The configuration options are defined in
 contains your credentials, so keep it local. Settings are compiled into the
 firmware: after changing them, build and upload again.
 
-## 3. Build and flash
+## 4. Build and flash
 
 Build the firmware:
 
@@ -104,7 +123,7 @@ pio run -e esp32dev -t upload --upload-port /dev/ttyUSB0
 Replace `/dev/ttyUSB0` with your board's port, such as `/dev/ttyACM0` on Linux,
 `/dev/cu.usbserial-...` on macOS, or `COM3` on Windows.
 
-## 4. Check the serial output
+## 5. Check the serial output
 
 Start the serial monitor at the baud rate configured in `platformio.ini`:
 
@@ -132,28 +151,16 @@ MQTT_EVENT_CONNECTED
 
 The firmware waits for Wi-Fi before starting MQTT. Exit the monitor with **Ctrl+C**.
 
-## 5. Test moisture discovery
+## 6. Test moisture discovery
 
 With Home Assistant's MQTT integration connected to the same broker and discovery
 enabled, the firmware publishes discovery information for a **PWS pws_<MAC>**
 device with a **Soil moisture** sensor displaying the calibrated percentage.
 
-Moisture discovery is built at startup using rhadar's `DeviceBuilder`,
-`OriginBuilder`, `SensorBuilder`, and `MessageBuilder`.
-
-Existing moisture entities migrate to device discovery with the same unique ID
-and device identifier. On each MQTT connection, the firmware retains
-`{"migrate_discovery":true}` on the previous sensor discovery topic before
-publishing the new device configuration. The marker remains available if Home
-Assistant is offline during the update. After confirming migration in Home
-Assistant's logs, you can clear the old retained marker with an empty retained
-payload; the firmware will republish it on its next connection. See
-[Home Assistant's discovery migration guide](https://www.home-assistant.io/integrations/mqtt/#migration-from-single-component-to-device-discovery).
-
 You can also test directly with any MQTT client:
 
-| Topic                                         | Purpose / payload                                                                                                  |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Topic | Purpose / payload |
+| --- | --- |
 | `pws_<MAC>/moisture/state` | Retained integer percentage (`0`–`100`), or `None` when unknown. |
 | `pws_<MAC>/status` | Availability: `online`; the broker publishes the `offline` last will when it detects a lost connection. |
 | `homeassistant/device/pws_<MAC>/config` | Retained soil moisture device discovery configuration generated by rhadar. |
@@ -170,17 +177,21 @@ restart. Missing or invalid calibration and failed ADC reads are reported as
 `None`, which Home Assistant displays as **Unknown** according to its
 [MQTT sensor documentation](https://www.home-assistant.io/integrations/sensor.mqtt/#state_topic).
 
+### Migrating an existing Home Assistant entity
+
+Existing moisture entities migrate to device discovery with the same unique ID
+and device identifier. On each MQTT connection, the firmware retains
+`{"migrate_discovery":true}` on the previous sensor discovery topic before
+publishing the new device configuration. The marker remains available if Home
+Assistant is offline during the update. After confirming migration in Home
+Assistant's logs, you can clear the old retained marker with an empty retained
+payload; the firmware will republish it on its next connection. See
+[Home Assistant's discovery migration guide](https://www.home-assistant.io/integrations/mqtt/#migration-from-single-component-to-device-discovery).
+
 ## Read and calibrate the moisture sensor
 
-Connect the sensor's **analog output (AO)** to **D34 / GPIO 34** and connect
-its ground to ESP32 GND. Power it according to its specifications; use 3.3 V
-if supported, and ensure its analog output is safe for the ESP32 (never feed
-5 V into GPIO 34). A digital threshold output (DO) cannot measure a percentage.
-
-GPIO 34 is ADC1 channel 6 on this ESP32. The driver uses 12-bit readings and
-12 dB attenuation; ADC1 works alongside Wi-Fi. See Espressif's
-[ADC documentation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/adc.html)
-and [oneshot driver guide](https://docs.espressif.com/projects/esp-idf/en/v5.4/esp32/api-reference/peripherals/adc_oneshot.html).
+Wire the sensor as described in [step 2](#2-wire-the-moisture-sensor).
+Calibration uses two measurements from your own sensor and soil.
 
 Build, upload, and open the serial monitor:
 
@@ -225,6 +236,17 @@ an absolute volumetric water content measurement. Raw and filtered readings appe
 in the serial log; the calibrated percentage is also published to MQTT and shown
 by the discovered Home Assistant soil moisture sensor.
 
+## Source layout
+
+| File or directory | Responsibility |
+| --- | --- |
+| [`src/main.cpp`](src/main.cpp) | Startup, Wi-Fi reconnects, MQTT connection and state publishing |
+| [`src/moisture_sensor.cpp`](src/moisture_sensor.cpp) | ADC sampling, smoothing and calibration |
+| [`src/mqtt_identity.cpp`](src/mqtt_identity.cpp) | MAC-based device identity, MQTT topics and discovery payload |
+| [`src/Kconfig.projbuild`](src/Kconfig.projbuild) | Wi-Fi, broker and calibration settings exposed in menuconfig |
+| [`src/CMakeLists.txt`](src/CMakeLists.txt) | ESP-IDF component and rhadar integration |
+| [`lib/rhadar/`](lib/rhadar/) | Home Assistant MQTT discovery library, tracked as a Git submodule |
+
 ## Developing in VS Code
 
 After the first build, run **PlatformIO: Rebuild C/C++ Project Index**. Open
@@ -238,15 +260,17 @@ changing dependencies or the build environment.
 
 ## Troubleshooting
 
-| Problem                                     | What to check                                                                                                                                                                                                                                              |
-| ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `pio` is not found                          | Open a PlatformIO Core CLI terminal in VS Code, or make sure your PlatformIO Core installation is on `PATH`.                                                                                                                                               |
-| No serial port appears                      | Check the USB data cable, board connection, and USB serial driver. For WSL or remote development, check USB forwarding to that environment.                                                                                                                |
-| Upload fails or the port is busy            | Close other serial monitors, confirm the port with `pio device list`, and check your user's serial port permissions. If the board does not enter the bootloader automatically, hold BOOT while the uploader connects, then release it once writing starts. |
-| Wi-Fi keeps reconnecting                    | Check the SSID and password in `menuconfig`, network availability, and signal strength. Build and upload after changing settings.                                                                                                                          |
-| Wi-Fi works but MQTT does not connect       | Check the broker URI, credentials, broker listener, and firewall. The ESP32 must be able to reach the broker's port.                                                                                                                                       |
-| Home Assistant does not discover the device | Confirm `MQTT_EVENT_CONNECTED`, verify both use the same broker, and check that MQTT discovery is enabled with the `homeassistant` prefix.                                                                                                                 |
-| Includes or completion are missing          | Build once, run **PlatformIO: Rebuild C/C++ Project Index**, then **C/C++: Reset IntelliSense Database** if needed. Check that `main.cpp` uses C++ language mode and the C/C++ configuration is PlatformIO.                                                    |
+| Problem | What to check |
+| --- | --- |
+| Moisture is `None` / Unknown | Set both calibration endpoints in menuconfig to different values between 0 and 4095, then rebuild and upload. Check serial logs for ADC errors. |
+| Build cannot find rhadar | Run `git submodule update --init --recursive` from the repository root. The submodule URL uses GitHub SSH access. |
+| `pio` is not found | Open a PlatformIO Core CLI terminal in VS Code, or make sure your PlatformIO Core installation is on `PATH`. |
+| No serial port appears | Check the USB data cable, board connection, and USB serial driver. For WSL or remote development, check USB forwarding to that environment. |
+| Upload fails or the port is busy | Close other serial monitors, confirm the port with `pio device list`, and check your user's serial port permissions. If the board does not enter the bootloader automatically, hold BOOT while the uploader connects, then release it once writing starts. |
+| Wi-Fi keeps reconnecting | Check the SSID and password in `menuconfig`, network availability, and signal strength. Build and upload after changing settings. |
+| Wi-Fi works but MQTT does not connect | Check the broker URI, credentials, broker listener, and firewall. The ESP32 must be able to reach the broker's port. |
+| Home Assistant does not discover the device | Confirm `MQTT_EVENT_CONNECTED`, verify both use the same broker, and check that MQTT discovery is enabled with the `homeassistant` prefix. |
+| Includes or completion are missing | Build once, run **PlatformIO: Rebuild C/C++ Project Index**, then **C/C++: Reset IntelliSense Database** if needed. Check that `main.cpp` uses C++ language mode and the C/C++ configuration is PlatformIO. |
 
 ## VS Code tasks
 
@@ -266,11 +290,14 @@ update the firmware checkout from the `firmware` directory with
 `git -C lib/rhadar fetch origin` and `git -C lib/rhadar checkout <commit>`, then
 commit the new submodule pointer in the parent repository.
 
-Run the library's host tests independently of the firmware (requires CMake and a
+Run the library's host tests independently of the firmware (requires CMake 3.24 or newer and a
 C++23-capable host compiler). Run these commands from the `firmware` directory:
 
 ```sh
-cmake -S lib/rhadar -B /tmp/rhadar-build
-cmake --build /tmp/rhadar-build
-ctest --test-dir /tmp/rhadar-build --output-on-failure
+cmake -S lib/rhadar -B build/rhadar-host -DRHADAR_BUILD_TESTING=ON
+cmake --build build/rhadar-host
+ctest --test-dir build/rhadar-host --output-on-failure
 ```
+
+These tests cover the discovery library. The firmware has no project tests in
+`test/` yet; sensor, network and upload behavior require an ESP32.

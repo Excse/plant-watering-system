@@ -1,10 +1,21 @@
 # 🌱 Smart Plant Pot
 
-A self-contained plant pot that waters plants automatically and connects to Home Assistant over Wi-Fi. The project brings together custom ESP32 firmware, a custom PCB, and purpose-designed pots with the water reservoir, sensors, pump, and electronics inside.
+An ESP32-based plant pot project combining soil moisture sensing, Home Assistant integration, a custom PCB, and a planned automatic watering system with an internal reservoir.
 
-[Development checklist](#development-checklist) · [Getting started](#getting-started) · [Firmware guide](firmware/README.md) · [Schematic](#schematic) · [PCB previews](#pcb-previews)
+[Getting started](#getting-started) · [Firmware guide](firmware/README.md) · [Hardware guide](docs/README.md) · [Development checklist](#development-checklist) · [PCB previews](#pcb-previews)
 
 > **Work in progress:** firmware and electronics are being prototyped. Soil moisture readings and MQTT discovery are implemented; the complete automatic watering pot is still under development.
+
+## Current status
+
+| Area | Available today | Still planned |
+| --- | --- | --- |
+| Firmware | GPIO 34 moisture readings, calibration, Wi-Fi, MQTT state and Home Assistant discovery | Pump control, reservoir sensing, automatic watering and manual watering commands |
+| Electronics | Editable KiCad schematic, board layout and generated previews | Prototype assembly and validation |
+| Pot | Integrated reservoir and electronics concept | Printable design, assembly instructions and plant trials |
+
+The repository currently supports testing moisture sensing on an ESP32 development
+board. Pot CAD files and a complete assembly guide are not included yet.
 
 ## The plant pot
 
@@ -17,6 +28,24 @@ The pot is intended to take care of routine watering while keeping everything in
 - A custom PCB and printable pot bring the electronics and water system together, with access for refilling and maintenance.
 
 Home Assistant will provide moisture and reservoir readings, watering status, and manual watering controls. Automatic watering should run on the pot itself; its behavior during network outages is part of the firmware design.
+
+## Getting started
+
+To try the current firmware, you need an ESP32 development board compatible with
+PlatformIO's `esp32dev` target, an analog soil moisture sensor, PlatformIO, Wi-Fi,
+and an MQTT broker. Home Assistant is optional for initial testing. The
+[firmware guide](firmware/README.md) lists the requirements and setup instructions.
+
+Clone the repository with its library submodule. The commands below use GitHub SSH access, including for the `rhadar` submodule:
+
+```sh
+git clone --recurse-submodules git@github.com:Excse/plant-watering-system.git
+cd plant-watering-system/firmware
+```
+
+For an existing checkout, run `git submodule update --init --recursive` from the repository root.
+
+Follow the [firmware guide](firmware/README.md) to wire the sensor, configure Wi-Fi and MQTT, flash the ESP32, calibrate readings, and connect Home Assistant.
 
 ## Development checklist
 
@@ -54,31 +83,13 @@ Start by testing the sensors and pump together, then use that prototype to finis
 - [ ] Run an extended plant trial and refine calibration and watering settings.
 - [ ] Document the parts, assembly, firmware setup, and maintenance.
 
-## Getting started
-
-To try the current firmware, you need an ESP32 development board compatible with
-PlatformIO's `esp32dev` target, an analog soil moisture sensor, PlatformIO, Wi-Fi,
-and an MQTT broker. Home Assistant is optional for initial testing. The
-[firmware guide](firmware/README.md) lists the requirements and setup instructions.
-
-Clone the repository with its library submodule. The commands below use GitHub SSH access, including for the `rhadar` submodule:
-
-```sh
-git clone --recurse-submodules git@github.com:Excse/plant-watering-system.git
-cd plant-watering-system/firmware
-```
-
-For an existing checkout, run `git submodule update --init --recursive` from the repository root.
-
-Follow the [firmware guide](firmware/README.md) to wire the sensor, configure Wi-Fi and MQTT, flash the ESP32, calibrate readings, and connect Home Assistant.
-
 ## Schematic
 
 [![Plant watering system schematic](docs/schematic/pcb.svg)](docs/schematic/pcb.svg)
 
 *Click the preview to open the full-size SVG.*
 
-Open [pcb/pcb.kicad_pro](pcb/pcb.kicad_pro) in KiCad to explore the editable design. GitHub Actions keeps the preview updated when the schematic or project files change on the default branch.
+Open [pcb/pcb.kicad_pro](pcb/pcb.kicad_pro) in KiCad 10 to explore the editable design. GitHub Actions keeps the preview updated when the schematic or project files change on the default branch.
 
 Local symbols, footprints, and 3D models are organized in [pcb/libraries/](pcb/libraries/README.md).
 
