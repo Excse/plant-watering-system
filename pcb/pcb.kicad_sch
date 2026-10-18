@@ -5,7 +5,7 @@
 	(uuid "4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04")
 	(paper "A3")
 	(title_block
-		(title "USB-C/Battery powered ESP32 PSW (Plant Watering System)")
+		(title "USB-C/Battery powered ESP32 PWS (Plant Watering System)")
 		(date "2026-10-03")
 		(rev "1.0")
 		(company "Arkoi Systems")
@@ -157,6 +157,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "EasyEDA:0805C 100nF"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -350,6 +353,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "EasyEDA:0805C 100uF"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -543,6 +549,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "EasyEDA:0805C 10uF"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -736,6 +745,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "EasyEDA:0805C 22uF"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -929,6 +941,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "EasyEDA:0805C 4.7uF"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1122,6 +1137,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "EasyEDA:0805R 1.5k"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1278,6 +1296,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "EasyEDA:0805R 100"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1434,6 +1455,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "EasyEDA:0805R 100k"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1590,6 +1614,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "EasyEDA:0805R 10k"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1746,6 +1773,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "EasyEDA:0805R 1k"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1902,6 +1932,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "EasyEDA:0805R 2.2k"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2058,6 +2091,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "EasyEDA:0805R 47k"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2214,6 +2250,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "EasyEDA:0805R 511k"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2359,6 +2398,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "EasyEDA:0805R 56.2k"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2504,6 +2546,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "EasyEDA:0805R 900k"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2649,6 +2694,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "EasyEDA:0805R 91k"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2794,6 +2842,9 @@
 			(embedded_fonts no)
 		)
 		(symbol "EasyEDA:0806L 470nH"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -8062,8 +8113,8 @@
 		(start 16.51 19.05)
 		(end 97.79 88.9)
 		(stroke
-			(width 0.3048)
-			(type dash_dot)
+			(width 0.1524)
+			(type dash)
 			(color 0 0 0 1)
 		)
 		(fill
@@ -8075,8 +8126,8 @@
 		(start 16.51 168.91)
 		(end 182.88 217.17)
 		(stroke
-			(width 0.3048)
-			(type dash_dot)
+			(width 0.1524)
+			(type dash)
 			(color 0 0 0 1)
 		)
 		(fill
@@ -8088,8 +8139,8 @@
 		(start 186.69 95.25)
 		(end 270.51 148.59)
 		(stroke
-			(width 0.3048)
-			(type dash_dot)
+			(width 0.1524)
+			(type dash)
 			(color 0 0 0 1)
 		)
 		(fill
@@ -8101,8 +8152,8 @@
 		(start 101.6 19.05)
 		(end 182.88 88.9)
 		(stroke
-			(width 0.3048)
-			(type dash_dot)
+			(width 0.1524)
+			(type dash)
 			(color 0 0 0 1)
 		)
 		(fill
@@ -8114,8 +8165,8 @@
 		(start 186.69 19.05)
 		(end 243.84 88.9)
 		(stroke
-			(width 0.3048)
-			(type dash_dot)
+			(width 0.1524)
+			(type dash)
 			(color 0 0 0 1)
 		)
 		(fill
@@ -8127,8 +8178,8 @@
 		(start 275.59 95.25)
 		(end 361.95 148.59)
 		(stroke
-			(width 0.3048)
-			(type dash_dot)
+			(width 0.1524)
+			(type dash)
 			(color 0 0 0 1)
 		)
 		(fill
@@ -8137,11 +8188,11 @@
 		(uuid "a0259141-115a-44b4-9ee6-e6b47412ca56")
 	)
 	(rectangle
-		(start 247.65 20.32)
+		(start 247.65 19.05)
 		(end 292.1 88.9)
 		(stroke
-			(width 0.3048)
-			(type dash_dot)
+			(width 0.1524)
+			(type dash)
 			(color 0 0 0 1)
 		)
 		(fill
@@ -8150,11 +8201,11 @@
 		(uuid "c19974af-691c-4189-b15c-d8b13300cdae")
 	)
 	(rectangle
-		(start 16.51 94.615)
+		(start 16.51 95.25)
 		(end 182.88 162.56)
 		(stroke
-			(width 0.3048)
-			(type dash_dot)
+			(width 0.1524)
+			(type dash)
 			(color 0 0 0 1)
 		)
 		(fill
@@ -8162,116 +8213,111 @@
 		)
 		(uuid "d6987e56-abc8-4e00-a5b6-7c8b994392da")
 	)
-	(rectangle
-		(start 19.05 97.536)
-		(end 53.34 105.156)
-		(stroke
-			(width 0)
-			(type solid)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 0 15 0.4)
-		)
-		(uuid "f44becda-9f18-4873-83ad-95a2e3475950")
-	)
-	(text "USB-C Power Input"
+	(text "USB-C power input"
 		(exclude_from_sim no)
-		(at 30.226 17.272 0)
+		(at 16.51 16.51 0)
 		(effects
 			(font
 				(size 1.905 1.905)
 				(color 0 0 0 1)
 			)
+			(justify left)
 		)
 		(uuid "1831aecb-c312-461b-aaa5-5ace98902cab")
 	)
-	(text "Water Level Sensor\n"
+	(text "Water level input"
 		(exclude_from_sim no)
-		(at 261.112 17.272 0)
+		(at 247.65 16.51 0)
 		(effects
 			(font
 				(size 1.905 1.905)
 				(color 0 0 0 1)
 			)
+			(justify left)
 		)
 		(uuid "4ae9b89c-529c-4fec-a790-4884b912326c")
 	)
-	(text "USB-C CC Amp Detection/Selection"
+	(text "USB-C current detection"
 		(exclude_from_sim no)
-		(at 128.524 17.272 0)
+		(at 101.6 16.51 0)
 		(effects
 			(font
 				(size 1.905 1.905)
 				(color 0 0 0 1)
 			)
+			(justify left)
 		)
 		(uuid "80820443-dab9-45d5-a7bd-53df84e9df18")
 	)
-	(text "Battery: protected 1S LiPo \n3.7 V nominal / 4.2 V max"
+	(text "Battery: protected 1S LiPo\n3.7 V nominal / 4.2 V maximum"
 		(exclude_from_sim no)
-		(at 36.83 101.6 0)
+		(at 21.59 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(color 255 255 255 1)
+				(color 0 0 0 1)
 			)
+			(justify left)
 		)
 		(uuid "88496196-3e65-417d-89aa-ab73b070c915")
 	)
-	(text "Soil Sensor\n"
+	(text "Soil sensor interface"
 		(exclude_from_sim no)
-		(at 194.564 93.472 0)
+		(at 186.69 92.71 0)
 		(effects
 			(font
 				(size 1.905 1.905)
 				(color 0 0 0 1)
 			)
+			(justify left)
 		)
 		(uuid "9cd4f258-70e2-4fac-8469-f353b6566b6d")
 	)
-	(text "ESP32 Integration"
+	(text "ESP32 DevBoard interface"
 		(exclude_from_sim no)
-		(at 199.136 17.272 0)
+		(at 186.69 16.51 0)
 		(effects
 			(font
 				(size 1.905 1.905)
 				(color 0 0 0 1)
 			)
+			(justify left)
 		)
 		(uuid "b4564c0d-6ae7-4cde-95ae-06b570f24d6e")
 	)
-	(text "VIMM to +3.3V Buck-Boost"
+	(text "3.3 V buck-boost regulator"
 		(exclude_from_sim no)
-		(at 36.068 167.132 0)
+		(at 16.51 166.37 0)
 		(effects
 			(font
 				(size 1.905 1.905)
 				(color 0 0 0 1)
 			)
+			(justify left)
 		)
 		(uuid "bea1d74b-6ff8-4229-9df8-272e3c592ebd")
 	)
-	(text "Water Pump\n"
+	(text "Pump driver"
 		(exclude_from_sim no)
-		(at 283.718 93.472 0)
+		(at 275.59 92.71 0)
 		(effects
 			(font
 				(size 1.905 1.905)
 				(color 0 0 0 1)
 			)
+			(justify left)
 		)
 		(uuid "decec08d-4bf5-4899-bdae-9f4da25fa4ab")
 	)
-	(text "USB-C / LiPo Battery VIMM output"
+	(text "Battery charger / power path"
 		(exclude_from_sim no)
-		(at 41.656 92.456 0)
+		(at 16.51 92.71 0)
 		(effects
 			(font
 				(size 1.905 1.905)
 				(color 0 0 0 1)
 			)
+			(justify left)
 		)
 		(uuid "ff78937b-7002-4e4f-96fb-42cb7f1ee680")
 	)
@@ -12219,7 +12265,7 @@
 		(dnp no)
 		(uuid "14dd19d7-9d35-4b7b-9a61-e787638db328")
 		(property "Reference" "R18"
-			(at 281.94 55.88 90)
+			(at 281.94 54.61 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12229,12 +12275,12 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 278.13 55.88 0)
+			(at 281.94 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -13992,7 +14038,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 110.49 211.836 90)
+			(at 110.49 211.836 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14135,7 +14181,7 @@
 		(dnp no)
 		(uuid "4436eac0-da1b-4e78-a10c-a6837efc0733")
 		(property "Reference" "R20"
-			(at 309.372 134.62 90)
+			(at 309.88 133.35 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14145,12 +14191,12 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 306.07 134.62 0)
+			(at 309.88 135.89 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -15120,8 +15166,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 215.9 30.48 90)
-			(hide yes)
+			(at 213.36 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15421,7 +15466,7 @@
 		(dnp no)
 		(uuid "5ecd4dca-dd2f-423a-9b91-8098c0f28a1b")
 		(property "Reference" "R3"
-			(at 73.914 133.35 90)
+			(at 74.93 132.08 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15431,12 +15476,12 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 71.12 133.35 0)
+			(at 74.93 134.62 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -16293,7 +16338,7 @@
 		(dnp no)
 		(uuid "75e7b9c6-6a6a-4449-a98b-3e29e841adf5")
 		(property "Reference" "R17"
-			(at 281.94 43.18 90)
+			(at 281.94 41.91 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16303,12 +16348,12 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 278.13 43.18 0)
+			(at 281.94 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -16746,7 +16791,7 @@
 		(dnp no)
 		(uuid "7d13f255-572f-42ce-b4ba-af3df291bc71")
 		(property "Reference" "R2"
-			(at 72.644 200.66 90)
+			(at 66.04 199.39 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16756,12 +16801,12 @@
 			)
 		)
 		(property "Value" "91k"
-			(at 69.85 200.66 0)
+			(at 66.04 201.93 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -17016,7 +17061,7 @@
 		(dnp no)
 		(uuid "7ec013b2-5bc6-4d58-b900-f4528c1053d6")
 		(property "Reference" "R15"
-			(at 217.932 134.62 90)
+			(at 218.44 133.35 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17026,12 +17071,12 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 214.63 134.62 0)
+			(at 218.44 135.89 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -17695,7 +17740,7 @@
 		(dnp no)
 		(uuid "8e74e315-7421-4d79-b123-10fafa8e67f5")
 		(property "Reference" "R1"
-			(at 72.644 187.96 90)
+			(at 66.04 186.69 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17705,12 +17750,12 @@
 			)
 		)
 		(property "Value" "511k"
-			(at 69.85 187.96 0)
+			(at 66.04 189.23 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -19357,7 +19402,7 @@
 		(dnp no)
 		(uuid "b7661734-1ba2-460a-a8ef-b57f644d749a")
 		(property "Reference" "R4"
-			(at 73.914 148.59 90)
+			(at 74.93 147.32 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19367,12 +19412,12 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 71.12 148.59 0)
+			(at 74.93 149.86 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -21615,7 +21660,7 @@
 	)
 	(group ""
 		(uuid "d7f0e1f9-d9f6-4c67-b3db-7f446257b6cb")
-		(members "88496196-3e65-417d-89aa-ab73b070c915" "f44becda-9f18-4873-83ad-95a2e3475950")
+		(members "88496196-3e65-417d-89aa-ab73b070c915")
 	)
 	(sheet_instances
 		(path "/"

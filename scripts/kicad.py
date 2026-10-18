@@ -38,7 +38,8 @@ def normalize_svg(path, title, background=False):
         rect = (f'<rect x="{x}" y="{y}" width="{width}" height="{height}" '
                 'fill="#111827" />')
         svg = svg.replace("</desc>", f"</desc>\n{rect}", 1)
-    path.write_text(svg)
+    # KiCad emits trailing spaces in SVG markup and multiline style attributes.
+    path.write_text(re.sub(r"[ \t]+$", "", svg, flags=re.MULTILINE))
 
 
 def previews():

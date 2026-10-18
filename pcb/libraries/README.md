@@ -20,6 +20,10 @@ inputs/outputs, control inputs, open-drain status outputs and MOSFET gates are
 typed according to their functions. Connectors, discrete diodes, MOSFET
 source/drain terminals and ordinary passive components remain passive.
 
+Resistor, capacitor and inductor pin numbers are hidden in the schematic and
+matching local symbols to keep the drawing readable. Their numbered pins remain
+available for netlists and PCB pad mapping.
+
 Some IC pins intentionally remain passive: TPS63802 L1/L2 are switching-stage
 inductor connections. For BQ24075, BAT pin 2 and OUT pin 10 are power outputs;
 their internally common companion pins 3 and 11 are passive, following KiCad's
