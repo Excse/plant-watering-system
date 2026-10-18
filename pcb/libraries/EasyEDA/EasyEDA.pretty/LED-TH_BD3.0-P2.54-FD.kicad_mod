@@ -21,7 +21,7 @@
 	(fp_arc (start -0.00 0.00) (end 1.81 1.13) (angle 130.65) (layer F.SilkS) (width 0.25))
 	(fp_line (start 1.64 -1.06) (end 1.64 1.06) (layer F.CrtYd) (width 0.05))
 	(fp_line (start 1.64 1.06) (end 1.64 -1.06) (layer F.CrtYd) (width 0.05))
-	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/LED-TH-3mm_R.wrl"
+	(model "${KIPRJMOD}/libraries/EasyEDA/EasyEDA.3dshapes/LED-TH-3mm_R.wrl"
 		(offset (xyz 0.000 0.000 0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))

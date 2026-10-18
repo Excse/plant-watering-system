@@ -24,7 +24,7 @@
 	(fp_line (start 2.16 1.30) (end -2.16 1.30) (layer F.CrtYd) (width 0.05))
 	(fp_poly (pts (xy -2.520010 -1.502410) (xy -2.521331 -1.095807) (xy -2.980868 -1.100328) (xy -2.977210 -1.502410) (xy -2.520010 -1.502410)) (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS"))
 	(fp_poly (pts (xy -2.511781 1.095959) (xy -2.513101 1.502562) (xy -2.972638 1.498041) (xy -2.968981 1.095959) (xy -2.511781 1.095959)) (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS"))
-	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/SMA_L4.3-W2.6-LS5.2-RD.wrl"
+	(model "${KIPRJMOD}/libraries/EasyEDA/EasyEDA.3dshapes/SMA_L4.3-W2.6-LS5.2-RD.wrl"
 		(offset (xyz 0.000 0.000 0.000))
 		(scale (xyz 1 1 1))
 		(rotate (xyz 0 0 0))
