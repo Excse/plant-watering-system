@@ -1313,7 +1313,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_100R-100R-1_C105577.html"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C17408.html"
 			(at 0 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1335,7 +1335,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO(国巨)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 -12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1346,7 +1346,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0805FR-07100RL"
+		(property "MPN" "0805W8F1000T5E"
 			(at 0 -15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1357,7 +1357,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C105577"
+		(property "LCSC Part" "C17408"
 			(at 0 -17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1784,7 +1784,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_1KR-1000-1_C95781.html"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C17513.html"
 			(at 0 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1806,7 +1806,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO(国巨)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 -12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1817,7 +1817,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0805FR-071KL"
+		(property "MPN" "0805W8F1001T5E"
 			(at 0 -15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1828,7 +1828,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C95781"
+		(property "LCSC Part" "C17513"
 			(at 0 -17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2217,7 +2217,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "0805R 511k"
+	(symbol "0805R 510k"
 		(pin_numbers (hide yes))
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2234,7 +2234,7 @@
 				)
 			)
 		)
-		(property "Value" "511k"
+		(property "Value" "510k"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2255,7 +2255,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5159719.pdf"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C17733.html"
 			(at 0 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2277,7 +2277,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "FOJAN(富捷)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 -12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2288,7 +2288,7 @@
 				)
 			)
 		)
-		(property "MPN" "FRC0805F5113TS"
+		(property "MPN" "0805W8F5103T5E"
 			(at 0 -15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2299,7 +2299,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C5159719"
+		(property "LCSC Part" "C17733"
 			(at 0 -17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2310,7 +2310,7 @@
 				)
 			)
 		)
-		(symbol "0805R 511k_0_1"
+		(symbol "0805R 510k_0_1"
 			(rectangle
 				(start -2.54 1.27)
 				(end 2.54 -1.27)
@@ -2323,7 +2323,7 @@
 				)
 			)
 		)
-		(symbol "0805R 511k_1_1"
+		(symbol "0805R 510k_1_1"
 			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
@@ -2363,7 +2363,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "0805R 56.2k"
+	(symbol "0805R 56k"
 		(pin_numbers (hide yes))
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2380,7 +2380,7 @@
 				)
 			)
 		)
-		(property "Value" "56.2k"
+		(property "Value" "56k"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2401,7 +2401,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2933471.pdf"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C17756.html"
 			(at 0 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2423,7 +2423,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "FOJAN(富捷)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 -12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2434,7 +2434,7 @@
 				)
 			)
 		)
-		(property "MPN" "FRC0805F5622TS"
+		(property "MPN" "0805W8F5602T5E"
 			(at 0 -15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2445,7 +2445,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C2933471"
+		(property "LCSC Part" "C17756"
 			(at 0 -17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2456,7 +2456,7 @@
 				)
 			)
 		)
-		(symbol "0805R 56.2k_0_1"
+		(symbol "0805R 56k_0_1"
 			(rectangle
 				(start -2.54 1.27)
 				(end 2.54 -1.27)
@@ -2469,7 +2469,7 @@
 				)
 			)
 		)
-		(symbol "0805R 56.2k_1_1"
+		(symbol "0805R 56k_1_1"
 			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
@@ -2655,7 +2655,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "0805R 91k"
+	(symbol "0603R 91k"
 		(pin_numbers (hide yes))
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2682,7 +2682,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 -7.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2693,7 +2693,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2933509.pdf"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C23265.html"
 			(at 0 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2715,7 +2715,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "FOJAN(富捷)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 -12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2726,7 +2726,7 @@
 				)
 			)
 		)
-		(property "MPN" "FRC0805F9102TS"
+		(property "MPN" "0603WAF9102T5E"
 			(at 0 -15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2737,7 +2737,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C2933509"
+		(property "LCSC Part" "C23265"
 			(at 0 -17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2748,7 +2748,7 @@
 				)
 			)
 		)
-		(symbol "0805R 91k_0_1"
+		(symbol "0603R 91k_0_1"
 			(rectangle
 				(start -2.54 1.27)
 				(end 2.54 -1.27)
@@ -2761,7 +2761,7 @@
 				)
 			)
 		)
-		(symbol "0805R 91k_1_1"
+		(symbol "0603R 91k_1_1"
 			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
@@ -6107,7 +6107,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C916396.pdf"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C8545.html"
 			(at 0 -20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6129,7 +6129,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "JSMSEMI(杰盛微)"
+		(property "Manufacturer" "JSCJ(江苏长晶)"
 			(at 0 -22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6151,7 +6151,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C916396"
+		(property "LCSC Part" "C8545"
 			(at 0 -27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6736,7 +6736,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "TUSB320LIRWBR"
+	(symbol "TUSB320IRWBR"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6752,7 +6752,7 @@
 				)
 			)
 		)
-		(property "Value" "TUSB320LIRWBR"
+		(property "Value" "TUSB320IRWBR"
 			(at 0 -11.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6773,7 +6773,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2836598.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tusb320.pdf"
 			(at 0 -16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6806,7 +6806,7 @@
 				)
 			)
 		)
-		(property "MPN" "TUSB320LIRWBR"
+		(property "MPN" "TUSB320IRWBR"
 			(at 0 -21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6817,7 +6817,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C2836598"
+		(property "LCSC Part" "C80170"
 			(at 0 -24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6839,7 +6839,7 @@
 				)
 			)
 		)
-		(symbol "TUSB320LIRWBR_0_1"
+		(symbol "TUSB320IRWBR_0_1"
 			(rectangle
 				(start -17.78 8.89)
 				(end 17.78 -8.89)
@@ -6863,7 +6863,7 @@
 				)
 			)
 		)
-		(symbol "TUSB320LIRWBR_1_1"
+		(symbol "TUSB320IRWBR_1_1"
 			(pin bidirectional line
 				(at -20.32 6.35 0)
 				(length 2.54)

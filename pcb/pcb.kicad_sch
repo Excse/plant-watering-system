@@ -156,6 +156,154 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "EasyEDA:0603R 91k"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "91k"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C23265.html"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "0603WAF9102T5E"
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C23265"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "0603R 91k_0_1"
+				(rectangle
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "0603R 91k_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "EasyEDA:0805C 100nF"
 			(pin_numbers
 				(hide yes)
@@ -1335,7 +1483,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_100R-100R-1_C105577.html"
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C17408.html"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1357,7 +1505,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "YAGEO(国巨)"
+			(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1368,7 +1516,7 @@
 					)
 				)
 			)
-			(property "MPN" "RC0805FR-07100RL"
+			(property "MPN" "0805W8F1000T5E"
 				(at 0 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1379,7 +1527,7 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C105577"
+			(property "LCSC Part" "C17408"
 				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1812,7 +1960,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_1KR-1000-1_C95781.html"
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C17513.html"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1834,7 +1982,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "YAGEO(国巨)"
+			(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1845,7 +1993,7 @@
 					)
 				)
 			)
-			(property "MPN" "RC0805FR-071KL"
+			(property "MPN" "0805W8F1001T5E"
 				(at 0 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1856,7 +2004,7 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C95781"
+			(property "LCSC Part" "C17513"
 				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2249,7 +2397,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "EasyEDA:0805R 511k"
+		(symbol "EasyEDA:0805R 510k"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2268,7 +2416,7 @@
 					)
 				)
 			)
-			(property "Value" "511k"
+			(property "Value" "510k"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2289,7 +2437,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C5159719.pdf"
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C17733.html"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2311,7 +2459,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "FOJAN(富捷)"
+			(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2322,7 +2470,7 @@
 					)
 				)
 			)
-			(property "MPN" "FRC0805F5113TS"
+			(property "MPN" "0805W8F5103T5E"
 				(at 0 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2333,7 +2481,7 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C5159719"
+			(property "LCSC Part" "C17733"
 				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2344,7 +2492,7 @@
 					)
 				)
 			)
-			(symbol "0805R 511k_0_1"
+			(symbol "0805R 510k_0_1"
 				(rectangle
 					(start -2.54 1.27)
 					(end 2.54 -1.27)
@@ -2357,7 +2505,7 @@
 					)
 				)
 			)
-			(symbol "0805R 511k_1_1"
+			(symbol "0805R 510k_1_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -2397,7 +2545,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "EasyEDA:0805R 56.2k"
+		(symbol "EasyEDA:0805R 56k"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2416,7 +2564,7 @@
 					)
 				)
 			)
-			(property "Value" "56.2k"
+			(property "Value" "56k"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2437,7 +2585,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C2933471.pdf"
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C17756.html"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2459,7 +2607,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "FOJAN(富捷)"
+			(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2470,7 +2618,7 @@
 					)
 				)
 			)
-			(property "MPN" "FRC0805F5622TS"
+			(property "MPN" "0805W8F5602T5E"
 				(at 0 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2481,7 +2629,7 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C2933471"
+			(property "LCSC Part" "C17756"
 				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2492,7 +2640,7 @@
 					)
 				)
 			)
-			(symbol "0805R 56.2k_0_1"
+			(symbol "0805R 56k_0_1"
 				(rectangle
 					(start -2.54 1.27)
 					(end 2.54 -1.27)
@@ -2505,7 +2653,7 @@
 					)
 				)
 			)
-			(symbol "0805R 56.2k_1_1"
+			(symbol "0805R 56k_1_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -2654,154 +2802,6 @@
 				)
 			)
 			(symbol "0805R 900k_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:0805R 91k"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "91k"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:R0805"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C2933509.pdf"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "FOJAN(富捷)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "FRC0805F9102TS"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C2933509"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0805R 91k_0_1"
-				(rectangle
-					(start -2.54 1.27)
-					(end 2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "0805R 91k_1_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -6149,7 +6149,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C916396.pdf"
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C8545.html"
 				(at 0 -20.32 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6171,7 +6171,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "JSMSEMI(杰盛微)"
+			(property "Manufacturer" "JSCJ(江苏长晶)"
 				(at 0 -22.86 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6193,7 +6193,7 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C916396"
+			(property "LCSC Part" "C8545"
 				(at 0 -27.94 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6778,7 +6778,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "EasyEDA:TUSB320LIRWBR"
+		(symbol "EasyEDA:TUSB320IRWBR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -6794,7 +6794,7 @@
 					)
 				)
 			)
-			(property "Value" "TUSB320LIRWBR"
+			(property "Value" "TUSB320IRWBR"
 				(at 0 -11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6815,7 +6815,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C2836598.pdf"
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tusb320.pdf"
 				(at 0 -16.51 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6848,7 +6848,7 @@
 					)
 				)
 			)
-			(property "MPN" "TUSB320LIRWBR"
+			(property "MPN" "TUSB320IRWBR"
 				(at 0 -21.59 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6859,7 +6859,7 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C2836598"
+			(property "LCSC Part" "C80170"
 				(at 0 -24.13 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6881,7 +6881,7 @@
 					)
 				)
 			)
-			(symbol "TUSB320LIRWBR_0_1"
+			(symbol "TUSB320IRWBR_0_1"
 				(rectangle
 					(start -17.78 8.89)
 					(end 17.78 -8.89)
@@ -6905,7 +6905,7 @@
 					)
 				)
 			)
-			(symbol "TUSB320LIRWBR_1_1"
+			(symbol "TUSB320IRWBR_1_1"
 				(pin bidirectional line
 					(at -20.32 6.35 0)
 					(length 2.54)
@@ -8322,13 +8322,7 @@
 		(uuid "ff78937b-7002-4e4f-96fb-42cb7f1ee680")
 	)
 	(junction
-		(at 62.23 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "085af29e-165f-436b-82c1-ccf80b373981")
-	)
-	(junction
-		(at 345.44 104.14)
+		(at 340.36 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "088801ac-5c6d-44a9-84fc-668827df8586")
@@ -8370,22 +8364,10 @@
 		(uuid "25b2e753-4063-41d9-adcb-55ac99fa7f08")
 	)
 	(junction
-		(at 66.04 127)
+		(at 58.42 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "28a420d8-ca5b-49a2-ba78-8d1792c8e618")
-	)
-	(junction
-		(at 321.31 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "29fd3918-9ab2-4bfd-b124-7ec8fb6ef213")
-	)
-	(junction
-		(at 125.73 196.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2b4b1475-f6a1-40a2-beb5-f29c8c1651cb")
 	)
 	(junction
 		(at 40.64 27.94)
@@ -8400,13 +8382,7 @@
 		(uuid "2fa87eeb-d48e-464d-9dee-8b25ec53a634")
 	)
 	(junction
-		(at 270.51 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "399084ef-7b1c-4c92-9623-bf0642357235")
-	)
-	(junction
-		(at 60.96 127)
+		(at 64.77 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3ce6bee2-ab7a-47c4-a808-0ce8c2acd1cd")
@@ -8448,28 +8424,16 @@
 		(uuid "52eb3da5-386d-40ce-b489-044a9010daa6")
 	)
 	(junction
-		(at 336.55 111.76)
+		(at 331.47 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "58c72268-0272-4893-b5d3-66dcd6b8e261")
 	)
 	(junction
-		(at 247.65 114.3)
+		(at 242.57 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5b8614d1-0ad8-4c61-93d6-8de9cb954cf3")
-	)
-	(junction
-		(at 223.52 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "61a7ea70-c8ce-4288-846d-a50f8af82e76")
-	)
-	(junction
-		(at 290.83 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6952811b-747e-45bf-80ce-10299f12f92e")
 	)
 	(junction
 		(at 69.85 44.45)
@@ -8484,7 +8448,7 @@
 		(uuid "78dbd2bb-4c47-4a10-8bb8-00d7bc67bff2")
 	)
 	(junction
-		(at 339.09 111.76)
+		(at 334.01 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "84e31b87-c72f-4c14-9b5d-4a6399c847d4")
@@ -8538,18 +8502,6 @@
 		(uuid "93966dc2-8859-46ac-a3c3-489cf5d2d08d")
 	)
 	(junction
-		(at 201.93 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "94f7b22f-f1c2-4077-85f1-650306a763a0")
-	)
-	(junction
-		(at 83.82 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9517ec86-ece3-445f-b367-b4fcc3fab009")
-	)
-	(junction
 		(at 127 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8562,10 +8514,10 @@
 		(uuid "9b492b4d-7e1a-4458-90c5-16533398779a")
 	)
 	(junction
-		(at 252.73 114.3)
+		(at 316.23 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a6450287-1db8-4597-9ebd-1305286643de")
+		(uuid "9b68bf43-9ef5-47d7-b2ef-c3eb30b9eb1e")
 	)
 	(junction
 		(at 55.88 46.99)
@@ -8574,7 +8526,7 @@
 		(uuid "a96d7146-286b-4e1a-89c3-515287bb8bdb")
 	)
 	(junction
-		(at 351.79 111.76)
+		(at 346.71 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aeab7708-e794-46f5-bbb8-e96931d369e7")
@@ -8586,7 +8538,7 @@
 		(uuid "ba8b42de-2cde-47a8-8155-02edef5ff72c")
 	)
 	(junction
-		(at 53.34 140.97)
+		(at 63.5 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c48e52ca-ce4e-450f-9a7c-26d16ba28fe5")
@@ -8614,12 +8566,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e763f5ec-0990-4fda-922e-2f1c157c4e1f")
-	)
-	(junction
-		(at 321.31 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ea81ac22-454e-4ad9-a853-cee168d5f476")
 	)
 	(junction
 		(at 110.49 196.85)
@@ -8779,6 +8725,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 58.42) (xy 226.06 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0512fbd0-85d1-48a0-82be-7b3eec017db2")
+	)
+	(wire
+		(pts
 			(xy 54.61 57.15) (xy 57.15 57.15)
 		)
 		(stroke
@@ -8889,7 +8845,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 119.38) (xy 223.52 123.19)
+			(xy 223.52 109.22) (xy 223.52 123.19)
 		)
 		(stroke
 			(width 0)
@@ -8939,7 +8895,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 111.76) (xy 355.6 111.76)
+			(xy 346.71 110.49) (xy 350.52 110.49)
 		)
 		(stroke
 			(width 0)
@@ -8989,16 +8945,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 140.97) (xy 71.12 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1fdc07ae-f1b9-4e84-83a9-b3624f39d256")
-	)
-	(wire
-		(pts
 			(xy 125.73 134.62) (xy 127 134.62)
 		)
 		(stroke
@@ -9009,7 +8955,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 110.49) (xy 351.79 111.76)
+			(xy 346.71 109.22) (xy 346.71 110.49)
 		)
 		(stroke
 			(width 0)
@@ -9189,7 +9135,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 114.3) (xy 252.73 114.3)
+			(xy 238.76 114.3) (xy 247.65 114.3)
 		)
 		(stroke
 			(width 0)
@@ -9209,7 +9155,7 @@
 	)
 	(wire
 		(pts
-			(xy 325.12 120.65) (xy 321.31 120.65)
+			(xy 320.04 119.38) (xy 316.23 119.38)
 		)
 		(stroke
 			(width 0)
@@ -9249,7 +9195,7 @@
 	)
 	(wire
 		(pts
-			(xy 339.09 110.49) (xy 339.09 111.76)
+			(xy 334.01 109.22) (xy 334.01 110.49)
 		)
 		(stroke
 			(width 0)
@@ -9279,7 +9225,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 140.97) (xy 53.34 146.05)
+			(xy 63.5 140.97) (xy 63.5 146.05)
 		)
 		(stroke
 			(width 0)
@@ -9309,7 +9255,7 @@
 	)
 	(wire
 		(pts
-			(xy 321.31 120.65) (xy 321.31 118.11)
+			(xy 316.23 109.22) (xy 316.23 119.38)
 		)
 		(stroke
 			(width 0)
@@ -9379,7 +9325,7 @@
 	)
 	(wire
 		(pts
-			(xy 336.55 111.76) (xy 339.09 111.76)
+			(xy 331.47 110.49) (xy 334.01 110.49)
 		)
 		(stroke
 			(width 0)
@@ -9409,7 +9355,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 186.69) (xy 133.35 186.69)
+			(xy 110.49 186.69) (xy 116.84 186.69)
 		)
 		(stroke
 			(width 0)
@@ -9489,7 +9435,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 128.27) (xy 201.93 128.27)
+			(xy 199.39 128.27) (xy 203.2 128.27)
 		)
 		(stroke
 			(width 0)
@@ -9509,7 +9455,7 @@
 	)
 	(wire
 		(pts
-			(xy 339.09 104.14) (xy 339.09 105.41)
+			(xy 334.01 102.87) (xy 334.01 104.14)
 		)
 		(stroke
 			(width 0)
@@ -9519,23 +9465,13 @@
 	)
 	(wire
 		(pts
-			(xy 336.55 120.65) (xy 332.74 120.65)
+			(xy 331.47 119.38) (xy 327.66 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5ecd7db2-9166-4394-abf0-e5418aff4556")
-	)
-	(wire
-		(pts
-			(xy 316.23 118.11) (xy 316.23 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5eed36d6-27b1-475c-943c-c5449177874d")
 	)
 	(wire
 		(pts
@@ -9689,17 +9625,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 38.1) (xy 83.82 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74cc8546-0d12-4d6f-9c58-279b44403d35")
-	)
-	(wire
-		(pts
-			(xy 110.49 196.85) (xy 133.35 196.85)
+			(xy 110.49 196.85) (xy 116.84 196.85)
 		)
 		(stroke
 			(width 0)
@@ -9709,7 +9635,7 @@
 	)
 	(wire
 		(pts
-			(xy 323.85 111.76) (xy 336.55 111.76)
+			(xy 318.77 110.49) (xy 331.47 110.49)
 		)
 		(stroke
 			(width 0)
@@ -9719,7 +9645,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 125.73) (xy 66.04 127)
+			(xy 58.42 125.73) (xy 58.42 127)
 		)
 		(stroke
 			(width 0)
@@ -9859,7 +9785,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 151.13) (xy 53.34 154.94)
+			(xy 63.5 151.13) (xy 63.5 154.94)
 		)
 		(stroke
 			(width 0)
@@ -9886,16 +9812,6 @@
 			(type default)
 		)
 		(uuid "8f3eb919-a046-4290-b3e3-21c878d87c89")
-	)
-	(wire
-		(pts
-			(xy 321.31 118.11) (xy 321.31 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "908c58a3-46b3-4b62-a379-4074430009d7")
 	)
 	(wire
 		(pts
@@ -9939,7 +9855,7 @@
 	)
 	(wire
 		(pts
-			(xy 336.55 111.76) (xy 336.55 120.65)
+			(xy 331.47 110.49) (xy 331.47 119.38)
 		)
 		(stroke
 			(width 0)
@@ -9989,13 +9905,23 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 127) (xy 60.96 127)
+			(xy 52.07 127) (xy 71.12 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9d762390-422c-4216-abdf-f67fd69b2ae9")
+	)
+	(wire
+		(pts
+			(xy 318.77 110.49) (xy 318.77 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dd1931a-8ff1-4516-b314-2f0ac157fe98")
 	)
 	(wire
 		(pts
@@ -10029,16 +9955,6 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 128.27) (xy 203.2 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2b38f2e-1473-4580-a29d-72d72dffc2d8")
-	)
-	(wire
-		(pts
 			(xy 40.64 26.67) (xy 40.64 27.94)
 		)
 		(stroke
@@ -10049,7 +9965,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 120.65) (xy 247.65 121.92)
+			(xy 242.57 120.65) (xy 242.57 121.92)
 		)
 		(stroke
 			(width 0)
@@ -10059,7 +9975,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 114.3) (xy 233.68 114.3)
+			(xy 226.06 114.3) (xy 228.6 114.3)
 		)
 		(stroke
 			(width 0)
@@ -10076,16 +9992,6 @@
 			(type default)
 		)
 		(uuid "a991b4ca-8d48-4f26-82a2-f02ed19a0d36")
-	)
-	(wire
-		(pts
-			(xy 223.52 109.22) (xy 223.52 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad596964-30ab-435e-9912-4116bef4da4c")
 	)
 	(wire
 		(pts
@@ -10109,7 +10015,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 115.57) (xy 247.65 114.3)
+			(xy 242.57 115.57) (xy 242.57 114.3)
 		)
 		(stroke
 			(width 0)
@@ -10139,13 +10045,13 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 127) (xy 66.04 127)
+			(xy 316.23 119.38) (xy 316.23 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ba32feea-0387-4674-9938-496e05136c6b")
+		(uuid "b5e05c30-b3d9-4050-962f-4d7385aad84e")
 	)
 	(wire
 		(pts
@@ -10169,23 +10075,13 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 104.14) (xy 351.79 105.41)
+			(xy 346.71 102.87) (xy 346.71 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c03770d8-99f2-415d-85b5-4a3a32d460e4")
-	)
-	(wire
-		(pts
-			(xy 201.93 128.27) (xy 201.93 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c19d1e5d-114d-4468-a488-55e59a335604")
 	)
 	(wire
 		(pts
@@ -10216,16 +10112,6 @@
 			(type default)
 		)
 		(uuid "c36ed085-6fa9-4fd4-8b00-d025d32babab")
-	)
-	(wire
-		(pts
-			(xy 321.31 114.3) (xy 321.31 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c41cba26-0d57-43f2-b97b-045e486f18c5")
 	)
 	(wire
 		(pts
@@ -10289,16 +10175,6 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 118.11) (xy 321.31 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9190c97-78bc-43dd-bc5a-f07a821118ca")
-	)
-	(wire
-		(pts
 			(xy 127 134.62) (xy 127 137.16)
 		)
 		(stroke
@@ -10306,16 +10182,6 @@
 			(type default)
 		)
 		(uuid "ca852490-712a-44e2-b3ae-8f0582fc0dd3")
-	)
-	(wire
-		(pts
-			(xy 66.04 127) (xy 71.12 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "caa1eeab-6431-4567-96d4-95b3bbb1c517")
 	)
 	(wire
 		(pts
@@ -10339,7 +10205,7 @@
 	)
 	(wire
 		(pts
-			(xy 345.44 104.14) (xy 351.79 104.14)
+			(xy 340.36 102.87) (xy 346.71 102.87)
 		)
 		(stroke
 			(width 0)
@@ -10369,7 +10235,7 @@
 	)
 	(wire
 		(pts
-			(xy 339.09 104.14) (xy 345.44 104.14)
+			(xy 334.01 102.87) (xy 340.36 102.87)
 		)
 		(stroke
 			(width 0)
@@ -10419,16 +10285,6 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 140.97) (xy 62.23 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d95ecb91-76a9-4bbf-b53a-91b5c1614306")
-	)
-	(wire
-		(pts
 			(xy 137.16 104.14) (xy 137.16 105.41)
 		)
 		(stroke
@@ -10456,16 +10312,6 @@
 			(type default)
 		)
 		(uuid "de6796d5-cbd1-42da-875f-5d0c2eb32d74")
-	)
-	(wire
-		(pts
-			(xy 252.73 114.3) (xy 256.54 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfd6e2be-f84c-4c38-b967-26260eafa084")
 	)
 	(wire
 		(pts
@@ -10519,16 +10365,6 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 49.53) (xy 278.13 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e64ee28d-3afc-46a5-9bfe-296a6ad76001")
-	)
-	(wire
-		(pts
 			(xy 40.64 27.94) (xy 41.91 27.94)
 		)
 		(stroke
@@ -10549,7 +10385,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 129.54) (xy 49.53 129.54)
+			(xy 52.07 129.54) (xy 53.34 129.54)
 		)
 		(stroke
 			(width 0)
@@ -10599,26 +10435,6 @@
 	)
 	(wire
 		(pts
-			(xy 320.04 114.3) (xy 321.31 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee1d6afe-c0c5-4e3c-b042-6c1b8e62ac2b")
-	)
-	(wire
-		(pts
-			(xy 62.23 142.24) (xy 62.23 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef4dbc05-e2ee-43cc-99c4-572876f2a4eb")
-	)
-	(wire
-		(pts
 			(xy 167.64 44.45) (xy 170.18 44.45)
 		)
 		(stroke
@@ -10629,7 +10445,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 140.97) (xy 53.34 140.97)
+			(xy 60.96 140.97) (xy 71.12 140.97)
 		)
 		(stroke
 			(width 0)
@@ -10639,7 +10455,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 49.53) (xy 270.51 49.53)
+			(xy 266.7 49.53) (xy 278.13 49.53)
 		)
 		(stroke
 			(width 0)
@@ -10649,7 +10465,7 @@
 	)
 	(wire
 		(pts
-			(xy 339.09 111.76) (xy 351.79 111.76)
+			(xy 334.01 110.49) (xy 346.71 110.49)
 		)
 		(stroke
 			(width 0)
@@ -10669,7 +10485,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 119.38) (xy 66.04 120.65)
+			(xy 58.42 119.38) (xy 58.42 120.65)
 		)
 		(stroke
 			(width 0)
@@ -10706,16 +10522,6 @@
 			(type default)
 		)
 		(uuid "f4c6aa8c-942e-4050-8b74-1f3750ad7fa7")
-	)
-	(wire
-		(pts
-			(xy 222.25 119.38) (xy 223.52 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7d6e633-c0ef-425d-8bad-625fe82c49b2")
 	)
 	(wire
 		(pts
@@ -10903,6 +10709,30 @@
 			)
 		)
 	)
+	(global_label "WATER_OUT"
+		(shape input)
+		(at 227.33 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "271585eb-3ca3-4a5b-8c41-78d5ef7ac69d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 240.838 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "~{SOIL_ON}"
 		(shape input)
 		(at 204.47 50.8 180)
@@ -10948,6 +10778,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "PUMP_ON"
+		(shape input)
+		(at 227.33 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4acefb67-a237-4fa2-b547-25922a226e0a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 239.2657 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -11023,30 +10877,6 @@
 			)
 		)
 	)
-	(global_label "WATER_OUT"
-		(shape input)
-		(at 226.06 58.42 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "593fbced-909d-49d1-b266-874dd7724b92")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 239.568 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "CC1"
 		(shape input)
 		(at 123.19 40.64 180)
@@ -11097,7 +10927,7 @@
 	)
 	(global_label "SOIL_OUT"
 		(shape input)
-		(at 256.54 114.3 0)
+		(at 247.65 114.3 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11107,7 +10937,7 @@
 		)
 		(uuid "8cb573b8-0af2-43bf-b04d-df62270a537e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 268.2943 114.3 0)
+			(at 259.4043 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11156,30 +10986,6 @@
 		(uuid "8fcf5403-f782-46b4-b786-01024956a1c6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 133.6742 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "PUMP_ON"
-		(shape input)
-		(at 227.33 53.34 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "96242ef9-f025-473a-80a4-bd83cdef4deb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 239.2657 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11241,7 +11047,7 @@
 	)
 	(global_label "BAT_SENSE"
 		(shape input)
-		(at 49.53 140.97 180)
+		(at 60.96 140.97 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11251,7 +11057,7 @@
 		)
 		(uuid "b4fa76d0-086d-4c20-b352-8ef46a143e76")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 36.2035 140.97 0)
+			(at 47.6335 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11385,7 +11191,7 @@
 	)
 	(global_label "VIMM"
 		(shape input)
-		(at 133.35 186.69 0)
+		(at 116.84 186.69 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11395,7 +11201,7 @@
 		)
 		(uuid "f665055c-dd34-4503-a301-dc51e21ad947")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.9314 186.69 0)
+			(at 124.4214 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11521,7 +11327,7 @@
 	)
 	(symbol
 		(lib_id "EasyEDA:0805C 100nF")
-		(at 339.09 107.95 90)
+		(at 334.01 106.68 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11531,7 +11337,7 @@
 		(dnp no)
 		(uuid "0230f47f-8033-46ed-ac86-e862e45a1ab3")
 		(property "Reference" "C10"
-			(at 342.138 106.934 90)
+			(at 337.058 105.664 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11542,7 +11348,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 342.138 108.966 90)
+			(at 337.058 107.696 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11553,7 +11359,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA:C0805"
-			(at 346.71 107.95 0)
+			(at 341.63 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11564,7 +11370,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_100nF-104-10-50V_C49678.html"
-			(at 349.25 107.95 0)
+			(at 344.17 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11575,7 +11381,7 @@
 			)
 		)
 		(property "Description" "100nF(104) ±10% 50V"
-			(at 361.95 107.95 0)
+			(at 356.87 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11586,7 +11392,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO(国巨)"
-			(at 351.79 107.95 0)
+			(at 346.71 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11597,7 +11403,7 @@
 			)
 		)
 		(property "MPN" "CC0805KRX7R9BB104"
-			(at 354.33 107.95 0)
+			(at 349.25 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11608,7 +11414,7 @@
 			)
 		)
 		(property "LCSC Part" "C49678"
-			(at 356.87 107.95 0)
+			(at 351.79 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12295,7 +12101,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_1KR-1000-1_C95781.html"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C17513.html"
 			(at 288.29 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -12317,7 +12123,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO(国巨)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 290.83 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -12328,7 +12134,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0805FR-071KL"
+		(property "MPN" "0805W8F1001T5E"
 			(at 293.37 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -12339,7 +12145,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C95781"
+		(property "LCSC Part" "C17513"
 			(at 295.91 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -12367,7 +12173,7 @@
 	)
 	(symbol
 		(lib_id "EasyEDA:0805C 100nF")
-		(at 53.34 148.59 90)
+		(at 63.5 148.59 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12377,7 +12183,7 @@
 		(dnp no)
 		(uuid "14e8a6cd-9a1d-42a1-93be-f4225eff65ed")
 		(property "Reference" "C1"
-			(at 50.292 147.574 90)
+			(at 60.452 147.574 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12388,7 +12194,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 50.292 149.606 90)
+			(at 60.452 149.606 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12399,7 +12205,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA:C0805"
-			(at 60.96 148.59 0)
+			(at 71.12 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12410,7 +12216,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_100nF-104-10-50V_C49678.html"
-			(at 63.5 148.59 0)
+			(at 73.66 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12421,7 +12227,7 @@
 			)
 		)
 		(property "Description" "100nF(104) ±10% 50V"
-			(at 76.2 148.59 0)
+			(at 86.36 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12432,7 +12238,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO(国巨)"
-			(at 66.04 148.59 0)
+			(at 76.2 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12443,7 +12249,7 @@
 			)
 		)
 		(property "MPN" "CC0805KRX7R9BB104"
-			(at 68.58 148.59 0)
+			(at 78.74 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12454,7 +12260,7 @@
 			)
 		)
 		(property "LCSC Part" "C49678"
-			(at 71.12 148.59 0)
+			(at 81.28 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12481,7 +12287,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 355.6 111.76 270)
+		(at 350.52 110.49 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12491,7 +12297,7 @@
 		(dnp no)
 		(uuid "15833325-d53c-4784-ab6d-7f34207af112")
 		(property "Reference" "#PWR041"
-			(at 351.79 111.76 0)
+			(at 346.71 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12502,7 +12308,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 357.124 114.046 90)
+			(at 352.044 112.776 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12512,7 +12318,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 355.6 111.76 0)
+			(at 350.52 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12523,7 +12329,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 355.6 111.76 0)
+			(at 350.52 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12534,7 +12340,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 355.6 111.76 0)
+			(at 350.52 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12558,7 +12364,7 @@
 	)
 	(symbol
 		(lib_id "EasyEDA:0805C 100nF")
-		(at 247.65 118.11 90)
+		(at 242.57 118.11 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12568,7 +12374,7 @@
 		(dnp no)
 		(uuid "188b9252-28da-436f-9619-7722e08d215e")
 		(property "Reference" "C9"
-			(at 250.698 117.094 90)
+			(at 245.618 117.094 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12579,7 +12385,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 250.698 119.126 90)
+			(at 245.618 119.126 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12590,7 +12396,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA:C0805"
-			(at 255.27 118.11 0)
+			(at 250.19 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12601,7 +12407,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_100nF-104-10-50V_C49678.html"
-			(at 257.81 118.11 0)
+			(at 252.73 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12612,7 +12418,7 @@
 			)
 		)
 		(property "Description" "100nF(104) ±10% 50V"
-			(at 270.51 118.11 0)
+			(at 265.43 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12623,7 +12429,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO(国巨)"
-			(at 260.35 118.11 0)
+			(at 255.27 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12634,7 +12440,7 @@
 			)
 		)
 		(property "MPN" "CC0805KRX7R9BB104"
-			(at 262.89 118.11 0)
+			(at 257.81 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12645,7 +12451,7 @@
 			)
 		)
 		(property "LCSC Part" "C49678"
-			(at 265.43 118.11 0)
+			(at 260.35 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12783,7 +12589,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:TUSB320LIRWBR")
+		(lib_id "EasyEDA:TUSB320IRWBR")
 		(at 144.78 46.99 0)
 		(unit 1)
 		(body_style 1)
@@ -12803,7 +12609,7 @@
 				)
 			)
 		)
-		(property "Value" "TUSB320LIRWBR"
+		(property "Value" "TUSB320IRWBR"
 			(at 134.62 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12824,7 +12630,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2836598.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tusb320.pdf"
 			(at 144.78 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -12857,7 +12663,7 @@
 				)
 			)
 		)
-		(property "MPN" "TUSB320LIRWBR"
+		(property "MPN" "TUSB320IRWBR"
 			(at 144.78 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -12868,7 +12674,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C2836598"
+		(property "LCSC Part" "C80170"
 			(at 144.78 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -13116,7 +12922,7 @@
 	)
 	(symbol
 		(lib_id "EasyEDA:SMA Schottky 40V")
-		(at 328.93 120.65 180)
+		(at 323.85 119.38 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13126,7 +12932,7 @@
 		(dnp no)
 		(uuid "258af09f-460f-479a-ad7c-9a4d4edbd03b")
 		(property "Reference" "D3"
-			(at 328.93 115.316 0)
+			(at 323.85 114.046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13136,7 +12942,7 @@
 			)
 		)
 		(property "Value" "Schottky 40V"
-			(at 328.929 117.094 0)
+			(at 323.849 115.824 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13146,7 +12952,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA:SMA_L4.3-W2.6-LS5.2-RD"
-			(at 328.93 113.03 0)
+			(at 323.85 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13157,7 +12963,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_SS34_C8678.html"
-			(at 328.93 110.49 0)
+			(at 323.85 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13168,7 +12974,7 @@
 			)
 		)
 		(property "Description" "SS34"
-			(at 328.93 97.79 0)
+			(at 323.85 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13179,7 +12985,7 @@
 			)
 		)
 		(property "Manufacturer" "MDD(辰达半导体)"
-			(at 328.93 107.95 0)
+			(at 323.85 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13190,7 +12996,7 @@
 			)
 		)
 		(property "MPN" "SS34"
-			(at 328.93 105.41 0)
+			(at 323.85 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13201,7 +13007,7 @@
 			)
 		)
 		(property "LCSC Part" "C8678"
-			(at 328.93 102.87 0)
+			(at 323.85 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13799,116 +13605,7 @@
 	)
 	(symbol
 		(lib_id "EasyEDA:RH-5019")
-		(at 83.82 41.91 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4121538e-1429-4dee-a09c-3310d3349fe4")
-		(property "Reference" "CN4"
-			(at 83.82 47.244 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 83.82 49.276 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:TESTPOINT-SMD_L3.8-W2.0_RH-5019"
-			(at 76.2 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5199800.pdf"
-			(at 73.66 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 83.82 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "荣和"
-			(at 71.12 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RH-5019"
-			(at 68.58 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C5199800"
-			(at 66.04 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a008e24c-d7dc-48a7-9241-325de3e80242")
-		)
-		(instances
-			(project "pcb"
-				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
-					(reference "CN4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA:RH-5019")
-		(at 60.96 130.81 270)
+		(at 64.77 130.81 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13918,7 +13615,7 @@
 		(dnp no)
 		(uuid "434480ed-037b-4561-a830-7896923ee3ce")
 		(property "Reference" "CN2"
-			(at 60.96 136.144 90)
+			(at 64.77 136.144 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13928,7 +13625,7 @@
 			)
 		)
 		(property "Value" "Battery"
-			(at 60.96 138.176 90)
+			(at 64.77 138.176 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13938,7 +13635,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA:TESTPOINT-SMD_L3.8-W2.0_RH-5019"
-			(at 53.34 130.81 0)
+			(at 57.15 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13949,7 +13646,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C5199800.pdf"
-			(at 50.8 130.81 0)
+			(at 54.61 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13960,7 +13657,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 60.96 130.81 0)
+			(at 64.77 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13971,7 +13668,7 @@
 			)
 		)
 		(property "Manufacturer" "荣和"
-			(at 48.26 130.81 0)
+			(at 52.07 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13982,7 +13679,7 @@
 			)
 		)
 		(property "MPN" "RH-5019"
-			(at 45.72 130.81 0)
+			(at 49.53 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13993,7 +13690,7 @@
 			)
 		)
 		(property "LCSC Part" "C5199800"
-			(at 43.18 130.81 0)
+			(at 46.99 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14181,7 +13878,7 @@
 		(dnp no)
 		(uuid "4436eac0-da1b-4e78-a10c-a6837efc0733")
 		(property "Reference" "R20"
-			(at 309.88 133.35 90)
+			(at 309.626 134.62 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14191,7 +13888,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 309.88 135.89 90)
+			(at 306.07 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14276,224 +13973,6 @@
 			(project "pcb"
 				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
 					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA:RH-5019")
-		(at 125.73 200.66 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "453a4593-5f97-4502-bfd6-ee7dbf3060c9")
-		(property "Reference" "CN5"
-			(at 125.73 205.994 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3.3V"
-			(at 125.73 208.026 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:TESTPOINT-SMD_L3.8-W2.0_RH-5019"
-			(at 118.11 200.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5199800.pdf"
-			(at 115.57 200.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 125.73 200.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "荣和"
-			(at 113.03 200.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RH-5019"
-			(at 110.49 200.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C5199800"
-			(at 107.95 200.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dc281b69-e265-490c-9f8f-ba04e15b9708")
-		)
-		(instances
-			(project "pcb"
-				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
-					(reference "CN5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA:RH-5019")
-		(at 316.23 114.3 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "467e57a0-163f-40a5-b927-5bc6828e578e")
-		(property "Reference" "CN12"
-			(at 310.134 113.284 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Pump_Drain"
-			(at 306.07 115.316 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:TESTPOINT-SMD_L3.8-W2.0_RH-5019"
-			(at 316.23 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5199800.pdf"
-			(at 316.23 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 316.23 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "荣和"
-			(at 316.23 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RH-5019"
-			(at 316.23 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C5199800"
-			(at 316.23 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b2858976-c088-45fd-b854-a80535d875da")
-		)
-		(instances
-			(project "pcb"
-				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
-					(reference "CN12")
 					(unit 1)
 				)
 			)
@@ -14656,7 +14135,7 @@
 	)
 	(symbol
 		(lib_id "EasyEDA:0805C 4.7uF")
-		(at 66.04 123.19 90)
+		(at 58.42 123.19 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14666,7 +14145,7 @@
 		(dnp no)
 		(uuid "4d1da600-868e-462c-9022-635139354444")
 		(property "Reference" "C3"
-			(at 69.088 122.174 90)
+			(at 61.468 122.174 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14677,7 +14156,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 69.088 124.206 90)
+			(at 61.468 124.206 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14688,7 +14167,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA:C0805"
-			(at 73.66 123.19 0)
+			(at 66.04 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14699,7 +14178,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21A475KAQNNNE_4-7uF-475-10-25V_C1779.html"
-			(at 76.2 123.19 0)
+			(at 68.58 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14710,28 +14189,6 @@
 			)
 		)
 		(property "Description" "4.7uF (475) ±10% 25V"
-			(at 88.9 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "SAMSUNG(三星)"
-			(at 78.74 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CL21A475KAQNNNE"
 			(at 81.28 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -14742,8 +14199,30 @@
 				)
 			)
 		)
+		(property "Manufacturer" "SAMSUNG(三星)"
+			(at 71.12 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21A475KAQNNNE"
+			(at 73.66 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "LCSC Part" "C1779"
-			(at 83.82 123.19 0)
+			(at 76.2 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15300,7 +14779,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 133.35 196.85 270)
+		(at 116.84 196.85 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15310,7 +14789,7 @@
 		(dnp no)
 		(uuid "58298218-f608-47cf-990d-7f18a389c1b1")
 		(property "Reference" "#PWR023"
-			(at 129.54 196.85 0)
+			(at 113.03 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15321,7 +14800,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 136.398 196.85 90)
+			(at 119.888 196.85 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15332,7 +14811,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.35 196.85 0)
+			(at 116.84 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15343,7 +14822,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 196.85 0)
+			(at 116.84 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15354,7 +14833,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 133.35 196.85 0)
+			(at 116.84 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16137,7 +15616,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 53.34 154.94 0)
+		(at 63.5 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16147,7 +15626,7 @@
 		(dnp no)
 		(uuid "730d0c83-f2fb-4101-9fb2-8eb67abb50be")
 		(property "Reference" "#PWR04"
-			(at 53.34 161.29 0)
+			(at 63.5 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16158,7 +15637,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 53.34 159.004 0)
+			(at 63.5 159.004 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16168,7 +15647,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 154.94 0)
+			(at 63.5 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16179,7 +15658,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 154.94 0)
+			(at 63.5 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16190,7 +15669,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 53.34 154.94 0)
+			(at 63.5 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16668,7 +16147,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 56.2k")
+		(lib_id "EasyEDA:0805R 56k")
 		(at 88.9 134.62 0)
 		(unit 1)
 		(body_style 1)
@@ -16688,7 +16167,7 @@
 				)
 			)
 		)
-		(property "Value" "56.2k"
+		(property "Value" "56k"
 			(at 88.9 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16709,7 +16188,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2933471.pdf"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C17756.html"
 			(at 88.9 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -16731,7 +16210,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "FOJAN(富捷)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 88.9 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -16742,7 +16221,7 @@
 				)
 			)
 		)
-		(property "MPN" "FRC0805F5622TS"
+		(property "MPN" "0805W8F5602T5E"
 			(at 88.9 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -16753,7 +16232,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C2933471"
+		(property "LCSC Part" "C17756"
 			(at 88.9 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -16780,7 +16259,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 91k")
+		(lib_id "EasyEDA:0603R 91k")
 		(at 69.85 200.66 90)
 		(unit 1)
 		(body_style 1)
@@ -16810,7 +16289,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 77.47 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -16821,7 +16300,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2933509.pdf"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C23265.html"
 			(at 80.01 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -16843,7 +16322,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "FOJAN(富捷)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 82.55 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -16854,7 +16333,7 @@
 				)
 			)
 		)
-		(property "MPN" "FRC0805F9102TS"
+		(property "MPN" "0603WAF9102T5E"
 			(at 85.09 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -16865,7 +16344,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C2933509"
+		(property "LCSC Part" "C23265"
 			(at 87.63 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -17240,115 +16719,6 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:RH-5019")
-		(at 270.51 45.72 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8082eac1-4cac-403e-a48e-affdaa758f03")
-		(property "Reference" "CN10"
-			(at 270.51 38.354 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Water_Out"
-			(at 270.51 40.386 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:TESTPOINT-SMD_L3.8-W2.0_RH-5019"
-			(at 278.13 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5199800.pdf"
-			(at 280.67 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 270.51 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "荣和"
-			(at 283.21 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RH-5019"
-			(at 285.75 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C5199800"
-			(at 288.29 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1f6814e4-ae25-4dff-9c2a-2edc041d289a")
-		)
-		(instances
-			(project "pcb"
-				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
-					(reference "CN10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "EasyEDA:AO3401A")
 		(at 220.98 128.27 0)
 		(unit 1)
@@ -17466,115 +16836,6 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:RH-5019")
-		(at 201.93 133.35 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "891c5a82-ffe4-457f-8e1e-06e138dd1b8c")
-		(property "Reference" "CN7"
-			(at 201.93 138.684 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~{Soil_On}"
-			(at 201.93 140.716 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:TESTPOINT-SMD_L3.8-W2.0_RH-5019"
-			(at 194.31 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5199800.pdf"
-			(at 191.77 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 201.93 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "荣和"
-			(at 189.23 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RH-5019"
-			(at 186.69 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C5199800"
-			(at 184.15 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fce38b85-56cc-42aa-9d42-24696669528c")
-		)
-		(instances
-			(project "pcb"
-				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
-					(reference "CN7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 110.49 179.07 180)
 		(unit 1)
@@ -17653,7 +16914,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 345.44 104.14 180)
+		(at 340.36 102.87 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17663,7 +16924,7 @@
 		(dnp no)
 		(uuid "8d7ade72-9d8d-45a5-9852-927f61c95849")
 		(property "Reference" "#PWR040"
-			(at 345.44 97.79 0)
+			(at 340.36 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17674,7 +16935,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 345.44 100.33 0)
+			(at 340.36 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17684,7 +16945,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 345.44 104.14 0)
+			(at 340.36 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17695,7 +16956,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 345.44 104.14 0)
+			(at 340.36 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17706,7 +16967,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 345.44 104.14 0)
+			(at 340.36 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17729,7 +16990,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 511k")
+		(lib_id "EasyEDA:0805R 510k")
 		(at 69.85 187.96 90)
 		(unit 1)
 		(body_style 1)
@@ -17749,7 +17010,7 @@
 				)
 			)
 		)
-		(property "Value" "511k"
+		(property "Value" "510k"
 			(at 66.04 189.23 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17770,7 +17031,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5159719.pdf"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C17733.html"
 			(at 80.01 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -17792,7 +17053,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "FOJAN(富捷)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 82.55 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -17803,7 +17064,7 @@
 				)
 			)
 		)
-		(property "MPN" "FRC0805F5113TS"
+		(property "MPN" "0805W8F5103T5E"
 			(at 85.09 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -17814,7 +17075,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C5159719"
+		(property "LCSC Part" "C17733"
 			(at 87.63 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -17918,115 +17179,6 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:RH-5019")
-		(at 252.73 110.49 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "95230478-61a1-48a1-8eeb-123f52859fd5")
-		(property "Reference" "CN9"
-			(at 252.73 102.87 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Soil_Out"
-			(at 252.73 105.156 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:TESTPOINT-SMD_L3.8-W2.0_RH-5019"
-			(at 260.35 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5199800.pdf"
-			(at 262.89 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 252.73 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "荣和"
-			(at 265.43 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RH-5019"
-			(at 267.97 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C5199800"
-			(at 270.51 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "92dbaea6-74d6-42db-9374-68b470125526")
-		)
-		(instances
-			(project "pcb"
-				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
-					(reference "CN9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 40.64 26.67 180)
 		(unit 1)
@@ -18105,7 +17257,7 @@
 	)
 	(symbol
 		(lib_id "EasyEDA:0805C 100uF")
-		(at 351.79 107.95 90)
+		(at 346.71 106.68 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18115,7 +17267,7 @@
 		(dnp no)
 		(uuid "99cc51f3-eb34-4f2a-a238-9d9716d81973")
 		(property "Reference" "C11"
-			(at 354.838 106.934 90)
+			(at 349.758 105.664 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18126,7 +17278,7 @@
 			)
 		)
 		(property "Value" "100uF"
-			(at 354.838 108.966 90)
+			(at 349.758 107.696 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18137,7 +17289,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA:C0805"
-			(at 359.41 107.95 0)
+			(at 354.33 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18148,7 +17300,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_MuRata_GRM21BR60J107ME15L_100uF-107-20-6-3V_C141660.html"
-			(at 361.95 107.95 0)
+			(at 356.87 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18159,7 +17311,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 351.79 107.95 0)
+			(at 346.71 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18170,7 +17322,7 @@
 			)
 		)
 		(property "Manufacturer" "muRata(村田)"
-			(at 364.49 107.95 0)
+			(at 359.41 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18181,7 +17333,7 @@
 			)
 		)
 		(property "MPN" "GRM21BR60J107ME15L"
-			(at 367.03 107.95 0)
+			(at 361.95 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18192,7 +17344,7 @@
 			)
 		)
 		(property "LCSC Part" "C141660"
-			(at 369.57 107.95 0)
+			(at 364.49 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18338,7 +17490,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_100R-100R-1_C105577.html"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C17408.html"
 			(at 298.45 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -18360,7 +17512,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO(国巨)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 298.45 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -18371,7 +17523,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0805FR-07100RL"
+		(property "MPN" "0805W8F1000T5E"
 			(at 298.45 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -18382,7 +17534,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C105577"
+		(property "LCSC Part" "C17408"
 			(at 298.45 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -18403,115 +17555,6 @@
 			(project "pcb"
 				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
 					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA:RH-5019")
-		(at 218.44 119.38 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a2075a31-9838-4f92-8adb-2e79489b3903")
-		(property "Reference" "CN8"
-			(at 212.344 118.364 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Soil_Drain"
-			(at 209.296 120.396 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:TESTPOINT-SMD_L3.8-W2.0_RH-5019"
-			(at 218.44 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5199800.pdf"
-			(at 218.44 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 218.44 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "荣和"
-			(at 218.44 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RH-5019"
-			(at 218.44 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C5199800"
-			(at 218.44 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "93bacd04-114c-4cd3-b95e-e962cb5ce7c5")
-		)
-		(instances
-			(project "pcb"
-				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
-					(reference "CN8")
 					(unit 1)
 				)
 			)
@@ -18861,115 +17904,6 @@
 			(project "pcb"
 				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA:RH-5019")
-		(at 62.23 146.05 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "aa1269fb-e553-4b56-be44-7396b3778c51")
-		(property "Reference" "CN3"
-			(at 62.23 151.384 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Bat_Sense"
-			(at 62.23 153.416 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:TESTPOINT-SMD_L3.8-W2.0_RH-5019"
-			(at 54.61 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5199800.pdf"
-			(at 52.07 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 62.23 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "荣和"
-			(at 49.53 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RH-5019"
-			(at 46.99 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C5199800"
-			(at 44.45 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9b8c4cc7-121f-413f-96c7-db94dc6790ea")
-		)
-		(instances
-			(project "pcb"
-				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
-					(reference "CN3")
 					(unit 1)
 				)
 			)
@@ -19581,115 +18515,6 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:RH-5019")
-		(at 290.83 124.46 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bafea225-a4a1-42fa-884a-c5b7abe2eb17")
-		(property "Reference" "CN11"
-			(at 290.83 117.094 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Pump_On"
-			(at 290.83 119.126 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:TESTPOINT-SMD_L3.8-W2.0_RH-5019"
-			(at 298.45 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5199800.pdf"
-			(at 300.99 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 290.83 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "荣和"
-			(at 303.53 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RH-5019"
-			(at 306.07 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C5199800"
-			(at 308.61 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d1f6da15-5dc4-4d91-8a95-b31fbe1a608d")
-		)
-		(instances
-			(project "pcb"
-				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
-					(reference "CN11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 62.23 80.01 0)
 		(unit 1)
@@ -19769,7 +18594,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 247.65 121.92 0)
+		(at 242.57 121.92 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19779,7 +18604,7 @@
 		(dnp no)
 		(uuid "bd246dec-7edb-4546-9d2c-341148b780f7")
 		(property "Reference" "#PWR035"
-			(at 247.65 128.27 0)
+			(at 242.57 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19790,7 +18615,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 247.65 125.984 0)
+			(at 242.57 125.984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19800,7 +18625,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 247.65 121.92 0)
+			(at 242.57 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19811,7 +18636,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 247.65 121.92 0)
+			(at 242.57 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19822,7 +18647,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 247.65 121.92 0)
+			(at 242.57 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20043,7 +18868,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C916396.pdf"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C8545.html"
 			(at 171.45 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -20065,7 +18890,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "JSMSEMI(杰盛微)"
+		(property "Manufacturer" "JSCJ(江苏长晶)"
 			(at 173.99 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -20087,7 +18912,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C916396"
+		(property "LCSC Part" "C8545"
 			(at 179.07 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -20118,7 +18943,7 @@
 	)
 	(symbol
 		(lib_id "EasyEDA:MX7620-7.62-02P-GN01-CU-S-A")
-		(at 322.58 107.95 90)
+		(at 317.5 105.41 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20128,7 +18953,7 @@
 		(dnp no)
 		(uuid "cc6f6917-a268-45fe-aa81-e3d57773e3e6")
 		(property "Reference" "U7"
-			(at 326.898 105.41 90)
+			(at 321.818 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20139,7 +18964,7 @@
 			)
 		)
 		(property "Value" "Pump"
-			(at 326.898 107.95 90)
+			(at 321.818 105.41 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20150,7 +18975,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA:CONN-TH_MX7620-7.62-02P-GN01-CU-S-A"
-			(at 331.47 107.95 0)
+			(at 326.39 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20161,7 +18986,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C5188497.pdf"
-			(at 334.01 107.95 0)
+			(at 328.93 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20172,7 +18997,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 322.58 107.95 0)
+			(at 317.5 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20183,7 +19008,7 @@
 			)
 		)
 		(property "Manufacturer" "MAX(迈旭)"
-			(at 336.55 107.95 0)
+			(at 331.47 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20194,7 +19019,7 @@
 			)
 		)
 		(property "MPN" "MX7620-7.62-02P-GN01-Cu-S-A"
-			(at 339.09 107.95 0)
+			(at 334.01 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20205,7 +19030,7 @@
 			)
 		)
 		(property "LCSC Part" "C5188497"
-			(at 341.63 107.95 0)
+			(at 336.55 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20232,7 +19057,7 @@
 	)
 	(symbol
 		(lib_id "EasyEDA:JST PH 2.0mm 1x2P")
-		(at 44.45 128.27 180)
+		(at 48.26 128.27 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20242,7 +19067,7 @@
 		(dnp no)
 		(uuid "cdf25911-858b-4286-bbdc-b57bca8ae2e3")
 		(property "Reference" "CN1"
-			(at 43.18 121.158 0)
+			(at 46.99 121.158 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20252,7 +19077,7 @@
 			)
 		)
 		(property "Value" "Battery_Cell"
-			(at 43.18 122.936 0)
+			(at 46.99 122.936 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20262,7 +19087,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA:CONN-TH_B2B-PH-K-S"
-			(at 44.45 119.38 0)
+			(at 48.26 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20273,7 +19098,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C5251182.pdf"
-			(at 44.45 116.84 0)
+			(at 48.26 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20284,7 +19109,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 44.45 128.27 0)
+			(at 48.26 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20295,7 +19120,7 @@
 			)
 		)
 		(property "Manufacturer" "JST"
-			(at 44.45 114.3 0)
+			(at 48.26 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20306,7 +19131,7 @@
 			)
 		)
 		(property "MPN" "B2B-PH-K-S-GW"
-			(at 44.45 111.76 0)
+			(at 48.26 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20317,7 +19142,7 @@
 			)
 		)
 		(property "LCSC Part" "C5251182"
-			(at 44.45 109.22 0)
+			(at 48.26 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20421,7 +19246,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 49.53 129.54 90)
+		(at 53.34 129.54 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20431,7 +19256,7 @@
 		(dnp no)
 		(uuid "d34b54fa-a376-441f-bc9b-6eb4746ade16")
 		(property "Reference" "#PWR03"
-			(at 55.88 129.54 0)
+			(at 59.69 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20442,7 +19267,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.356 129.54 90)
+			(at 58.166 129.54 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20452,7 +19277,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 129.54 0)
+			(at 53.34 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20463,7 +19288,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 129.54 0)
+			(at 53.34 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20474,7 +19299,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 49.53 129.54 0)
+			(at 53.34 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21010,7 +19835,7 @@
 	)
 	(symbol
 		(lib_id "EasyEDA:0805R 1k")
-		(at 238.76 114.3 0)
+		(at 233.68 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21020,7 +19845,7 @@
 		(dnp no)
 		(uuid "e6c501d6-46bc-4a8d-ba34-73dc68a199c1")
 		(property "Reference" "R16"
-			(at 238.76 112.014 0)
+			(at 233.68 112.014 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21030,7 +19855,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 238.76 114.3 0)
+			(at 233.68 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21040,7 +19865,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA:R0805"
-			(at 238.76 121.92 0)
+			(at 233.68 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21050,8 +19875,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_1KR-1000-1_C95781.html"
-			(at 238.76 124.46 0)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C17513.html"
+			(at 233.68 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21062,7 +19887,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 238.76 114.3 0)
+			(at 233.68 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21072,8 +19897,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO(国巨)"
-			(at 238.76 127 0)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 233.68 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21083,8 +19908,8 @@
 				)
 			)
 		)
-		(property "MPN" "RC0805FR-071KL"
-			(at 238.76 129.54 0)
+		(property "MPN" "0805W8F1001T5E"
+			(at 233.68 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21094,8 +19919,8 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C95781"
-			(at 238.76 132.08 0)
+		(property "LCSC Part" "C17513"
+			(at 233.68 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21122,7 +19947,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 66.04 119.38 180)
+		(at 58.42 119.38 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21132,7 +19957,7 @@
 		(dnp no)
 		(uuid "eba35298-61c6-47fc-b784-0b701a7ba265")
 		(property "Reference" "#PWR08"
-			(at 66.04 113.03 0)
+			(at 58.42 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21143,7 +19968,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 66.04 115.57 0)
+			(at 58.42 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21153,7 +19978,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 119.38 0)
+			(at 58.42 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21164,7 +19989,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 119.38 0)
+			(at 58.42 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21175,7 +20000,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 66.04 119.38 0)
+			(at 58.42 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21471,7 +20296,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_1KR-1000-1_C95781.html"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C17513.html"
 			(at 208.28 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -21493,7 +20318,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO(国巨)"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 208.28 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -21504,7 +20329,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0805FR-071KL"
+		(property "MPN" "0805W8F1001T5E"
 			(at 208.28 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -21515,7 +20340,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C95781"
+		(property "LCSC Part" "C17513"
 			(at 208.28 146.05 0)
 			(hide yes)
 			(show_name no)

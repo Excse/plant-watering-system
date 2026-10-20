@@ -3,10 +3,10 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "2.4 GHz Wi-Fi and Bluetooth module https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c3/esp32-c3-devkitm-1/index.html")
-	(tags "esp32 esp32-c3 riscv risc-v wifi bluetooth ble")
+	(descr "30-pin ESP-32S USB-C CH340 development board, 2.54 mm pin pitch, 25.2 mm header row spacing")
+	(tags "esp32 esp-32s usb-c ch340 wifi bluetooth ble devboard")
 	(property "Reference" "REF**"
-		(at 11.43 38.1 0)
+		(at 12.6 38.1 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "720687b5-237f-4986-9421-fe04c3f4f9ff")
@@ -18,7 +18,7 @@
 		)
 	)
 	(property "Value" "ESP-32S_USB-C_CH340_DevBoard"
-		(at 11.43 40.64 0)
+		(at 12.6 40.64 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "4fdfe27a-4106-4c56-b54b-6208226d8312")
@@ -166,8 +166,8 @@
 		(uuid "76dd1375-cc83-44c8-b180-fc446a6d492b")
 	)
 	(fp_line
-		(start 4.83 -7.08)
-		(end 18.03 -7.08)
+		(start 6 -7.08)
+		(end 19.2 -7.08)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -176,7 +176,7 @@
 		(uuid "3ddfc62d-c0b9-4714-8ea5-cc1d61463512")
 	)
 	(fp_line
-		(start 4.83 -1.675)
+		(start 6 -1.675)
 		(end -0.83 -1.675)
 		(stroke
 			(width 0.1)
@@ -186,8 +186,8 @@
 		(uuid "121dda4f-14dd-47b4-8164-b96b51fcb6ac")
 	)
 	(fp_line
-		(start 4.83 -1.675)
-		(end 4.83 -7.08)
+		(start 6 -1.675)
+		(end 6 -7.08)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -196,8 +196,8 @@
 		(uuid "5ca9fc36-e4bc-4a64-8942-544617169dbd")
 	)
 	(fp_line
-		(start 18.03 -7.08)
-		(end 18.03 -1.675)
+		(start 19.2 -7.08)
+		(end 19.2 -1.675)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -206,7 +206,7 @@
 		(uuid "510c18dc-7062-4b4c-9251-8b4febc62984")
 	)
 	(fp_line
-		(start 18.03 -1.675)
+		(start 19.2 -1.675)
 		(end 26.327 -1.675)
 		(stroke
 			(width 0.1)
@@ -226,7 +226,7 @@
 		(uuid "91304bc8-2cce-4801-bd88-5351642163f1")
 	)
 	(fp_text user "Antenna"
-		(at 11.43 -4.318 0)
+		(at 12.6 -4.318 0)
 		(unlocked yes)
 		(layer "Cmts.User")
 		(uuid "af22807b-5a7c-4a0e-bcdb-529bf13e483c")
@@ -238,7 +238,7 @@
 		)
 	)
 	(fp_text user "${REFERENCE}"
-		(at 11.43 17.78 0)
+		(at 12.6 17.78 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "7703a624-95e2-442c-bcd3-7947ff925d10")
@@ -520,15 +520,4 @@
 		(uuid "cd8b2063-971f-4529-a483-0089335e22f4")
 	)
 	(embedded_fonts no)
-	(model "${KICAD10_3DMODEL_DIR}/RF_Module.3dshapes/ESP32-C3-DevKitM-1.step"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
 )

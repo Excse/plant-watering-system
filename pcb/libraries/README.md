@@ -51,6 +51,11 @@ After changing a library footprint, update the placed footprints in PCB Editor
 as needed. Check the board's 3D view and run the
 [hardware checks](../../docs/README.md#run-checks-and-previews-locally).
 
+The custom `ESP-32S_USB-C_CH340_DevBoard` footprint uses 2.54 mm pin pitch
+and 25.2 mm between the header rows. Its antenna outline and label are centered
+between those rows at X = 12.6 mm. It has no assigned 3D model: the original
+ESP32-C3-DevKitM-1 model was for a different board.
+
 ## Repair EasyEDA 3D model links
 
 [`scripts/fix_links.py`](../../scripts/fix_links.py) replaces legacy
