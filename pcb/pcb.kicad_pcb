@@ -367,7 +367,7 @@
 				)
 			)
 		)
-		(property "Value" "1.62k"
+		(property "Value" "1.5k"
 			(at 0 4 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -379,7 +379,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2933331.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C4310.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -401,7 +401,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C2933331"
+		(property "LCSC Part" "C4310"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -413,7 +413,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "FOJAN(富捷)"
+		(property "Manufacturer" "UNI-ROYAL(厚声)"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -426,7 +426,7 @@
 				)
 			)
 		)
-		(property "MPN" "FRC0805F1621TS"
+		(property "MPN" "0805W8F1501T5E"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1549,7 +1549,7 @@
 				)
 			)
 		)
-		(property "Value" "900k"
+		(property "Value" "910k"
 			(at 0 4 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1561,7 +1561,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C52209984.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17864.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1583,7 +1583,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C52209984"
+		(property "LCSC Part" "C17864"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1595,7 +1595,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "昶龙科技"
+		(property "Manufacturer" "UNI-ROYAL(厚声)"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1608,7 +1608,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL0805FN900KPS"
+		(property "MPN" "0805W8F9103T5E"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2288,7 +2288,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21A226MPQNNNE_22uF-226-20-10V_C29277.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C45783.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2310,7 +2310,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C29277"
+		(property "LCSC Part" "C45783"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2335,7 +2335,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A226MPQNNNE"
+		(property "MPN" "CL21A226MAQNNNE"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2817,7 +2817,7 @@
 				)
 			)
 		)
-		(property "Value" "100uF"
+		(property "Value" "47uF"
 			(at 0 4 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2829,7 +2829,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_MuRata_GRM21BR60J107ME15L_100uF-107-20-6-3V_C141660.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C16780.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2851,7 +2851,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C141660"
+		(property "LCSC Part" "C16780"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2863,7 +2863,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "muRata(村田)"
+		(property "Manufacturer" "SAMSUNG(三星)"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2876,7 +2876,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM21BR60J107ME15L"
+		(property "MPN" "CL21A476MQYNNNE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7238,7 +7238,7 @@
 				)
 			)
 		)
-		(property "Value" "SMAJ6.0A"
+		(property "Value" "SMAJ5.0A"
 			(at 0 4 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7250,7 +7250,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Others_Littelfuse_SMAJ6-0A_Littelfuse-SMAJ6-0A_C223993.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2925443.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7272,7 +7272,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C223993"
+		(property "LCSC Part" "C2925443"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7284,7 +7284,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Littelfuse(美国力特)"
+		(property "Manufacturer" "Liown"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7297,7 +7297,7 @@
 				)
 			)
 		)
-		(property "MPN" "SMAJ6.0A"
+		(property "MPN" "SMAJ5.0A"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12858,7 +12858,7 @@
 				)
 			)
 		)
-		(property "Value" "TUSB320IRWBR"
+		(property "Value" "TUSB320LIRWBR"
 			(at 0 4.75 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -12870,7 +12870,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tusb320.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2836598.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -12892,7 +12892,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C80170"
+		(property "LCSC Part" "C2836598"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -12917,7 +12917,7 @@
 				)
 			)
 		)
-		(property "MPN" "TUSB320IRWBR"
+		(property "MPN" "TUSB320LIRWBR"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
