@@ -1,0 +1,215 @@
+(footprint "USB_C_Receptacle_HX_TYPE-C-6P"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -6 0)
+		(layer "F.SilkS")
+		(uuid "303844a3-a789-4889-8950-1ca6f3e3fc86")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "USB-C-SMD_HX-TYPE-C-6PIN"
+		(at 0 6 0)
+		(layer "F.Fab")
+		(uuid "c66c19b0-8e38-450f-9c0e-1037a4c77495")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5cdc3e61-4e7a-45df-8849-c6dfe7f91a26")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2c2d2abb-9579-48ab-92df-8d477c2b0f83")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -4.47 -2.2)
+		(end 4.47 4.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "fefd9ed2-152d-4799-90a7-d2abde257b51")
+	)
+	(fp_line
+		(start -4.58 -0.69)
+		(end -4.58 0.89)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e6587844-3bbb-4c6f-87ee-894add16cd9f")
+	)
+	(fp_line
+		(start 4.58 -0.69)
+		(end 4.58 0.89)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d20b85f0-de23-4a7f-9e0d-3fb34b75304c")
+	)
+	(fp_line
+		(start -4.58 3.11)
+		(end -4.58 4.71)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c6c95819-83fc-4d1d-86f6-3b28f66a9dab")
+	)
+	(fp_line
+		(start 4.58 3.11)
+		(end 4.58 4.71)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "431616cd-a603-4c0e-8465-1a6749423c9b")
+	)
+	(fp_line
+		(start -4.58 4.71)
+		(end 4.58 4.71)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5d572234-e825-4798-9708-329e0a5e00fc")
+	)
+	(fp_rect
+		(start -5.17 -3.0)
+		(end 5.17 4.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "efe11854-b369-4e9e-a260-fb299176416c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "249121e7-7466-4994-8a9d-29d9af02c92b")
+		(effects
+			(font
+				(size 1.0 1.0)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "13" thru_hole oval
+		(at -4.32 -1.8)
+		(size 1.2 1.7)
+		(drill oval 0.500024 1.199998)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e0f75e11-9759-43b0-80e8-6ab0b9fe934d")
+	)
+	(pad "14" thru_hole oval
+		(at 4.32 -1.8)
+		(size 1.2 1.7)
+		(drill oval 0.500024 1.199998)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7945ddcf-de9e-47fe-b2f5-9a97bcb4df3e")
+	)
+	(pad "15" thru_hole oval
+		(at -4.32 2)
+		(size 1.2 1.7)
+		(drill oval 0.500024 1.199998)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8ffb98e4-bf0a-4d2d-b178-56f3dc394de6")
+	)
+	(pad "16" thru_hole oval
+		(at 4.32 2)
+		(size 1.2 1.7)
+		(drill oval 0.500024 1.199998)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2cc24443-5391-43d6-b8b3-35f265174cd9")
+	)
+	(pad "A5" smd rect
+		(at -0.5 -2)
+		(size 0.7 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f9784733-d746-417b-bbb9-9b57e7d53d2b")
+	)
+	(pad "A9" smd rect
+		(at 1.52 -2)
+		(size 0.8 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e90edcad-f939-4a23-be6b-670bff2aae07")
+	)
+	(pad "A12" smd rect
+		(at 2.75 -2)
+		(size 0.9 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0d4849cc-2ada-4593-8874-556ccd8b8a86")
+	)
+	(pad "B5" smd rect
+		(at 0.5 -2)
+		(size 0.7 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c572dc86-b0c2-48f8-87d4-64d2175727d1")
+	)
+	(pad "B9" smd rect
+		(at -1.52 -2)
+		(size 0.8 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d797e918-b3c4-49e1-ac19-4993a11aaa14")
+	)
+	(pad "B12" smd rect
+		(at -2.75 -2)
+		(size 0.9 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "89029d08-fbf8-41a7-a3dd-0b06a89196fa")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/libraries/custom/custom.3dshapes/USB_C_Receptacle_HX_TYPE-C-6P.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

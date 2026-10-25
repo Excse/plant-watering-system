@@ -11,7 +11,7 @@
 		(company "Arkoi Systems")
 	)
 	(lib_symbols
-		(symbol "EasyEDA:0806L 470nH"
+		(symbol "custom:L"
 			(pin_numbers
 				(hide yes)
 			)
@@ -30,7 +30,7 @@
 					)
 				)
 			)
-			(property "Value" "470nH"
+			(property "Value" "L"
 				(at 0 2.794 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -40,7 +40,7 @@
 					)
 				)
 			)
-			(property "Footprint" "EasyEDA:IND-SMD_L2.0-W1.6-1"
+			(property "Footprint" ""
 				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -51,7 +51,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C668312.pdf"
+			(property "Datasheet" ""
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -62,7 +62,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Inductor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -73,7 +73,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "muRata(村田)"
+			(property "Manufacturer" ""
 				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -84,7 +84,7 @@
 					)
 				)
 			)
-			(property "MPN" "DFE201612E-R47M=P2"
+			(property "MPN" ""
 				(at 0 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -95,7 +95,7 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C668312"
+			(property "LCSC Part" ""
 				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -117,7 +117,7 @@
 					)
 				)
 			)
-			(symbol "0806L 470nH_0_1"
+			(symbol "L_0_1"
 				(arc
 					(start -4.06 0.01)
 					(mid -3.035 1.02)
@@ -167,7 +167,7 @@
 					)
 				)
 			)
-			(symbol "0806L 470nH_1_1"
+			(symbol "L_1_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 1.27)
@@ -207,7 +207,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "EasyEDA:AO3400A"
+		(symbol "custom:AO3400A"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -233,7 +233,7 @@
 					)
 				)
 			)
-			(property "Footprint" "EasyEDA:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR"
+			(property "Footprint" "custom:SOT-23-3"
 				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -502,7 +502,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "EasyEDA:AO3401A"
+		(symbol "custom:AO3401A"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -528,7 +528,7 @@
 					)
 				)
 			)
-			(property "Footprint" "EasyEDA:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR"
+			(property "Footprint" "custom:SOT-23-3"
 				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -821,7 +821,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "EasyEDA:BQ24075RGTR"
+		(symbol "custom:BQ24075RGTR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -847,7 +847,7 @@
 					)
 				)
 			)
-			(property "Footprint" "EasyEDA:QFN-16_L3.0-W3.0-P0.50-TL-EP1.7"
+			(property "Footprint" "custom:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm"
 				(at 0 -24.13 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -858,7 +858,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://lcsc.com/product-detail/PMIC-Battery-Management_TI_BQ24075RGTR_BQ24075RGTR_C15464.html"
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/bq24075.pdf"
 				(at 0 -26.67 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -880,7 +880,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "TI(德州仪器)"
+			(property "Manufacturer" "Texas Instruments"
 				(at 0 -29.21 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1247,7 +1247,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "EasyEDA:HXTYPE-C6PIN"
+		(symbol "custom:USB_C_Receptacle_PowerOnly_6P"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1264,7 +1264,7 @@
 					)
 				)
 			)
-			(property "Value" "HX TYPE-C 6PIN"
+			(property "Value" "USB-C"
 				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1275,7 +1275,7 @@
 					)
 				)
 			)
-			(property "Footprint" "EasyEDA:USB-C-SMD_HX-TYPE-C-6PIN"
+			(property "Footprint" "custom:USB_C_Receptacle_HX_TYPE-C-6P"
 				(at 0 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1308,7 +1308,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "hanxia(韩下)"
+			(property "Manufacturer" "hanxia"
 				(at 0 -20.32 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1352,7 +1352,7 @@
 					)
 				)
 			)
-			(symbol "HXTYPE-C6PIN_0_1"
+			(symbol "USB_C_Receptacle_PowerOnly_6P_0_1"
 				(rectangle
 					(start -8.89 25.4)
 					(end 8.89 0)
@@ -1365,7 +1365,7 @@
 					)
 				)
 			)
-			(symbol "HXTYPE-C6PIN_1_1"
+			(symbol "USB_C_Receptacle_PowerOnly_6P_1_1"
 				(pin passive line
 					(at -1.27 30.48 270)
 					(length 5.08)
@@ -1549,7 +1549,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "EasyEDA:SMA Schottky 40V"
+		(symbol "custom:D_Schottky"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1565,7 +1565,7 @@
 					)
 				)
 			)
-			(property "Value" "Schottky 40V"
+			(property "Value" "D_Schottky"
 				(at 0 3.302 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1575,7 +1575,7 @@
 					)
 				)
 			)
-			(property "Footprint" "EasyEDA:SMA_L4.3-W2.6-LS5.2-RD"
+			(property "Footprint" ""
 				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1586,7 +1586,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_SS34_C8678.html"
+			(property "Datasheet" ""
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1597,7 +1597,7 @@
 					)
 				)
 			)
-			(property "Description" "SS34"
+			(property "Description" "Schottky diode"
 				(at 0 -22.86 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1608,7 +1608,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "MDD(辰达半导体)"
+			(property "Manufacturer" ""
 				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1619,7 +1619,7 @@
 					)
 				)
 			)
-			(property "MPN" "SS34"
+			(property "MPN" ""
 				(at 0 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1630,7 +1630,7 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C8678"
+			(property "LCSC Part" ""
 				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1652,7 +1652,7 @@
 					)
 				)
 			)
-			(symbol "SMA Schottky 40V_0_1"
+			(symbol "D_Schottky_0_1"
 				(polyline
 					(pts
 						(xy -1.27 0) (xy -1.27 2.03) (xy -1.78 2.03) (xy -1.78 1.78)
@@ -1690,7 +1690,7 @@
 					)
 				)
 			)
-			(symbol "SMA Schottky 40V_1_1"
+			(symbol "D_Schottky_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -1730,7 +1730,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "EasyEDA:SMAJ6.0A"
+		(symbol "custom:D_TVS"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1746,7 +1746,7 @@
 					)
 				)
 			)
-			(property "Value" "SMAJ6.0A"
+			(property "Value" "D_TVS"
 				(at 0 3.302 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1756,7 +1756,7 @@
 					)
 				)
 			)
-			(property "Footprint" "EasyEDA:SMA_L4.3-W2.6-LS5.2-RD"
+			(property "Footprint" ""
 				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1767,7 +1767,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Others_Littelfuse_SMAJ6-0A_Littelfuse-SMAJ6-0A_C223993.html"
+			(property "Datasheet" ""
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1778,7 +1778,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "TVS diode, unidirectional"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1789,7 +1789,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "Littelfuse(美国力特)"
+			(property "Manufacturer" ""
 				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1800,7 +1800,7 @@
 					)
 				)
 			)
-			(property "MPN" "SMAJ6.0A"
+			(property "MPN" ""
 				(at 0 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1811,7 +1811,7 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C223993"
+			(property "LCSC Part" ""
 				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1833,7 +1833,7 @@
 					)
 				)
 			)
-			(symbol "SMAJ6.0A_0_1"
+			(symbol "D_TVS_0_1"
 				(polyline
 					(pts
 						(xy -2.29 2.29) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.25 -2.29)
@@ -1859,7 +1859,7 @@
 					)
 				)
 			)
-			(symbol "SMAJ6.0A_1_1"
+			(symbol "D_TVS_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -1899,7 +1899,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "EasyEDA:TPS63802DLAT"
+		(symbol "custom:TPS63802"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1915,7 +1915,7 @@
 					)
 				)
 			)
-			(property "Value" "TPS63802DLAT"
+			(property "Value" "TPS63802DLAR"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1925,7 +1925,7 @@
 					)
 				)
 			)
-			(property "Footprint" "EasyEDA:VSON-10-HR_L3.0-W2.0-P0.50-BL_TI_DLA"
+			(property "Footprint" "custom:Texas_VSON-HR-10_2x3mm_P0.5mm"
 				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1936,7 +1936,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C1849531.pdf"
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps63802.pdf"
 				(at 0 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1958,7 +1958,7 @@
 					)
 				)
 			)
-			(property "Manufacturer" "TI(德州仪器)"
+			(property "Manufacturer" "Texas Instruments"
 				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1969,7 +1969,7 @@
 					)
 				)
 			)
-			(property "MPN" "TPS63802DLAT"
+			(property "MPN" "TPS63802DLAR"
 				(at 0 -20.32 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1980,7 +1980,7 @@
 					)
 				)
 			)
-			(property "LCSC Part" "C1849531"
+			(property "LCSC Part" "C2845237"
 				(at 0 -22.86 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2002,7 +2002,7 @@
 					)
 				)
 			)
-			(symbol "TPS63802DLAT_0_1"
+			(symbol "TPS63802_0_1"
 				(rectangle
 					(start -8.89 7.62)
 					(end 8.89 -7.62)
@@ -2026,7 +2026,7 @@
 					)
 				)
 			)
-			(symbol "TPS63802DLAT_1_1"
+			(symbol "TPS63802_1_1"
 				(pin input line
 					(at -11.43 5.08 0)
 					(length 2.54)
@@ -6731,7 +6731,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "custom:C_0402_1005Metric"
 			(at 300.99 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -7044,7 +7044,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "custom:C_0402_1005Metric"
 			(at 74.93 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -7279,7 +7279,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "custom:C_0603_1608Metric"
 			(at 77.47 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -7405,7 +7405,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:TPS63802DLAT")
+		(lib_id "custom:TPS63802")
 		(at 55.88 191.77 0)
 		(unit 1)
 		(body_style 1)
@@ -7435,7 +7435,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:VSON-10-HR_L3.0-W2.0-P0.50-BL_TI_DLA"
+		(property "Footprint" "custom:Texas_VSON-HR-10_2x3mm_P0.5mm"
 			(at 55.88 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -7585,7 +7585,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:HXTYPE-C6PIN")
+		(lib_id "custom:USB_C_Receptacle_PowerOnly_6P")
 		(at 63.5 67.31 0)
 		(unit 1)
 		(body_style 1)
@@ -7617,7 +7617,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "EasyEDA:USB-C-SMD_HX-TYPE-C-6PIN"
+		(property "Footprint" "custom:USB_C_Receptacle_HX_TYPE-C-6P"
 			(at 63.5 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -7797,7 +7797,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 246.38 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -7955,7 +7955,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "custom:C_0402_1005Metric"
 			(at 45.72 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -8190,7 +8190,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "custom:C_0402_1005Metric"
 			(at 214.63 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -8346,7 +8346,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 63.5 127 0)
 			(hide yes)
 			(show_name no)
@@ -8502,7 +8502,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 63.5 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -8628,7 +8628,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:SMA Schottky 40V")
+		(lib_id "custom:D_Schottky")
 		(at 283.21 119.38 180)
 		(unit 1)
 		(body_style 1)
@@ -8658,7 +8658,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:SMA_L4.3-W2.6-LS5.2-RD"
+		(property "Footprint" "custom:D_SMA"
 			(at 283.21 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -8814,7 +8814,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 121.92 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -8972,7 +8972,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "custom:C_0603_1608Metric"
 			(at 77.47 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -9206,7 +9206,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 90.17 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -9362,7 +9362,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 63.5 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -9672,7 +9672,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 273.05 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -10135,7 +10135,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "custom:C_0603_1608Metric"
 			(at 43.18 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -10445,7 +10445,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 121.92 127 0)
 			(hide yes)
 			(show_name no)
@@ -11139,7 +11139,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 53.34 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -11295,7 +11295,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "custom:LED_0805_2012Metric"
 			(at 111.76 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -11453,7 +11453,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "custom:C_0603_1608Metric"
 			(at 119.38 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -11579,7 +11579,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:SMAJ6.0A")
+		(lib_id "custom:D_TVS")
 		(at 82.55 39.37 90)
 		(unit 1)
 		(body_style 1)
@@ -11611,7 +11611,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "EasyEDA:SMA_L4.3-W2.6-LS5.2-RD"
+		(property "Footprint" "custom:D_SMA"
 			(at 90.17 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -11844,7 +11844,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 246.38 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -12002,7 +12002,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal"
+		(property "Footprint" "custom:JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal"
 			(at 198.12 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -12161,7 +12161,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 63.5 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -12317,7 +12317,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "custom:R_0603_1608Metric"
 			(at 36.83 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -12443,7 +12443,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:BQ24075RGTR")
+		(lib_id "custom:BQ24075RGTR")
 		(at 85.09 128.27 0)
 		(unit 1)
 		(body_style 1)
@@ -12474,7 +12474,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:QFN-16_L3.0-W3.0-P0.50-TL-EP1.7"
+		(property "Footprint" "custom:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm"
 			(at 85.09 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -12675,7 +12675,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 186.69 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -12879,7 +12879,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:AO3401A")
+		(lib_id "custom:AO3401A")
 		(at 185.42 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -12911,7 +12911,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "EasyEDA:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR"
+		(property "Footprint" "custom:SOT-23-3"
 			(at 185.42 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -13224,7 +13224,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 36.83 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -13614,7 +13614,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "EasyEDA:C0805"
+		(property "Footprint" "custom:C_0805_2012Metric"
 			(at 313.69 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -13770,7 +13770,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 257.81 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -14006,7 +14006,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
+		(property "Footprint" "custom:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
 			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -14242,7 +14242,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "custom:C_0603_1608Metric"
 			(at 93.98 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -14475,7 +14475,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+		(property "Footprint" "custom:LED_0805_2012Metric"
 			(at 111.76 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -14601,7 +14601,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0806L 470nH")
+		(lib_id "custom:L")
 		(at 85.09 194.31 0)
 		(unit 1)
 		(body_style 1)
@@ -14631,7 +14631,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:IND-SMD_L2.0-W1.6-1"
+		(property "Footprint" "custom:L_Murata_DFE201610P"
 			(at 85.09 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -14787,7 +14787,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 53.34 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -15099,7 +15099,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
+		(property "Footprint" "custom:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
 			(at 285.75 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -15255,7 +15255,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
+		(property "Footprint" "custom:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
 			(at 29.21 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -15965,7 +15965,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "custom:C_0402_1005Metric"
 			(at 106.68 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -16121,7 +16121,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 198.12 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -16277,7 +16277,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 90.17 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -16742,7 +16742,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "custom:R_0402_1005Metric"
 			(at 172.72 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -16868,7 +16868,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:AO3400A")
+		(lib_id "custom:AO3400A")
 		(at 273.05 128.27 0)
 		(unit 1)
 		(body_style 1)
@@ -16900,7 +16900,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "EasyEDA:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR"
+		(property "Footprint" "custom:SOT-23-3"
 			(at 273.05 140.97 0)
 			(hide yes)
 			(show_name no)

@@ -53,7 +53,7 @@
 			)
 		)
 	)
-	(attr through_hole)
+	(attr through_hole exclude_from_pos_files exclude_from_bom)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -1.27 -1.68)
@@ -520,4 +520,26 @@
 		(uuid "cd8b2063-971f-4529-a483-0089335e22f4")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/libraries/custom/custom.3dshapes/PinSocket_1x15_P2.54mm_Vertical.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/libraries/custom/custom.3dshapes/PinSocket_1x15_P2.54mm_Vertical.step"
+		(offset
+			(xyz 25.2 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

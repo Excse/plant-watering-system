@@ -1,5 +1,4 @@
 (fp_lib_table
 	(version 7)
-	(lib (name "custom") (type "KiCad") (uri "${KIPRJMOD}/libraries/custom/custom.pretty") (options "") (descr "Project-specific footprints"))
-	(lib (name "EasyEDA") (type "KiCad") (uri "${KIPRJMOD}/libraries/EasyEDA/EasyEDA.pretty") (options "") (descr "EasyEDA/LCSC component footprints"))
+	(lib (name "custom") (type "KiCad") (uri "${KIPRJMOD}/libraries/custom/custom.pretty") (options "") (descr "Project library: every footprint used by this design"))
 )
