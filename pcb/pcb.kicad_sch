@@ -11,2688 +11,6 @@
 		(company "Arkoi Systems")
 	)
 	(lib_symbols
-		(symbol "EasyEDA:0603R 91k"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "91k"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/product-detail/C23265.html"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "0603WAF9102T5E"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C23265"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0603R 91k_0_1"
-				(rectangle
-					(start -2.54 1.27)
-					(end 2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "0603R 91k_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:0805C 100nF"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "100nF"
-				(at 0 3.048 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:C0805"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_100nF-104-10-50V_C49678.html"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "100nF(104) ±10% 50V"
-				(at 0 -22.86 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "YAGEO(国巨)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "CC0805KRX7R9BB104"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C49678"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0805C 100nF_0_1"
-				(polyline
-					(pts
-						(xy -0.51 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.51 -2.03) (xy -0.51 2.03)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.51 2.03) (xy 0.51 -2.03)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 0.51 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "0805C 100nF_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:0805C 100uF"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "100uF"
-				(at 0 3.048 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:C0805"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_MuRata_GRM21BR60J107ME15L_100uF-107-20-6-3V_C141660.html"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "muRata(村田)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "GRM21BR60J107ME15L"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C141660"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0805C 100uF_0_1"
-				(polyline
-					(pts
-						(xy -0.51 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.51 -2.03) (xy -0.51 2.03)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.51 2.03) (xy 0.51 -2.03)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 0.51 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "0805C 100uF_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:0805C 10uF"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "10uF"
-				(at 0 3.048 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:C0805"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Murata-Electronics-GRM21BR61H106KE43L_C440198.html"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "muRata(村田)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "GRM21BR61H106KE43L"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C440198"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0805C 10uF_0_1"
-				(polyline
-					(pts
-						(xy -0.51 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.51 -2.03) (xy -0.51 2.03)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.51 2.03) (xy 0.51 -2.03)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 0.51 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "0805C 10uF_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:0805C 22uF"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "22uF"
-				(at 0 3.048 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:C0805"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21A226MPQNNNE_22uF-226-20-10V_C29277.html"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "22uF (226) ±20% 10V"
-				(at 0 -22.86 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "SAMSUNG(三星)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "CL21A226MPQNNNE"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C29277"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0805C 22uF_0_1"
-				(polyline
-					(pts
-						(xy -0.51 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.51 -2.03) (xy -0.51 2.03)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.51 2.03) (xy 0.51 -2.03)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 0.51 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "0805C 22uF_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:0805C 4.7uF"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "4.7uF"
-				(at 0 3.048 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:C0805"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21A475KAQNNNE_4-7uF-475-10-25V_C1779.html"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "4.7uF (475) ±10% 25V"
-				(at 0 -22.86 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "SAMSUNG(三星)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "CL21A475KAQNNNE"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C1779"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0805C 4.7uF_0_1"
-				(polyline
-					(pts
-						(xy -0.51 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.51 -2.03) (xy -0.51 2.03)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.51 2.03) (xy 0.51 -2.03)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 0.51 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "0805C 4.7uF_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:0805R 1.5k"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "1.5k"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:R0805"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_1-5KR-1501-1_C4310.html"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "1.5KΩ (1501) ±1%"
-				(at 0 -22.86 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "UNI-ROYAL(厚声)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "0805W8F1501T5E"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C4310"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Resistors"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0805R 1.5k_0_1"
-				(rectangle
-					(start -2.54 1.27)
-					(end 2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "0805R 1.5k_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:0805R 1.62k"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "1.62k"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:R0805"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C2933331.pdf"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "FOJAN(富捷)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "FRC0805F1621TS"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C2933331"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0805R 1.62k_0_1"
-				(rectangle
-					(start -2.54 1.27)
-					(end 2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "0805R 1.62k_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:0805R 100"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "100"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:R0805"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/product-detail/C17408.html"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "0805W8F1000T5E"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C17408"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Resistors"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0805R 100_0_1"
-				(rectangle
-					(start -2.54 1.27)
-					(end 2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "0805R 100_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:0805R 100k"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "100k"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:R0805"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_Uniroyal-Elec-0805W8F1003T5E_C149504.html"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "UNI-ROYAL(厚声)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "0805W8F1003T5E"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C149504"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Resistors"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0805R 100k_0_1"
-				(rectangle
-					(start -2.54 1.27)
-					(end 2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "0805R 100k_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:0805R 10k"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "10k"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:R0805"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_10KR-1002-1_C17414.html"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "10KΩ (1002) ±1%"
-				(at 0 -22.86 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "UNI-ROYAL(厚声)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "0805W8F1002T5E"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C17414"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Resistors"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0805R 10k_0_1"
-				(rectangle
-					(start -2.54 1.27)
-					(end 2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "0805R 10k_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:0805R 1k"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "1k"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:R0805"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/product-detail/C17513.html"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "0805W8F1001T5E"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C17513"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Resistors"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0805R 1k_0_1"
-				(rectangle
-					(start -2.54 1.27)
-					(end 2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "0805R 1k_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:0805R 2.2k"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "2.2k"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:R0805"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_2-2KR-2201-1_C17520.html"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "2.2KΩ (2201) ±1%"
-				(at 0 -22.86 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "UNI-ROYAL(厚声)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "0805W8F2201T5E"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C17520"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Resistors"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0805R 2.2k_0_1"
-				(rectangle
-					(start -2.54 1.27)
-					(end 2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "0805R 2.2k_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:0805R 5.1k"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0 2.794 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "5.1k"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:R0805"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_5-1KR-5101-1_C27834.html"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "5.1KΩ (5101) ±1%"
-				(at 0 -22.86 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "UNI-ROYAL(厚声)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "0805W8F5101T5E"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C27834"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Resistors"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0805R 5.1k_0_1"
-				(rectangle
-					(start -2.54 1.27)
-					(end 2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "0805R 5.1k_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:0805R 510k"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "510k"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:R0805"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/product-detail/C17733.html"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "0805W8F5103T5E"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C17733"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0805R 510k_0_1"
-				(rectangle
-					(start -2.54 1.27)
-					(end 2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "0805R 510k_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:0805R 56k"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "56k"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:R0805"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/product-detail/C17756.html"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "0805W8F5602T5E"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C17756"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "0805R 56k_0_1"
-				(rectangle
-					(start -2.54 1.27)
-					(end 2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "0805R 56k_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "EasyEDA:0806L 470nH"
 			(pin_numbers
 				(hide yes)
@@ -4231,948 +1549,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "EasyEDA:JST PH 2.0mm 1x2P"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "CN"
-				(at 5.588 3.048 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "JST PH 2.0mm 1x2P"
-				(at 14.224 1.016 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:CONN-TH_B2B-PH-K-S"
-				(at 0 -8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C5251182.pdf"
-				(at 0 -11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "JST"
-				(at 0 -13.97 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "B2B-PH-K-S-GW"
-				(at 0 -16.51 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C5251182"
-				(at 0 -19.05 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "JST PH 2.0mm 1x2P_0_1"
-				(rectangle
-					(start -1.27 3.81)
-					(end 3.81 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center 0 2.54)
-					(radius 0.38)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "JST PH 2.0mm 1x2P_1_1"
-				(pin passive line
-					(at -3.81 1.27 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -3.81 -1.27 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:LED GREEN 2V"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "LED"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "GREEN 2V"
-				(at 0 3.048 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:LED-TH_BD4.0-P2.54-FD"
-				(at 0 -8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/New-Arrivals_Everlight-Elec-204-10SYGD-S530-E2_C409438.html"
-				(at 0 -11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "EVERLIGHT(亿光)"
-				(at 0 -13.97 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "204-10SYGD/S530-E2"
-				(at 0 -16.51 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C409438"
-				(at 0 -19.05 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Light Emitting Diodes (LED)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "LED GREEN 2V_0_1"
-				(polyline
-					(pts
-						(xy -4.83 -2.54) (xy -3.81 -2.03) (xy -4.32 -1.52) (xy -4.83 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.556 -2.798) (xy -2.536 -2.288) (xy -3.046 -1.778) (xy -3.556 -2.798)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.05 -0.76) (xy -4.83 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.776 -1.018) (xy -3.556 -2.798)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.52) (xy -1.27 1.52)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.52) (xy -1.27 0) (xy 1.27 -1.52) (xy 1.27 1.52)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "LED GREEN 2V_1_1"
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:LED RED 2V"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "LED"
-				(at 0 5.334 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "RED 2V"
-				(at 0 3.302 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:LED-TH_BD3.0-P2.54-FD"
-				(at 0 -8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_red_C99772.html"
-				(at 0 -11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "EVERLIGHT(亿光)"
-				(at 0 -13.97 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "204-10SURD/S530-A3"
-				(at 0 -16.51 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C99772"
-				(at 0 -19.05 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Light Emitting Diodes (LED)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "LED RED 2V_0_1"
-				(polyline
-					(pts
-						(xy -4.83 -2.54) (xy -3.81 -2.03) (xy -4.32 -1.52) (xy -4.83 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.556 -2.798) (xy -2.536 -2.288) (xy -3.046 -1.778) (xy -3.556 -2.798)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.05 -0.76) (xy -4.83 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.776 -1.018) (xy -3.556 -2.798)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.52) (xy -1.27 1.52)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.52) (xy -1.27 0) (xy 1.27 -1.52) (xy 1.27 1.52)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "LED RED 2V_1_1"
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:MX7620-7.62-02P-GN01-CU-S-A"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MX7620-7.62-02P-GN01-CU-S-A"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:CONN-TH_MX7620-7.62-02P-GN01-CU-S-A"
-				(at 0 -8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C5188497.pdf"
-				(at 0 -11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "MAX(迈旭)"
-				(at 0 -13.97 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "MX7620-7.62-02P-GN01-Cu-S-A"
-				(at 0 -16.51 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C5188497"
-				(at 0 -19.05 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Barrier Terminal Blocks"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "MX7620-7.62-02P-GN01-CU-S-A_0_1"
-				(rectangle
-					(start -1.27 3.81)
-					(end 3.81 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center 0 2.54)
-					(radius 0.38)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "MX7620-7.62-02P-GN01-CU-S-A_1_1"
-				(pin passive line
-					(at -3.81 1.27 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -3.81 -1.27 0)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA:PZ254V-11-03P_C2937625"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "H"
-				(at 0 7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "PZ254V-11-03P_C2937625"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA:HDR-TH_3P-P2.54-V-M_PZ254V-11-03P"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/C2937625.pdf"
-				(at 0 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "XFCN(兴飞)"
-				(at 0 -15.24 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "PZ254V-11-03P"
-				(at 0 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C2937625"
-				(at 0 -20.32 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Pin Headers"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "PZ254V-11-03P_C2937625_0_1"
-				(rectangle
-					(start -1.27 5.08)
-					(end 3.81 -5.08)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center 0 3.81)
-					(radius 0.38)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "PZ254V-11-03P_C2937625_1_1"
-				(pin passive line
-					(at -3.81 2.54 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -3.81 -2.54 0)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "EasyEDA:SMA Schottky 40V"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -5834,6 +2210,521 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "custom:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "C"
+				(at 0 3.048 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" ""
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" ""
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" ""
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -0.51 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.51 -2.03) (xy -0.51 2.03)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.51 2.03) (xy 0.51 -2.03)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 0.51 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "custom:Conn_01x02"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 5.588 3.048 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 14.224 1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" ""
+				(at 0 -13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" ""
+				(at 0 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" ""
+				(at 0 -19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x02_0_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 3.81 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center 0 2.54)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(pin passive line
+					(at -3.81 1.27 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 -1.27 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "custom:Conn_01x03"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" ""
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" ""
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" ""
+				(at 0 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x03_0_1"
+				(rectangle
+					(start -1.27 5.08)
+					(end 3.81 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center 0 3.81)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(pin passive line
+					(at -3.81 2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 -2.54 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "custom:ESP-32S_USB-C_CH340_DevBoard"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -6448,6 +3339,360 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "custom:LED"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "LED"
+				(at 0 5.334 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 3.302 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Light emitting diode (pin 1 = K, pin 2 = A)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" ""
+				(at 0 -13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" ""
+				(at 0 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" ""
+				(at 0 -19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -4.83 -2.54) (xy -3.81 -2.03) (xy -4.32 -1.52) (xy -4.83 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.556 -2.798) (xy -2.536 -2.288) (xy -3.046 -1.778) (xy -3.556 -2.798)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.05 -0.76) (xy -4.83 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.776 -1.018) (xy -3.556 -2.798)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.52) (xy -1.27 1.52)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.52) (xy -1.27 0) (xy 1.27 -1.52) (xy 1.27 1.52)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "custom:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" ""
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" ""
+				(at 0 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" ""
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -7036,7 +4281,7 @@
 		(uuid "25b2e753-4063-41d9-adcb-55ac99fa7f08")
 	)
 	(junction
-		(at 39.37 127)
+		(at 35.56 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "28a420d8-ca5b-49a2-ba78-8d1792c8e618")
@@ -7084,7 +4329,7 @@
 		(uuid "58c72268-0272-4893-b5d3-66dcd6b8e261")
 	)
 	(junction
-		(at 201.93 114.3)
+		(at 207.01 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5b8614d1-0ad8-4c61-93d6-8de9cb954cf3")
@@ -7114,7 +4359,7 @@
 		(uuid "859e7094-0172-4b3d-ad62-17b8f6ee8776")
 	)
 	(junction
-		(at 173.99 128.27)
+		(at 179.07 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "86aeac2d-dac7-4ec0-be24-26d1dee5ec3d")
@@ -7463,7 +4708,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 109.22) (xy 182.88 123.19)
+			(xy 187.96 110.49) (xy 187.96 119.38)
 		)
 		(stroke
 			(width 0)
@@ -7513,7 +4758,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 114.3) (xy 185.42 109.22)
+			(xy 190.5 111.76) (xy 190.5 110.49)
 		)
 		(stroke
 			(width 0)
@@ -7583,7 +4828,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 128.27) (xy 173.99 129.54)
+			(xy 179.07 124.46) (xy 179.07 125.73)
 		)
 		(stroke
 			(width 0)
@@ -7693,7 +4938,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 114.3) (xy 207.01 114.3)
+			(xy 203.2 111.76) (xy 212.09 111.76)
 		)
 		(stroke
 			(width 0)
@@ -7963,7 +5208,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 128.27) (xy 162.56 128.27)
+			(xy 163.83 124.46) (xy 167.64 124.46)
 		)
 		(stroke
 			(width 0)
@@ -8013,7 +5258,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 133.35) (xy 182.88 135.89)
+			(xy 187.96 129.54) (xy 187.96 132.08)
 		)
 		(stroke
 			(width 0)
@@ -8123,7 +5368,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 125.73) (xy 39.37 127)
+			(xy 35.56 125.73) (xy 35.56 127)
 		)
 		(stroke
 			(width 0)
@@ -8403,7 +5648,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 120.65) (xy 201.93 121.92)
+			(xy 207.01 118.11) (xy 207.01 119.38)
 		)
 		(stroke
 			(width 0)
@@ -8413,7 +5658,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 114.3) (xy 187.96 114.3)
+			(xy 190.5 111.76) (xy 193.04 111.76)
 		)
 		(stroke
 			(width 0)
@@ -8443,7 +5688,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 115.57) (xy 201.93 114.3)
+			(xy 207.01 113.03) (xy 207.01 111.76)
 		)
 		(stroke
 			(width 0)
@@ -8453,7 +5698,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 128.27) (xy 175.26 128.27)
+			(xy 177.8 124.46) (xy 180.34 124.46)
 		)
 		(stroke
 			(width 0)
@@ -8663,7 +5908,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 139.7) (xy 173.99 140.97)
+			(xy 179.07 135.89) (xy 179.07 137.16)
 		)
 		(stroke
 			(width 0)
@@ -8873,7 +6118,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 119.38) (xy 39.37 120.65)
+			(xy 35.56 119.38) (xy 35.56 120.65)
 		)
 		(stroke
 			(width 0)
@@ -8883,7 +6128,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 110.49) (xy 180.34 109.22)
+			(xy 185.42 111.76) (xy 185.42 110.49)
 		)
 		(stroke
 			(width 0)
@@ -9213,7 +6458,7 @@
 	)
 	(global_label "SOIL_OUT"
 		(shape input)
-		(at 207.01 114.3 0)
+		(at 212.09 111.76 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9223,7 +6468,7 @@
 		)
 		(uuid "8cb573b8-0af2-43bf-b04d-df62270a537e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 218.7643 114.3 0)
+			(at 223.8443 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9285,7 +6530,7 @@
 	)
 	(global_label "~{SOIL_ON}"
 		(shape input)
-		(at 158.75 128.27 180)
+		(at 163.83 124.46 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9295,7 +6540,7 @@
 		)
 		(uuid "c819928e-8bca-48e2-bbe5-10fbb2866f4a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.9633 128.27 0)
+			(at 153.0433 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9380,7 +6625,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805C 100nF")
+		(lib_id "custom:C")
 		(at 293.37 106.68 90)
 		(unit 1)
 		(body_style 1)
@@ -9412,7 +6657,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "EasyEDA:C0805"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 300.99 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -9423,7 +6668,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_100nF-104-10-50V_C49678.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1525.pdf"
 			(at 303.53 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -9434,7 +6679,7 @@
 				)
 			)
 		)
-		(property "Description" "100nF(104) ±10% 50V"
+		(property "Description" "100nF 16V X7R ±10% 0402 MLCC"
 			(at 316.23 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -9445,7 +6690,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO(国巨)"
+		(property "Manufacturer" "Samsung"
 			(at 306.07 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -9456,7 +6701,7 @@
 				)
 			)
 		)
-		(property "MPN" "CC0805KRX7R9BB104"
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 308.61 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -9467,7 +6712,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C49678"
+		(property "LCSC Part" "C1525"
 			(at 311.15 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -9649,7 +6894,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805C 100nF")
+		(lib_id "custom:C")
 		(at 82.55 200.66 270)
 		(unit 1)
 		(body_style 1)
@@ -9681,7 +6926,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "EasyEDA:C0805"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 74.93 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -9692,7 +6937,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_100nF-104-10-50V_C49678.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1525.pdf"
 			(at 72.39 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -9703,7 +6948,7 @@
 				)
 			)
 		)
-		(property "Description" "100nF(104) ±10% 50V"
+		(property "Description" "100nF 16V X7R ±10% 0402 MLCC"
 			(at 59.69 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -9714,7 +6959,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO(国巨)"
+		(property "Manufacturer" "Samsung"
 			(at 69.85 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -9725,7 +6970,7 @@
 				)
 			)
 		)
-		(property "MPN" "CC0805KRX7R9BB104"
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 67.31 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -9736,7 +6981,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C49678"
+		(property "LCSC Part" "C1525"
 			(at 64.77 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -9840,7 +7085,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805C 10uF")
+		(lib_id "custom:C")
 		(at 69.85 182.88 90)
 		(unit 1)
 		(body_style 1)
@@ -9851,7 +7096,7 @@
 		(dnp no)
 		(uuid "0e540166-9a64-4a87-ae5d-4452b4b5186d")
 		(property "Reference" "C3"
-			(at 72.898 181.864 90)
+			(at 72.39 181.864 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9862,7 +7107,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 72.898 183.896 90)
+			(at 72.39 183.896 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9872,7 +7117,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "EasyEDA:C0805"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 77.47 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -9883,7 +7128,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Murata-Electronics-GRM21BR61H106KE43L_C440198.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C96446.pdf"
 			(at 80.01 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -9894,7 +7139,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "10uF 25V X5R ±20% 0603 MLCC"
 			(at 69.85 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -9905,7 +7150,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "muRata(村田)"
+		(property "Manufacturer" "Samsung"
 			(at 82.55 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -9916,7 +7161,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM21BR61H106KE43L"
+		(property "MPN" "CL10A106MA8NRNC"
 			(at 85.09 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -9927,7 +7172,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C440198"
+		(property "LCSC Part" "C96446"
 			(at 87.63 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -10006,7 +7251,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Buck-boost converter 1.3-5.5V in, 2A, VSON-10"
 			(at 55.88 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -10017,7 +7262,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TI(德州仪器)"
+		(property "Manufacturer" "Texas Instruments"
 			(at 55.88 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -10100,7 +7345,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "108977b6-e41c-47e1-8baa-1813d19864fc")
-		(property "Reference" "U2"
+		(property "Reference" "J1"
 			(at 51.562 42.926 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10111,8 +7356,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "USB-C 6PIN"
-			(at 41.91 44.958 0)
+		(property "Value" "USB-C"
+			(at 46.99 44.958 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10144,7 +7389,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "USB Type-C 6-pin receptacle (power only), SMD"
 			(at 63.5 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -10155,7 +7400,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "hanxia(韩下)"
+		(property "Manufacturer" "hanxia"
 			(at 63.5 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -10221,14 +7466,14 @@
 		(instances
 			(project "pcb"
 				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
-					(reference "U2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 1k")
+		(lib_id "custom:R")
 		(at 238.76 55.88 90)
 		(unit 1)
 		(body_style 1)
@@ -10239,7 +7484,7 @@
 		(dnp no)
 		(uuid "14dd19d7-9d35-4b7b-9a61-e787638db328")
 		(property "Reference" "R17"
-			(at 242.57 54.61 90)
+			(at 242.062 55.88 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10249,7 +7494,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 242.57 57.15 90)
+			(at 238.76 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10258,7 +7503,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 246.38 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10269,7 +7514,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C17513.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C11702.pdf"
 			(at 248.92 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10280,7 +7525,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1kΩ ±1% 62.5mW 0402 thick film resistor"
 			(at 238.76 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10291,7 +7536,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 251.46 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10302,7 +7547,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F1001T5E"
+		(property "MPN" "0402WGF1001TCE"
 			(at 254 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10313,7 +7558,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C17513"
+		(property "LCSC Part" "C11702"
 			(at 256.54 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10340,7 +7585,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805C 100nF")
+		(lib_id "custom:C")
 		(at 38.1 148.59 90)
 		(unit 1)
 		(body_style 1)
@@ -10351,7 +7596,7 @@
 		(dnp no)
 		(uuid "14e8a6cd-9a1d-42a1-93be-f4225eff65ed")
 		(property "Reference" "C1"
-			(at 35.052 147.574 90)
+			(at 35.56 147.574 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10362,7 +7607,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 35.052 149.606 90)
+			(at 35.56 149.606 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10372,7 +7617,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "EasyEDA:C0805"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 45.72 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10383,7 +7628,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_100nF-104-10-50V_C49678.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1525.pdf"
 			(at 48.26 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10394,7 +7639,7 @@
 				)
 			)
 		)
-		(property "Description" "100nF(104) ±10% 50V"
+		(property "Description" "100nF 16V X7R ±10% 0402 MLCC"
 			(at 60.96 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10405,7 +7650,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO(国巨)"
+		(property "Manufacturer" "Samsung"
 			(at 50.8 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10416,7 +7661,7 @@
 				)
 			)
 		)
-		(property "MPN" "CC0805KRX7R9BB104"
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 53.34 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10427,7 +7672,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C49678"
+		(property "LCSC Part" "C1525"
 			(at 55.88 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -10531,8 +7776,8 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805C 100nF")
-		(at 201.93 118.11 90)
+		(lib_id "custom:C")
+		(at 207.01 115.57 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10542,7 +7787,7 @@
 		(dnp no)
 		(uuid "188b9252-28da-436f-9619-7722e08d215e")
 		(property "Reference" "C9"
-			(at 204.978 117.094 90)
+			(at 209.55 114.554 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10553,7 +7798,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 204.978 119.126 90)
+			(at 209.55 116.586 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10563,8 +7808,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "EasyEDA:C0805"
-			(at 209.55 118.11 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 214.63 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10574,8 +7819,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_100nF-104-10-50V_C49678.html"
-			(at 212.09 118.11 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1525.pdf"
+			(at 217.17 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10585,8 +7830,8 @@
 				)
 			)
 		)
-		(property "Description" "100nF(104) ±10% 50V"
-			(at 224.79 118.11 0)
+		(property "Description" "100nF 16V X7R ±10% 0402 MLCC"
+			(at 229.87 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10596,8 +7841,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO(国巨)"
-			(at 214.63 118.11 0)
+		(property "Manufacturer" "Samsung"
+			(at 219.71 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10607,8 +7852,8 @@
 				)
 			)
 		)
-		(property "MPN" "CC0805KRX7R9BB104"
-			(at 217.17 118.11 0)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 222.25 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10618,8 +7863,8 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C49678"
-			(at 219.71 118.11 0)
+		(property "LCSC Part" "C1525"
+			(at 224.79 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10645,7 +7890,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 10k")
+		(lib_id "custom:R")
 		(at 63.5 119.38 0)
 		(unit 1)
 		(body_style 1)
@@ -10675,7 +7920,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 63.5 127 0)
 			(hide yes)
 			(show_name no)
@@ -10686,7 +7931,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_10KR-1002-1_C17414.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25744.pdf"
 			(at 63.5 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -10697,7 +7942,7 @@
 				)
 			)
 		)
-		(property "Description" "10KΩ (1002) ±1%"
+		(property "Description" "10kΩ ±1% 62.5mW 0402 thick film resistor"
 			(at 63.5 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -10708,7 +7953,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(厚声)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 63.5 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -10719,7 +7964,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F1002T5E"
+		(property "MPN" "0402WGF1002TCE"
 			(at 63.5 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -10730,7 +7975,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C17414"
+		(property "LCSC Part" "C25744"
 			(at 63.5 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -10757,7 +8002,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 1.62k")
+		(lib_id "custom:R")
 		(at 63.5 139.7 0)
 		(unit 1)
 		(body_style 1)
@@ -10787,7 +8032,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 63.5 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -10798,7 +8043,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2933331.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25867.pdf"
 			(at 63.5 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -10809,7 +8054,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1.5kΩ ±1% 62.5mW 0402 thick film resistor"
 			(at 63.5 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -10820,7 +8065,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "FOJAN(富捷)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 63.5 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -10831,7 +8076,7 @@
 				)
 			)
 		)
-		(property "MPN" "FRC0805F1621TS"
+		(property "MPN" "0402WGF1501TCE"
 			(at 63.5 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -10842,7 +8087,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C2933331"
+		(property "LCSC Part" "C25867"
 			(at 63.5 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -10889,7 +8134,7 @@
 				)
 			)
 		)
-		(property "Value" "Schottky 40V"
+		(property "Value" "SS34"
 			(at 283.209 115.824 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10910,7 +8155,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_SS34_C8678.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C8678.pdf"
 			(at 283.21 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -10921,7 +8166,7 @@
 				)
 			)
 		)
-		(property "Description" "SS34"
+		(property "Description" "Schottky diode 40V 3A SMA"
 			(at 283.21 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -10932,7 +8177,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "MDD(辰达半导体)"
+		(property "Manufacturer" "MDD"
 			(at 283.21 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -10981,7 +8226,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 1.5k")
+		(lib_id "custom:R")
 		(at 121.92 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -11011,7 +8256,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 121.92 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -11022,7 +8267,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_1-5KR-1501-1_C4310.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25867.pdf"
 			(at 121.92 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -11033,7 +8278,7 @@
 				)
 			)
 		)
-		(property "Description" "1.5KΩ (1501) ±1%"
+		(property "Description" "1.5kΩ ±1% 62.5mW 0402 thick film resistor"
 			(at 121.92 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -11044,7 +8289,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(厚声)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 121.92 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -11055,7 +8300,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F1501T5E"
+		(property "MPN" "0402WGF1501TCE"
 			(at 121.92 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -11066,7 +8311,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C4310"
+		(property "LCSC Part" "C25867"
 			(at 121.92 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -11093,7 +8338,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805C 22uF")
+		(lib_id "custom:C")
 		(at 69.85 200.66 90)
 		(unit 1)
 		(body_style 1)
@@ -11125,7 +8370,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "EasyEDA:C0805"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 77.47 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -11136,7 +8381,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21A226MPQNNNE_22uF-226-20-10V_C29277.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C59461.pdf"
 			(at 80.01 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -11147,7 +8392,7 @@
 				)
 			)
 		)
-		(property "Description" "22uF (226) ±20% 10V"
+		(property "Description" "22uF 6.3V X5R ±20% 0603 MLCC"
 			(at 92.71 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -11158,7 +8403,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "SAMSUNG(三星)"
+		(property "Manufacturer" "Samsung"
 			(at 82.55 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -11169,7 +8414,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A226MPQNNNE"
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 85.09 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -11180,7 +8425,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C29277"
+		(property "LCSC Part" "C59461"
 			(at 87.63 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -11285,7 +8530,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 5.1k")
+		(lib_id "custom:R")
 		(at 90.17 62.23 0)
 		(unit 1)
 		(body_style 1)
@@ -11315,7 +8560,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 90.17 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -11326,7 +8571,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_5-1KR-5101-1_C27834.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25905.pdf"
 			(at 90.17 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -11337,7 +8582,7 @@
 				)
 			)
 		)
-		(property "Description" "5.1KΩ (5101) ±1%"
+		(property "Description" "5.1kΩ ±1% 62.5mW 0402 thick film resistor"
 			(at 90.17 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -11348,7 +8593,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(厚声)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 90.17 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -11359,7 +8604,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F5101T5E"
+		(property "MPN" "0402WGF5101TCE"
 			(at 90.17 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -11370,7 +8615,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C27834"
+		(property "LCSC Part" "C25905"
 			(at 90.17 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -11397,7 +8642,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 2.2k")
+		(lib_id "custom:R")
 		(at 63.5 144.78 0)
 		(unit 1)
 		(body_style 1)
@@ -11427,7 +8672,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 63.5 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -11438,7 +8683,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_2-2KR-2201-1_C17520.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25879.pdf"
 			(at 63.5 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -11449,7 +8694,7 @@
 				)
 			)
 		)
-		(property "Description" "2.2KΩ (2201) ±1%"
+		(property "Description" "2.2kΩ ±1% 62.5mW 0402 thick film resistor"
 			(at 63.5 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -11460,7 +8705,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(厚声)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 63.5 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -11471,7 +8716,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F2201T5E"
+		(property "MPN" "0402WGF2201TCE"
 			(at 63.5 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -11482,7 +8727,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C17520"
+		(property "LCSC Part" "C25879"
 			(at 63.5 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -11663,7 +8908,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 10k")
+		(lib_id "custom:R")
 		(at 265.43 134.62 90)
 		(unit 1)
 		(body_style 1)
@@ -11693,7 +8938,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 273.05 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -11704,7 +8949,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_10KR-1002-1_C17414.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25744.pdf"
 			(at 275.59 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -11715,7 +8960,7 @@
 				)
 			)
 		)
-		(property "Description" "10KΩ (1002) ±1%"
+		(property "Description" "10kΩ ±1% 62.5mW 0402 thick film resistor"
 			(at 288.29 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -11726,7 +8971,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(厚声)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 278.13 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -11737,7 +8982,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F1002T5E"
+		(property "MPN" "0402WGF1002TCE"
 			(at 280.67 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -11748,7 +8993,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C17414"
+		(property "LCSC Part" "C25744"
 			(at 283.21 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -11930,8 +9175,8 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805C 4.7uF")
-		(at 39.37 123.19 90)
+		(lib_id "custom:C")
+		(at 35.56 123.19 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11941,7 +9186,7 @@
 		(dnp no)
 		(uuid "4d1da600-868e-462c-9022-635139354444")
 		(property "Reference" "C2"
-			(at 42.418 122.174 90)
+			(at 38.608 122.174 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11952,7 +9197,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 42.418 124.206 90)
+			(at 38.608 124.206 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11962,8 +9207,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "EasyEDA:C0805"
-			(at 46.99 123.19 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 43.18 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11973,8 +9218,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21A475KAQNNNE_4-7uF-475-10-25V_C1779.html"
-			(at 49.53 123.19 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C19666.pdf"
+			(at 45.72 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11984,8 +9229,8 @@
 				)
 			)
 		)
-		(property "Description" "4.7uF (475) ±10% 25V"
-			(at 62.23 123.19 0)
+		(property "Description" "4.7uF 16V X5R ±10% 0603 MLCC"
+			(at 58.42 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11995,8 +9240,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "SAMSUNG(三星)"
-			(at 52.07 123.19 0)
+		(property "Manufacturer" "Samsung"
+			(at 48.26 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12006,8 +9251,8 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A475KAQNNNE"
-			(at 54.61 123.19 0)
+		(property "MPN" "CL10A475KO8NNNC"
+			(at 50.8 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12017,8 +9262,8 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C1779"
-			(at 57.15 123.19 0)
+		(property "LCSC Part" "C19666"
+			(at 53.34 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12198,7 +9443,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 1.5k")
+		(lib_id "custom:R")
 		(at 121.92 119.38 0)
 		(unit 1)
 		(body_style 1)
@@ -12228,7 +9473,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 121.92 127 0)
 			(hide yes)
 			(show_name no)
@@ -12239,7 +9484,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_1-5KR-1501-1_C4310.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25867.pdf"
 			(at 121.92 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -12250,7 +9495,7 @@
 				)
 			)
 		)
-		(property "Description" "1.5KΩ (1501) ±1%"
+		(property "Description" "1.5kΩ ±1% 62.5mW 0402 thick film resistor"
 			(at 121.92 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -12261,7 +9506,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(厚声)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 121.92 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -12272,7 +9517,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F1501T5E"
+		(property "MPN" "0402WGF1501TCE"
 			(at 121.92 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -12283,7 +9528,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C4310"
+		(property "LCSC Part" "C25867"
 			(at 121.92 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -12698,7 +9943,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 100k")
+		(lib_id "custom:R")
 		(at 45.72 133.35 90)
 		(unit 1)
 		(body_style 1)
@@ -12709,7 +9954,7 @@
 		(dnp no)
 		(uuid "5ecd4dca-dd2f-423a-9b91-8098c0f28a1b")
 		(property "Reference" "R3"
-			(at 49.53 132.08 90)
+			(at 48.514 133.35 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12719,7 +9964,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 49.53 134.62 90)
+			(at 45.72 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12728,7 +9973,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 53.34 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -12739,7 +9984,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_Uniroyal-Elec-0805W8F1003T5E_C149504.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25741.pdf"
 			(at 55.88 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -12750,7 +9995,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "100kΩ ±1% 62.5mW 0402 thick film resistor"
 			(at 45.72 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -12761,7 +10006,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(厚声)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 58.42 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -12772,7 +10017,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F1003T5E"
+		(property "MPN" "0402WGF1003TCE"
 			(at 60.96 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -12783,7 +10028,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C149504"
+		(property "LCSC Part" "C25741"
 			(at 63.5 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -12810,7 +10055,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:LED GREEN 2V")
+		(lib_id "custom:LED")
 		(at 111.76 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -12821,7 +10066,7 @@
 		(dnp no)
 		(uuid "69e4e904-8561-4c10-bb3a-1491ec88b048")
 		(property "Reference" "LED2"
-			(at 112.522 127.254 0)
+			(at 112.268 127.254 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12830,8 +10075,8 @@
 				)
 			)
 		)
-		(property "Value" "GREEN 2V"
-			(at 114.808 129.286 0)
+		(property "Value" "Green"
+			(at 112.268 129.032 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12840,7 +10085,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:LED-TH_BD4.0-P2.54-FD"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 111.76 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -12851,7 +10096,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/New-Arrivals_Everlight-Elec-204-10SYGD-S530-E2_C409438.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2297.pdf"
 			(at 111.76 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -12862,7 +10107,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Green LED 0805, 525nm"
 			(at 111.76 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -12873,7 +10118,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "EVERLIGHT(亿光)"
+		(property "Manufacturer" "KENTO"
 			(at 111.76 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -12884,7 +10129,7 @@
 				)
 			)
 		)
-		(property "MPN" "204-10SYGD/S530-E2"
+		(property "MPN" "KT-0805G"
 			(at 111.76 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -12895,7 +10140,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C409438"
+		(property "LCSC Part" "C2297"
 			(at 111.76 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -12922,7 +10167,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805C 4.7uF")
+		(lib_id "custom:C")
 		(at 111.76 107.95 90)
 		(unit 1)
 		(body_style 1)
@@ -12933,7 +10178,7 @@
 		(dnp no)
 		(uuid "6c28252a-7c90-4a0f-8163-36a1e6a4bdec")
 		(property "Reference" "C8"
-			(at 108.712 106.934 90)
+			(at 108.966 106.934 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12944,7 +10189,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 108.712 108.966 90)
+			(at 108.966 108.966 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12954,7 +10199,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "EasyEDA:C0805"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 119.38 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -12965,7 +10210,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21A475KAQNNNE_4-7uF-475-10-25V_C1779.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C19666.pdf"
 			(at 121.92 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -12976,7 +10221,7 @@
 				)
 			)
 		)
-		(property "Description" "4.7uF (475) ±10% 25V"
+		(property "Description" "4.7uF 16V X5R ±10% 0603 MLCC"
 			(at 134.62 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -12987,7 +10232,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "SAMSUNG(三星)"
+		(property "Manufacturer" "Samsung"
 			(at 124.46 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -12998,7 +10243,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A475KAQNNNE"
+		(property "MPN" "CL10A475KO8NNNC"
 			(at 127 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -13009,7 +10254,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C1779"
+		(property "LCSC Part" "C19666"
 			(at 129.54 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -13057,7 +10302,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SMAJ5.0A"
+		(property "Value" "SMAJ6.0A"
 			(at 85.344 40.386 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13079,7 +10324,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Others_Littelfuse_SMAJ6-0A_Littelfuse-SMAJ6-0A_C223993.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C223993.pdf"
 			(at 92.71 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -13090,7 +10335,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "TVS diode 6V unidirectional 400W SMA"
 			(at 82.55 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -13101,7 +10346,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Littelfuse(美国力特)"
+		(property "Manufacturer" "Littelfuse"
 			(at 95.25 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -13227,7 +10472,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 100k")
+		(lib_id "custom:R")
 		(at 238.76 43.18 90)
 		(unit 1)
 		(body_style 1)
@@ -13238,7 +10483,7 @@
 		(dnp no)
 		(uuid "75e7b9c6-6a6a-4449-a98b-3e29e841adf5")
 		(property "Reference" "R16"
-			(at 242.57 41.91 90)
+			(at 242.062 43.18 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13248,7 +10493,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 242.57 44.45 90)
+			(at 238.76 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13257,7 +10502,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 246.38 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -13268,7 +10513,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_Uniroyal-Elec-0805W8F1003T5E_C149504.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25741.pdf"
 			(at 248.92 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -13279,7 +10524,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "100kΩ ±1% 62.5mW 0402 thick film resistor"
 			(at 238.76 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -13290,7 +10535,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(厚声)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 251.46 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -13301,7 +10546,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F1003T5E"
+		(property "MPN" "0402WGF1003TCE"
 			(at 254 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -13312,7 +10557,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C149504"
+		(property "LCSC Part" "C25741"
 			(at 256.54 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -13339,8 +10584,8 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:PZ254V-11-03P_C2937625")
-		(at 182.88 105.41 90)
+		(lib_id "custom:Conn_01x03")
+		(at 187.96 106.68 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13349,8 +10594,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "786f1ff6-fee3-42a5-b6db-63c60bdf29f6")
-		(property "Reference" "H1"
-			(at 188.722 102.87 90)
+		(property "Reference" "J3"
+			(at 193.802 104.14 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13361,7 +10606,7 @@
 			)
 		)
 		(property "Value" "Soil_Sensor"
-			(at 188.722 105.41 90)
+			(at 193.802 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13371,8 +10616,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "EasyEDA:HDR-TH_3P-P2.54-V-M_PZ254V-11-03P"
-			(at 193.04 105.41 0)
+		(property "Footprint" "Connector_JST:JST_PH_S3B-PH-SM4-TB_1x03-1MP_P2.00mm_Horizontal"
+			(at 198.12 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13382,8 +10627,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C2937625.pdf"
-			(at 195.58 105.41 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C265101.pdf"
+			(at 200.66 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13393,8 +10638,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 182.88 105.41 0)
+		(property "Description" "JST PH 2.0mm 1x3P SMD right-angle header"
+			(at 187.96 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13404,8 +10649,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "XFCN(兴飞)"
-			(at 198.12 105.41 0)
+		(property "Manufacturer" "JST"
+			(at 203.2 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13415,8 +10660,8 @@
 				)
 			)
 		)
-		(property "MPN" "PZ254V-11-03P"
-			(at 200.66 105.41 0)
+		(property "MPN" "S3B-PH-SM4-TB(LF)(SN)"
+			(at 205.74 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13426,8 +10671,8 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C2937625"
-			(at 203.2 105.41 0)
+		(property "LCSC Part" "C265101"
+			(at 208.28 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13449,14 +10694,14 @@
 		(instances
 			(project "pcb"
 				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
-					(reference "H1")
+					(reference "J3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 56k")
+		(lib_id "custom:R")
 		(at 63.5 134.62 0)
 		(unit 1)
 		(body_style 1)
@@ -13486,7 +10731,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 63.5 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -13497,7 +10742,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C17756.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25796.pdf"
 			(at 63.5 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -13508,7 +10753,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "56kΩ ±1% 62.5mW 0402 thick film resistor"
 			(at 63.5 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -13519,7 +10764,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 63.5 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -13530,7 +10775,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F5602T5E"
+		(property "MPN" "0402WGF5602TCE"
 			(at 63.5 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -13541,7 +10786,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C17756"
+		(property "LCSC Part" "C25796"
 			(at 63.5 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -13568,7 +10813,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0603R 91k")
+		(lib_id "custom:R")
 		(at 29.21 200.66 90)
 		(unit 1)
 		(body_style 1)
@@ -13579,7 +10824,7 @@
 		(dnp no)
 		(uuid "7d13f255-572f-42ce-b4ba-af3df291bc71")
 		(property "Reference" "R2"
-			(at 25.4 199.39 90)
+			(at 32.004 200.66 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13589,7 +10834,7 @@
 			)
 		)
 		(property "Value" "91k"
-			(at 25.4 201.93 90)
+			(at 29.21 200.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13609,7 +10854,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C23265.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C23265.pdf"
 			(at 39.37 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -13620,7 +10865,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "91kΩ ±1% 100mW 0603 thick film resistor"
 			(at 29.21 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -13631,7 +10876,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 41.91 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -13691,7 +10936,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e85c02d-aca0-41b7-a883-905e8619c704")
-		(property "Reference" "U3"
+		(property "Reference" "U2"
 			(at 85.09 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13722,7 +10967,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/PMIC-Battery-Management_TI_BQ24075RGTR_BQ24075RGTR_C15464.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C15464.pdf"
 			(at 85.09 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -13733,7 +10978,7 @@
 				)
 			)
 		)
-		(property "Description" "USB-Friendly Li-Ion Battery Charger and Power-Path Management IC, Vout 5.5 V, 4.3 V, -40 to 85 degC, 16-pin QFN (RGT), Green (RoHS  no SbBr)"
+		(property "Description" "Li-ion charger with power path, 1.5A, QFN-16"
 			(at 85.09 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -13744,7 +10989,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "TI(德州仪器)"
+		(property "Manufacturer" "Texas Instruments"
 			(at 85.09 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -13831,15 +11076,15 @@
 		(instances
 			(project "pcb"
 				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
-					(reference "U3")
+					(reference "U2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 100k")
-		(at 173.99 134.62 90)
+		(lib_id "custom:R")
+		(at 179.07 130.81 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13849,7 +11094,7 @@
 		(dnp no)
 		(uuid "7ec013b2-5bc6-4d58-b900-f4528c1053d6")
 		(property "Reference" "R14"
-			(at 177.8 133.35 90)
+			(at 182.626 130.81 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13859,7 +11104,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 177.8 135.89 90)
+			(at 179.07 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13868,8 +11113,8 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
-			(at 181.61 134.62 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 186.69 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13879,8 +11124,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_Uniroyal-Elec-0805W8F1003T5E_C149504.html"
-			(at 184.15 134.62 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25741.pdf"
+			(at 189.23 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13890,8 +11135,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 173.99 134.62 0)
+		(property "Description" "100kΩ ±1% 62.5mW 0402 thick film resistor"
+			(at 179.07 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13901,8 +11146,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(厚声)"
-			(at 186.69 134.62 0)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 191.77 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13912,8 +11157,8 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F1003T5E"
-			(at 189.23 134.62 0)
+		(property "MPN" "0402WGF1003TCE"
+			(at 194.31 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13923,8 +11168,8 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C149504"
-			(at 191.77 134.62 0)
+		(property "LCSC Part" "C25741"
+			(at 196.85 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13951,7 +11196,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 173.99 140.97 180)
+		(at 179.07 137.16 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13962,7 +11207,7 @@
 		(fields_autoplaced yes)
 		(uuid "7ee4ff8f-44f1-44a6-aad4-79ce7a08643b")
 		(property "Reference" "#PWR025"
-			(at 173.99 137.16 0)
+			(at 179.07 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13973,7 +11218,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 173.99 146.05 0)
+			(at 179.07 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13983,7 +11228,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 140.97 0)
+			(at 179.07 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13994,7 +11239,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 140.97 0)
+			(at 179.07 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14005,7 +11250,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 173.99 140.97 0)
+			(at 179.07 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14029,7 +11274,7 @@
 	)
 	(symbol
 		(lib_id "EasyEDA:AO3401A")
-		(at 180.34 128.27 0)
+		(at 185.42 124.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14039,7 +11284,7 @@
 		(dnp no)
 		(uuid "87298e6d-fe25-475b-857c-52da198813d6")
 		(property "Reference" "Q1"
-			(at 186.944 127 0)
+			(at 192.024 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14050,7 +11295,7 @@
 			)
 		)
 		(property "Value" "AO3401A"
-			(at 186.944 129.54 0)
+			(at 192.024 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14061,7 +11306,7 @@
 			)
 		)
 		(property "Footprint" "EasyEDA:SOT-23_L2.9-W1.3-P1.90-LS2.4-BR"
-			(at 180.34 140.97 0)
+			(at 185.42 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14071,8 +11316,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/MOSFET_AOS_AO3401A_AO3401A_C15127.html"
-			(at 180.34 143.51 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C15127.pdf"
+			(at 185.42 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14082,8 +11327,8 @@
 				)
 			)
 		)
-		(property "Description" "AO3401A"
-			(at 180.34 128.27 0)
+		(property "Description" "P-channel MOSFET 30V 4A SOT-23"
+			(at 185.42 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14094,7 +11339,7 @@
 			)
 		)
 		(property "Manufacturer" "AOS"
-			(at 180.34 146.05 0)
+			(at 185.42 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14105,7 +11350,7 @@
 			)
 		)
 		(property "MPN" "AO3401A"
-			(at 180.34 148.59 0)
+			(at 185.42 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14116,7 +11361,7 @@
 			)
 		)
 		(property "LCSC Part" "C15127"
-			(at 180.34 151.13 0)
+			(at 185.42 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14299,7 +11544,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 510k")
+		(lib_id "custom:R")
 		(at 29.21 187.96 90)
 		(unit 1)
 		(body_style 1)
@@ -14310,7 +11555,7 @@
 		(dnp no)
 		(uuid "8e74e315-7421-4d79-b123-10fafa8e67f5")
 		(property "Reference" "R1"
-			(at 25.4 186.69 90)
+			(at 32.004 187.96 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14320,7 +11565,7 @@
 			)
 		)
 		(property "Value" "510k"
-			(at 25.4 189.23 90)
+			(at 29.21 187.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14329,7 +11574,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 36.83 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -14340,7 +11585,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C17733.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C11616.pdf"
 			(at 39.37 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -14351,7 +11596,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "510kΩ ±1% 62.5mW 0402 thick film resistor"
 			(at 29.21 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -14362,7 +11607,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 41.91 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -14373,7 +11618,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F5103T5E"
+		(property "MPN" "0402WGF5103TCE"
 			(at 44.45 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -14384,7 +11629,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C17733"
+		(property "LCSC Part" "C11616"
 			(at 46.99 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -14643,7 +11888,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805C 100uF")
+		(lib_id "custom:C")
 		(at 306.07 106.68 90)
 		(unit 1)
 		(body_style 1)
@@ -14664,7 +11909,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "47uF"
+		(property "Value" "100uF"
 			(at 309.118 107.696 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14686,7 +11931,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_MuRata_GRM21BR60J107ME15L_100uF-107-20-6-3V_C141660.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C141660.pdf"
 			(at 316.23 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -14697,7 +11942,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "100uF 6.3V X5R ±20% 0805 MLCC"
 			(at 306.07 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -14708,7 +11953,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "muRata(村田)"
+		(property "Manufacturer" "Murata"
 			(at 318.77 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -14757,7 +12002,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 100")
+		(lib_id "custom:R")
 		(at 257.81 128.27 0)
 		(unit 1)
 		(body_style 1)
@@ -14787,7 +12032,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 257.81 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -14798,7 +12043,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C17408.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25076.pdf"
 			(at 257.81 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -14809,7 +12054,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "100Ω ±1% 62.5mW 0402 thick film resistor"
 			(at 257.81 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -14820,7 +12065,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 257.81 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -14831,7 +12076,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F1000T5E"
+		(property "MPN" "0402WGF1000TCE"
 			(at 257.81 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -14842,7 +12087,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C17408"
+		(property "LCSC Part" "C25076"
 			(at 257.81 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -14947,7 +12192,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:MX7620-7.62-02P-GN01-CU-S-A")
+		(lib_id "custom:Conn_01x02")
 		(at 234.95 66.04 180)
 		(unit 1)
 		(body_style 1)
@@ -14957,7 +12202,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a5d02992-1cb2-48b5-88ce-2f837c8b8b40")
-		(property "Reference" "U5"
+		(property "Reference" "J5"
 			(at 227.838 65.024 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14979,7 +12224,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "EasyEDA:CONN-TH_MX7620-7.62-02P-GN01-CU-S-A"
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
 			(at 234.95 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -14990,7 +12235,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5188497.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C295747.pdf"
 			(at 234.95 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -15001,7 +12246,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "JST PH 2.0mm 1x2P SMD right-angle header"
 			(at 234.95 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -15012,7 +12257,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "MAX(迈旭)"
+		(property "Manufacturer" "JST"
 			(at 234.95 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -15023,7 +12268,7 @@
 				)
 			)
 		)
-		(property "MPN" "MX7620-7.62-02P-GN01-Cu-S-A"
+		(property "MPN" "S2B-PH-SM4-TB(LF)(SN)"
 			(at 234.95 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -15034,7 +12279,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C5188497"
+		(property "LCSC Part" "C295747"
 			(at 234.95 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -15054,7 +12299,7 @@
 		(instances
 			(project "pcb"
 				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
-					(reference "U5")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -15139,7 +12384,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805C 4.7uF")
+		(lib_id "custom:C")
 		(at 86.36 48.26 90)
 		(unit 1)
 		(body_style 1)
@@ -15150,7 +12395,7 @@
 		(dnp no)
 		(uuid "ad60b7e8-540b-43a9-a200-8a204ab86219")
 		(property "Reference" "C6"
-			(at 83.312 47.244 90)
+			(at 91.44 47.244 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15161,7 +12406,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 83.312 49.276 90)
+			(at 94.234 49.276 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15171,7 +12416,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "EasyEDA:C0805"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 93.98 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -15182,7 +12427,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21A475KAQNNNE_4-7uF-475-10-25V_C1779.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C19666.pdf"
 			(at 96.52 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -15193,7 +12438,7 @@
 				)
 			)
 		)
-		(property "Description" "4.7uF (475) ±10% 25V"
+		(property "Description" "4.7uF 16V X5R ±10% 0603 MLCC"
 			(at 109.22 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -15204,7 +12449,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "SAMSUNG(三星)"
+		(property "Manufacturer" "Samsung"
 			(at 99.06 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -15215,7 +12460,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A475KAQNNNE"
+		(property "MPN" "CL10A475KO8NNNC"
 			(at 101.6 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -15226,7 +12471,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C1779"
+		(property "LCSC Part" "C19666"
 			(at 104.14 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -15330,7 +12575,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:LED RED 2V")
+		(lib_id "custom:LED")
 		(at 111.76 119.38 0)
 		(unit 1)
 		(body_style 1)
@@ -15341,7 +12586,7 @@
 		(dnp no)
 		(uuid "b072d42c-9d55-42cd-81ec-fee1dd6d44fc")
 		(property "Reference" "LED1"
-			(at 112.776 114.3 0)
+			(at 112.268 114.554 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15350,8 +12595,8 @@
 				)
 			)
 		)
-		(property "Value" "RED 2V"
-			(at 113.792 116.332 0)
+		(property "Value" "Red"
+			(at 112.014 116.332 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15360,7 +12605,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:LED-TH_BD3.0-P2.54-FD"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 111.76 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -15371,7 +12616,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_red_C99772.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C84256.pdf"
 			(at 111.76 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -15382,7 +12627,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Red LED 0805, 630nm"
 			(at 111.76 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -15393,7 +12638,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "EVERLIGHT(亿光)"
+		(property "Manufacturer" "NationStar"
 			(at 111.76 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -15404,7 +12649,7 @@
 				)
 			)
 		)
-		(property "MPN" "204-10SURD/S530-A3"
+		(property "MPN" "NCD0805R1"
 			(at 111.76 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -15415,7 +12660,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C99772"
+		(property "LCSC Part" "C84256"
 			(at 111.76 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -15494,7 +12739,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "470nH ±20% 4.5A 26mΩ 2016 power inductor"
 			(at 85.09 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -15505,7 +12750,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "muRata(村田)"
+		(property "Manufacturer" "Murata"
 			(at 85.09 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -15554,7 +12799,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 100k")
+		(lib_id "custom:R")
 		(at 45.72 148.59 90)
 		(unit 1)
 		(body_style 1)
@@ -15565,7 +12810,7 @@
 		(dnp no)
 		(uuid "b7661734-1ba2-460a-a8ef-b57f644d749a")
 		(property "Reference" "R4"
-			(at 49.53 147.32 90)
+			(at 48.514 148.59 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15575,7 +12820,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 49.53 149.86 90)
+			(at 45.72 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15584,7 +12829,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 53.34 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -15595,7 +12840,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_Uniroyal-Elec-0805W8F1003T5E_C149504.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25741.pdf"
 			(at 55.88 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -15606,7 +12851,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "100kΩ ±1% 62.5mW 0402 thick film resistor"
 			(at 45.72 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -15617,7 +12862,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(厚声)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 58.42 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -15628,7 +12873,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F1003T5E"
+		(property "MPN" "0402WGF1003TCE"
 			(at 60.96 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -15639,7 +12884,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C149504"
+		(property "LCSC Part" "C25741"
 			(at 63.5 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -15667,7 +12912,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 201.93 121.92 0)
+		(at 207.01 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15677,7 +12922,7 @@
 		(dnp no)
 		(uuid "bd246dec-7edb-4546-9d2c-341148b780f7")
 		(property "Reference" "#PWR029"
-			(at 201.93 128.27 0)
+			(at 207.01 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15688,7 +12933,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 201.93 125.984 0)
+			(at 207.01 123.444 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15698,7 +12943,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 201.93 121.92 0)
+			(at 207.01 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15709,7 +12954,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 121.92 0)
+			(at 207.01 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15720,7 +12965,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 201.93 121.92 0)
+			(at 207.01 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15820,7 +13065,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:MX7620-7.62-02P-GN01-CU-S-A")
+		(lib_id "custom:Conn_01x02")
 		(at 276.86 105.41 90)
 		(unit 1)
 		(body_style 1)
@@ -15830,7 +13075,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cc6f6917-a268-45fe-aa81-e3d57773e3e6")
-		(property "Reference" "U6"
+		(property "Reference" "J4"
 			(at 281.178 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15852,7 +13097,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "EasyEDA:CONN-TH_MX7620-7.62-02P-GN01-CU-S-A"
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
 			(at 285.75 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -15863,7 +13108,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5188497.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C295747.pdf"
 			(at 288.29 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -15874,7 +13119,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "JST PH 2.0mm 1x2P SMD right-angle header"
 			(at 276.86 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -15885,7 +13130,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "MAX(迈旭)"
+		(property "Manufacturer" "JST"
 			(at 290.83 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -15896,7 +13141,7 @@
 				)
 			)
 		)
-		(property "MPN" "MX7620-7.62-02P-GN01-Cu-S-A"
+		(property "MPN" "S2B-PH-SM4-TB(LF)(SN)"
 			(at 293.37 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -15907,7 +13152,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C5188497"
+		(property "LCSC Part" "C295747"
 			(at 295.91 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -15927,14 +13172,14 @@
 		(instances
 			(project "pcb"
 				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
-					(reference "U6")
+					(reference "J4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:JST PH 2.0mm 1x2P")
+		(lib_id "custom:Conn_01x02")
 		(at 29.21 128.27 180)
 		(unit 1)
 		(body_style 1)
@@ -15944,7 +13189,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cdf25911-858b-4286-bbdc-b57bca8ae2e3")
-		(property "Reference" "CN1"
+		(property "Reference" "J2"
 			(at 27.94 121.158 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15954,7 +13199,7 @@
 				)
 			)
 		)
-		(property "Value" "Battery_Cell"
+		(property "Value" "Battery"
 			(at 27.94 122.936 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15964,7 +13209,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:CONN-TH_B2B-PH-K-S"
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
 			(at 29.21 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -15975,7 +13220,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C5251182.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C295747.pdf"
 			(at 29.21 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -15986,7 +13231,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "JST PH 2.0mm 1x2P SMD right-angle header"
 			(at 29.21 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -16008,7 +13253,7 @@
 				)
 			)
 		)
-		(property "MPN" "B2B-PH-K-S-GW"
+		(property "MPN" "S2B-PH-SM4-TB(LF)(SN)"
 			(at 29.21 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -16019,7 +13264,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C5251182"
+		(property "LCSC Part" "C295747"
 			(at 29.21 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -16039,7 +13284,7 @@
 		(instances
 			(project "pcb"
 				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
-					(reference "CN1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -16357,7 +13602,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 180.34 110.49 0)
+		(at 185.42 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16367,7 +13612,7 @@
 		(dnp no)
 		(uuid "da38717b-803a-424b-a0b3-4a218a3fd24f")
 		(property "Reference" "#PWR027"
-			(at 180.34 116.84 0)
+			(at 185.42 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16378,7 +13623,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 180.34 114.3 0)
+			(at 185.42 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16388,7 +13633,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 110.49 0)
+			(at 185.42 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16399,7 +13644,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 110.49 0)
+			(at 185.42 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16410,7 +13655,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 180.34 110.49 0)
+			(at 185.42 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16443,7 +13688,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "db3c9062-0378-47cf-8ba9-df52424f201b")
-		(property "Reference" "U4"
+		(property "Reference" "U3"
 			(at 180.594 72.644 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16487,7 +13732,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "30-pin ESP32 dev board (USB-C, CH340), hand-soldered"
 			(at 175.26 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -16591,14 +13836,14 @@
 		(instances
 			(project "pcb"
 				(path "/4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
-					(reference "U4")
+					(reference "U3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805C 100nF")
+		(lib_id "custom:C")
 		(at 99.06 48.26 90)
 		(unit 1)
 		(body_style 1)
@@ -16609,7 +13854,7 @@
 		(dnp no)
 		(uuid "e56347b3-a8f3-4b4e-bdfc-3a7bb1dc2a9b")
 		(property "Reference" "C7"
-			(at 96.012 47.244 90)
+			(at 104.14 47.244 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16620,7 +13865,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 96.012 49.276 90)
+			(at 107.696 49.276 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16630,7 +13875,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "EasyEDA:C0805"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 106.68 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -16641,7 +13886,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_100nF-104-10-50V_C49678.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C1525.pdf"
 			(at 109.22 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -16652,7 +13897,7 @@
 				)
 			)
 		)
-		(property "Description" "100nF(104) ±10% 50V"
+		(property "Description" "100nF 16V X7R ±10% 0402 MLCC"
 			(at 121.92 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -16663,7 +13908,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "YAGEO(国巨)"
+		(property "Manufacturer" "Samsung"
 			(at 111.76 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -16674,7 +13919,7 @@
 				)
 			)
 		)
-		(property "MPN" "CC0805KRX7R9BB104"
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 114.3 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -16685,7 +13930,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C49678"
+		(property "LCSC Part" "C1525"
 			(at 116.84 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -16712,8 +13957,8 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 1k")
-		(at 193.04 114.3 0)
+		(lib_id "custom:R")
+		(at 198.12 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16723,7 +13968,7 @@
 		(dnp no)
 		(uuid "e6c501d6-46bc-4a8d-ba34-73dc68a199c1")
 		(property "Reference" "R15"
-			(at 193.04 112.014 0)
+			(at 198.12 114.554 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16733,7 +13978,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 193.04 114.3 0)
+			(at 198.12 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16742,8 +13987,8 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
-			(at 193.04 121.92 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 198.12 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16753,8 +13998,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C17513.html"
-			(at 193.04 124.46 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C11702.pdf"
+			(at 198.12 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16764,8 +14009,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 193.04 114.3 0)
+		(property "Description" "1kΩ ±1% 62.5mW 0402 thick film resistor"
+			(at 198.12 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16775,8 +14020,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 193.04 127 0)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 198.12 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16786,8 +14031,8 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F1001T5E"
-			(at 193.04 129.54 0)
+		(property "MPN" "0402WGF1001TCE"
+			(at 198.12 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16797,8 +14042,8 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C17513"
-			(at 193.04 132.08 0)
+		(property "LCSC Part" "C11702"
+			(at 198.12 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16824,7 +14069,7 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 5.1k")
+		(lib_id "custom:R")
 		(at 90.17 64.77 0)
 		(unit 1)
 		(body_style 1)
@@ -16854,7 +14099,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 90.17 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -16865,7 +14110,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_5-1KR-5101-1_C27834.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25905.pdf"
 			(at 90.17 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -16876,7 +14121,7 @@
 				)
 			)
 		)
-		(property "Description" "5.1KΩ (5101) ±1%"
+		(property "Description" "5.1kΩ ±1% 62.5mW 0402 thick film resistor"
 			(at 90.17 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -16887,7 +14132,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(厚声)"
+		(property "Manufacturer" "UNI-ROYAL"
 			(at 90.17 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -16898,7 +14143,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F5101T5E"
+		(property "MPN" "0402WGF5101TCE"
 			(at 90.17 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -16909,7 +14154,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C27834"
+		(property "LCSC Part" "C25905"
 			(at 90.17 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -16937,7 +14182,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 39.37 119.38 180)
+		(at 35.56 119.38 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16947,7 +14192,7 @@
 		(dnp no)
 		(uuid "eba35298-61c6-47fc-b784-0b701a7ba265")
 		(property "Reference" "#PWR05"
-			(at 39.37 113.03 0)
+			(at 35.56 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16958,7 +14203,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 39.37 115.57 0)
+			(at 35.56 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16968,7 +14213,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 119.38 0)
+			(at 35.56 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16979,7 +14224,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 119.38 0)
+			(at 35.56 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16990,7 +14235,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 39.37 119.38 0)
+			(at 35.56 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17014,7 +14259,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 182.88 135.89 180)
+		(at 187.96 132.08 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17025,7 +14270,7 @@
 		(fields_autoplaced yes)
 		(uuid "edf238ec-179b-4bbb-a579-13abe1750dd5")
 		(property "Reference" "#PWR028"
-			(at 182.88 132.08 0)
+			(at 187.96 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17036,7 +14281,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 182.88 140.97 0)
+			(at 187.96 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17046,7 +14291,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 135.89 0)
+			(at 187.96 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17057,7 +14302,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 135.89 0)
+			(at 187.96 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17068,7 +14313,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 182.88 135.89 0)
+			(at 187.96 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17245,8 +14490,8 @@
 		)
 	)
 	(symbol
-		(lib_id "EasyEDA:0805R 1k")
-		(at 167.64 128.27 0)
+		(lib_id "custom:R")
+		(at 172.72 124.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17256,7 +14501,7 @@
 		(dnp no)
 		(uuid "f59923b5-33d3-442f-8920-0cc931136b21")
 		(property "Reference" "R13"
-			(at 167.64 125.984 0)
+			(at 172.72 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17266,7 +14511,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 167.64 128.27 0)
+			(at 172.72 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17275,8 +14520,8 @@
 				)
 			)
 		)
-		(property "Footprint" "EasyEDA:R0805"
-			(at 167.64 135.89 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 172.72 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17286,8 +14531,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C17513.html"
-			(at 167.64 138.43 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C11702.pdf"
+			(at 172.72 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17297,8 +14542,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 167.64 128.27 0)
+		(property "Description" "1kΩ ±1% 62.5mW 0402 thick film resistor"
+			(at 172.72 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17308,8 +14553,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 167.64 140.97 0)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 172.72 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17319,8 +14564,8 @@
 				)
 			)
 		)
-		(property "MPN" "0805W8F1001T5E"
-			(at 167.64 143.51 0)
+		(property "MPN" "0402WGF1001TCE"
+			(at 172.72 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17330,8 +14575,8 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C17513"
-			(at 167.64 146.05 0)
+		(property "LCSC Part" "C11702"
+			(at 172.72 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17400,7 +14645,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/MOSFET_AOS_AO3400A_AO3400A_C20917.html"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C20917.pdf"
 			(at 273.05 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -17411,7 +14656,7 @@
 				)
 			)
 		)
-		(property "Description" "AO3400A"
+		(property "Description" "N-channel MOSFET 30V 5.7A SOT-23"
 			(at 273.05 128.27 0)
 			(hide yes)
 			(show_name no)
