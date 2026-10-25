@@ -40,8 +40,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 1.3,
-          "width": 0.3
+          "height": 0.005,
+          "width": 0.005
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -133,12 +133,12 @@
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
-        "track_not_centered_on_via": "ignore",
+        "track_not_centered_on_via": "warning",
         "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
-        "tuning_profile_track_geometries": "ignore",
+        "tuning_profile_track_geometries": "warning",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -787,7 +787,7 @@
         "uuid": "4ed6dd03-f4d0-46d7-b0cd-4ff0bb962f04"
       }
     ],
-    "used_designators": "P1,U1-9,J1-6,R1-23,#FLG1-5,#PWR1-46,D1-7,C1-16,BT1,IC1-2,L1-2,Q1-5,JP1,TP1-11,USB1-2,H1-2,CN1-12,LED1-2",
+    "used_designators": "P1,U1-9,R1-23,#FLG1-5,J1-6,D1-7,#PWR1-46,C1-16,BT1,IC1-2,L1-2,Q1-5,JP1,TP1-11,USB1-2,H1-2,CN1-12,LED1-2",
     "variants": []
   },
   "sheets": [

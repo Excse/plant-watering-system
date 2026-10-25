@@ -301,7 +301,7 @@
 	)
 	(pad "17" smd custom
 		(at 0 0)
-		(size 0.005 0.005)
+		(size 1 1)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 90)
 		(options
