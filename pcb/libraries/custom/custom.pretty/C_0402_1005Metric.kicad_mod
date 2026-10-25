@@ -1,12 +1,14 @@
 (footprint "C_0402_1005Metric"
 	(version 20260206)
-	(generator "kicad-footprint-generator")
+	(generator "pcbnew")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 	(tags "capacitor")
 	(property "Reference" "REF**"
 		(at 0 -1.16 0)
 		(layer "F.SilkS")
+		(uuid "56a0f7e6-47af-4e29-8f3f-52fe7d1f94f8")
 		(effects
 			(font
 				(size 1 1)
@@ -17,6 +19,7 @@
 	(property "Value" "C_0402_1005Metric"
 		(at 0 1.16 0)
 		(layer "F.Fab")
+		(uuid "1da4f4b4-9361-433f-b1de-721103d13113")
 		(effects
 			(font
 				(size 1 1)
@@ -24,10 +27,33 @@
 			)
 		)
 	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cea80d76-35ce-45f2-8ee4-473d4701739e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a4d04d26-3c54-4140-879b-192a0434fd8c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
 	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
 		(at 0 0 0)
 		(layer "F.SilkS")
 		(hide yes)
+		(uuid "90505416-5df6-4bba-91fd-62b4d5c1f278")
 		(effects
 			(font
 				(size 1 1)
@@ -38,22 +64,24 @@
 	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
-		(start -0.107836 -0.36)
-		(end 0.107836 -0.36)
+		(start -0.114072 0.4572)
+		(end 0.1016 0.4572)
 		(stroke
 			(width 0.12)
 			(type solid)
 		)
 		(layer "F.SilkS")
+		(uuid "54321a78-329b-4139-b0bd-f2f3f6e6c369")
 	)
 	(fp_line
-		(start -0.107836 0.36)
-		(end 0.107836 0.36)
+		(start -0.107836 -0.4616)
+		(end 0.107836 -0.4616)
 		(stroke
 			(width 0.12)
 			(type solid)
 		)
 		(layer "F.SilkS")
+		(uuid "970df63f-68d2-4086-a4f6-e69c964de0f4")
 	)
 	(fp_rect
 		(start -0.91 -0.46)
@@ -64,6 +92,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
+		(uuid "72094c35-6022-4e1f-badc-75f7c8d9b997")
 	)
 	(fp_rect
 		(start -0.5 -0.25)
@@ -74,10 +103,12 @@
 		)
 		(fill no)
 		(layer "F.Fab")
+		(uuid "4dc6e4b4-35c6-496a-903d-71bfb49e676c")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
+		(uuid "64131e53-790f-4741-a479-f21cfbee1b61")
 		(effects
 			(font
 				(size 0.25 0.25)
@@ -90,12 +121,14 @@
 		(size 0.56 0.62)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(uuid "2d98fecb-4000-4b1e-9049-e622ca654c3a")
 	)
 	(pad "2" smd roundrect
 		(at 0.48 0)
 		(size 0.56 0.62)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
+		(uuid "13c4688b-b158-4029-bb2e-2700fe6bad24")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/libraries/custom/custom.3dshapes/C_0402_1005Metric.step"
