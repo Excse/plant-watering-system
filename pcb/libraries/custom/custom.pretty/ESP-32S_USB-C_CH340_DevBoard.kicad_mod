@@ -56,86 +56,6 @@
 	(attr through_hole exclude_from_pos_files exclude_from_bom)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
-		(start -1.27 -1.68)
-		(end 26.327 -1.68)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "8d081c5e-28d1-4e12-bb3c-ccaca94e391a")
-	)
-	(fp_line
-		(start -1.27 37.24)
-		(end -1.27 -1.68)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "2e70ce3a-c002-460a-8c08-7ac019f3be9e")
-	)
-	(fp_line
-		(start 26.327 -1.68)
-		(end 26.327 37.24)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "575eb77a-467b-46b3-a08e-ad2b6c44a408")
-	)
-	(fp_line
-		(start 26.327 37.24)
-		(end -1.27 37.24)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "03b3eda5-31d8-46dd-a1bc-b2fab5ea43e6")
-	)
-	(fp_line
-		(start -1.4 -7.35)
-		(end -1.4 37.34)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "8981ca6f-41d0-48f2-8aae-4dca1253c1dd")
-	)
-	(fp_line
-		(start -1.4 37.34)
-		(end 26.597 37.34)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "1184e6c1-4cdc-4bf9-bf5f-f8232e000271")
-	)
-	(fp_line
-		(start 26.597 -7.35)
-		(end -1.4 -7.35)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "45628b27-b5e8-4ce5-a800-27dc9f4b7db5")
-	)
-	(fp_line
-		(start 26.597 37.34)
-		(end 26.597 -7.35)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "e7a66ee2-e7c6-4d11-86ee-5254becf337f")
-	)
-	(fp_line
 		(start -1.27 -1.18)
 		(end -1.27 37.235)
 		(stroke
@@ -224,6 +144,187 @@
 		)
 		(layer "F.Fab")
 		(uuid "91304bc8-2cce-4801-bd88-5351642163f1")
+	)
+	(fp_line
+		(start -1.33 1.27)
+		(end -1.33 36.89)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "120c95e6-2ba2-4b98-8ca3-67c47afab2e9")
+	)
+	(fp_line
+		(start -1.33 1.27)
+		(end 1.33 1.27)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9d33fcd0-fccd-4923-a8ec-1ab98df3b402")
+	)
+	(fp_line
+		(start -1.33 36.89)
+		(end 1.33 36.89)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "928131e5-3862-4290-aa1f-c393160d11f3")
+	)
+	(fp_line
+		(start 1.33 1.27)
+		(end 1.33 36.89)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b6c16469-30e4-48e4-adda-83213593701d")
+	)
+	(fp_line
+		(start 0 -1.33)
+		(end 1.33 -1.33)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e906593a-c343-410e-9668-dd427663423a")
+	)
+	(fp_line
+		(start 1.33 -1.33)
+		(end 1.33 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1073f5f2-fd0e-4064-8628-dd7d80a4dbb6")
+	)
+	(fp_rect
+		(start 23.869999999999997 -1.33)
+		(end 26.53 36.89)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "4379c1b8-b4ad-47ff-815e-901067b28bcf")
+	)
+	(fp_rect
+		(start -1.77 -1.77)
+		(end 1.77 37.33)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "9ddc8e1d-a6cc-49e6-9809-4acc0382f525")
+	)
+	(fp_rect
+		(start 23.43 -1.77)
+		(end 26.97 37.33)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "cdb51686-aaf3-4688-8035-46550372307a")
+	)
+	(fp_rect
+		(start -1.27 -1.27)
+		(end 1.27 36.83)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "650bcb9a-c983-4922-a242-b34af096bdf9")
+	)
+	(fp_rect
+		(start 23.93 -1.27)
+		(end 26.47 36.83)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "d820e440-a948-4e4e-9ae6-56861d787b6e")
+	)
+	(fp_rect
+		(start 1.77 -1.77)
+		(end 23.43 37.33)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "8b358df8-305d-4eb4-beea-242107a4cabf")
+	)
+	(fp_text user "Parts area"
+		(at 12.6 15.24 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "1566376d-31e2-4ecc-9aa8-31b3cdd48230")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "max. 8 mm high"
+		(at 12.6 17.0 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "a73ce5b8-3082-45fc-8a72-a8ef4b92b03b")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(zone
+		(layers "F.Cu" "B.Cu")
+		(uuid "db3ccd13-6e1b-40de-98bb-0a1b587ab423")
+		(name "Antenna keepout")
+		(hatch full 0.508)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.254)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints not_allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.508)
+			(thermal_bridge_width 0.508)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 6 -7.08) (xy 19.2 -7.08) (xy 19.2 -1.675) (xy 6 -1.675)
+			)
+		)
 	)
 	(fp_text user "Antenna"
 		(at 12.6 -4.318 0)

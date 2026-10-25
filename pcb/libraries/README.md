@@ -79,6 +79,11 @@ The custom `ESP-32S_USB-C_CH340_DevBoard` footprint uses 2.54 mm pin pitch,
 Its antenna outline and label are centered between those rows at X = 12.6 mm.
 It is excluded from the BOM and position files because the dev board is
 plugged into two hand-soldered 1x15 sockets (`J6`, `J7` in the schematic).
+Parts may be placed under the dev board: silkscreen and courtyard only enclose
+the two sockets (KiCad `PinSocket_1x15` geometry), the free area between them
+(21.7 x 39.1 mm, parts up to 8 mm high) is drawn on User.Comments, and a rule
+area keeps copper and footprints out from under the antenna. The dev board
+outline itself is on F.Fab.
 Those sockets have no footprint of their own, so the footprint carries their
 3D model twice (KiCad's `PinSocket_1x15_P2.54mm_Vertical`, offset 0 and
 25.2 mm). There is no model of the dev board itself: the original
