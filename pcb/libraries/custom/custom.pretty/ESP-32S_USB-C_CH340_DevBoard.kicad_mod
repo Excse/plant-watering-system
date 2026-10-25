@@ -18,7 +18,7 @@
 		)
 	)
 	(property "Value" "ESP-32S_USB-C_CH340_DevBoard"
-		(at -0.03295 22.86 0)
+		(at -0.03295 27.94 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "50ab56cf-c238-4c84-8e5c-7afeac4231f8")
@@ -159,96 +159,6 @@
 		(layer "F.CrtYd")
 		(uuid "f6d121a2-589f-4dda-8054-87f16a7f0356")
 	)
-	(fp_line
-		(start -14.3256 -18.96)
-		(end -14.3256 19.4564)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "bcca67ea-76ed-4db6-9bc8-27469b4fcae1")
-	)
-	(fp_line
-		(start -14.3256 19.455)
-		(end 14.2494 19.455)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "2b3280b5-dd73-4487-b635-c5b182f411cd")
-	)
-	(fp_line
-		(start -14.317 -18.9614)
-		(end -13.877 -19.4564)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "6f292ece-a28b-4ef1-9cac-b5823910ce4f")
-	)
-	(fp_line
-		(start -6.63295 -24.86)
-		(end 6.56705 -24.86)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "8eca3b37-c0d5-448b-b6a9-9da449213e90")
-	)
-	(fp_line
-		(start -6.63295 -19.455)
-		(end -13.8684 -19.455)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "90c74d0c-36ca-4a26-ae30-e80e3d5c14ad")
-	)
-	(fp_line
-		(start -6.63295 -19.455)
-		(end -6.63295 -24.86)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "c6806701-4241-4e51-a8d8-4384d0a3815e")
-	)
-	(fp_line
-		(start 6.56705 -24.86)
-		(end 6.56705 -19.455)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "8f6c3450-314d-4841-af7c-d04be4a21d64")
-	)
-	(fp_line
-		(start 6.56705 -19.455)
-		(end 14.2494 -19.455)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "77403cf7-e40a-4d06-ba0d-53b2ede55442")
-	)
-	(fp_line
-		(start 14.2494 19.4536)
-		(end 14.2494 -19.4564)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "45bef946-d2f2-4d0f-9928-4090aaaacde7")
-	)
 	(fp_rect
 		(start -13.90295 -19.05)
 		(end -11.36295 19.05)
@@ -270,6 +180,118 @@
 		(fill no)
 		(layer "F.Fab")
 		(uuid "48efb15c-a668-4cab-b690-bb23d5201e19")
+	)
+	(fp_line
+		(start -14.18295 -24.88)
+		(end 14.11705 -24.88)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "91ee485d-b8f5-4223-a3c5-fcd91a51f56a")
+	)
+	(fp_line
+		(start 14.11705 -24.88)
+		(end 14.11705 26.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1f4b5b4a-2ef1-45b3-98d5-8d8e0a4a150b")
+	)
+	(fp_line
+		(start 14.11705 26.62)
+		(end -14.18295 26.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c9b1b7b9-d377-4748-864c-464d150d0aed")
+	)
+	(fp_line
+		(start -14.18295 26.62)
+		(end -14.18295 -24.88)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "03219ca8-c0d1-4f37-86e6-e55b1abdf426")
+	)
+	(fp_line
+		(start -6.63295 -19.455)
+		(end 6.56705 -19.455)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "64c3aecc-e6c8-4cdd-bf2a-4bae7f8cf78c")
+	)
+	(fp_line
+		(start -6.63295 -24.88)
+		(end -6.63295 -19.455)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "eeba1af8-bdde-4b7e-be3f-a1abaa7705ed")
+	)
+	(fp_line
+		(start 6.56705 -24.88)
+		(end 6.56705 -19.455)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3429271f-dcce-4b05-bb23-e70d1103b487")
+	)
+	(fp_line
+		(start -4.50295 19.27)
+		(end 4.43705 19.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8e87de6a-d187-4ee4-b97a-30e622e7d21e")
+	)
+	(fp_line
+		(start -4.50295 19.27)
+		(end -4.50295 26.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "87347f1a-6d9c-4c0f-85d0-15a198f39686")
+	)
+	(fp_line
+		(start 4.43705 19.27)
+		(end 4.43705 26.62)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f4d96b6e-ddbe-41a6-aa5d-c24425583115")
+	)
+	(fp_text user "USB-C"
+		(at -0.03295 23.12 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "dff656a5-6862-4482-8890-c4b2fd971f10")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
 	)
 	(fp_text user "Antenna"
 		(at -0.03295 -22.098 0)
@@ -623,7 +645,7 @@
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/libraries/custom/custom.3dshapes/PinSocket_1x15_P2.54mm_Vertical.step"
 		(offset
-			(xyz 0 0 0)
+			(xyz -12.63295 17.78 0)
 		)
 		(scale
 			(xyz 1 1 1)
@@ -634,7 +656,18 @@
 	)
 	(model "${KIPRJMOD}/libraries/custom/custom.3dshapes/PinSocket_1x15_P2.54mm_Vertical.step"
 		(offset
-			(xyz 25.2 0 0)
+			(xyz 12.56705 17.78 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/libraries/custom/custom.3dshapes/ESP-32S_USB-C_CH340_DevBoard.wrl"
+		(offset
+			(xyz -12.63295 17.78 0)
 		)
 		(scale
 			(xyz 1 1 1)
