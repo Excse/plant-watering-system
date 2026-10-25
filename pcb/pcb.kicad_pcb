@@ -3136,7 +3136,7 @@
 		(pad "1" thru_hole rect
 			(at 0 0)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3149,7 +3149,7 @@
 		(pad "2" thru_hole circle
 			(at 0 2.54)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3162,7 +3162,7 @@
 		(pad "3" thru_hole circle
 			(at 0 5.08)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3175,7 +3175,7 @@
 		(pad "4" thru_hole circle
 			(at 0 7.62)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3188,7 +3188,7 @@
 		(pad "5" thru_hole circle
 			(at 0 10.16)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3201,7 +3201,7 @@
 		(pad "6" thru_hole circle
 			(at 0 12.7)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3214,7 +3214,7 @@
 		(pad "7" thru_hole circle
 			(at 0 15.24)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3227,7 +3227,7 @@
 		(pad "8" thru_hole circle
 			(at 0 17.78)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3240,7 +3240,7 @@
 		(pad "9" thru_hole circle
 			(at 0 20.32)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3253,7 +3253,7 @@
 		(pad "10" thru_hole circle
 			(at 0 22.86)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3266,7 +3266,7 @@
 		(pad "11" thru_hole circle
 			(at 0 25.4)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3279,7 +3279,7 @@
 		(pad "12" thru_hole circle
 			(at 0 27.94)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3292,7 +3292,7 @@
 		(pad "13" thru_hole circle
 			(at 0 30.48)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3305,7 +3305,7 @@
 		(pad "14" thru_hole circle
 			(at 0 33.02)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3318,7 +3318,7 @@
 		(pad "15" thru_hole circle
 			(at 0 35.56)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3331,7 +3331,7 @@
 		(pad "16" thru_hole circle
 			(at 25.2 0)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3344,7 +3344,7 @@
 		(pad "17" thru_hole circle
 			(at 25.2 2.54)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3357,7 +3357,7 @@
 		(pad "18" thru_hole circle
 			(at 25.2 5.08)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3370,7 +3370,7 @@
 		(pad "19" thru_hole circle
 			(at 25.2 7.62)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3383,7 +3383,7 @@
 		(pad "20" thru_hole circle
 			(at 25.2 10.16)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3396,7 +3396,7 @@
 		(pad "21" thru_hole circle
 			(at 25.2 12.7)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3409,7 +3409,7 @@
 		(pad "22" thru_hole circle
 			(at 25.2 15.24)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3422,7 +3422,7 @@
 		(pad "23" thru_hole circle
 			(at 25.2 17.78)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3435,7 +3435,7 @@
 		(pad "24" thru_hole circle
 			(at 25.2 20.32)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3448,7 +3448,7 @@
 		(pad "25" thru_hole circle
 			(at 25.2 22.86)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3461,7 +3461,7 @@
 		(pad "26" thru_hole circle
 			(at 25.2 25.4)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3474,7 +3474,7 @@
 		(pad "27" thru_hole circle
 			(at 25.2 27.94)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3487,7 +3487,7 @@
 		(pad "28" thru_hole circle
 			(at 25.2 30.48)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3500,7 +3500,7 @@
 		(pad "29" thru_hole circle
 			(at 25.2 33.02)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
@@ -3513,7 +3513,7 @@
 		(pad "30" thru_hole circle
 			(at 25.2 35.56)
 			(size 1.5 1.5)
-			(drill 0.9)
+			(drill 1.0)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers yes)
 			(keep_end_layers yes)
